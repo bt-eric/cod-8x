@@ -1,7 +1,7 @@
 api = 2
 core = 7.x
 projects[drupal][type] = core
-projects[drupal][version] = 7.17
+projects[drupal][version] = 7.19
 
 ; Hide the profiles under /profiles, so Commons is the only one. This allows
 ; the installation to start at the Language selection screen, bypassing a

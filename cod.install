@@ -37,7 +37,7 @@ function cod_install() {
   variable_set('theme_settings', $theme_settings);
 
   // Set adaptivetheme as the default theme.
-  variable_set('theme_default', 'adaptivetheme');
+  variable_set('theme_default', 'sky');
   variable_set('admin_theme', 'seven');
 
   // Revert features to be sure everything is setup correctly.
