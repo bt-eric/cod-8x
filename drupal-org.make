@@ -12,9 +12,6 @@ projects[jquery_update][version] = "2.x-dev"
 projects[jquery_update][type] = "module"
 projects[jquery_update][subdir] = "contrib"
 
-projects[adminrole][version] = "1.0"
-projects[adminrole][subdir] = contrib
-
 projects[admin_menu][version] = "3.x-dev"
 projects[admin_menu][subdir] = contrib
 
