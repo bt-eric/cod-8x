@@ -27,18 +27,29 @@ function cod_install() {
     node_type_save($type);
     node_add_body_field($type);
   }
-  // Set default administrator permissions with adminrole
-  $rid = 0;
-  $rid = db_select('role', 'r')
-   ->fields('r', array('rid'))
-   ->condition('name', 'administrator','=')
-   ->execute()
-   ->fetchField();
 
-  variable_set('user_admin_role', $rid);
-  if(function_exists('adminrole_update_permissions')) {
-    adminrole_update_permissions();
-  }
+  // Create a default role for site administrators, with all available permissions assigned.
+  $admin_role = new stdClass();
+  $admin_role->name = 'administrator';
+  $admin_role->weight = 2;
+  user_role_save($admin_role);
+  user_role_grant_permissions($admin_role->rid, array_keys(module_invoke_all('permission')));
+  // Set this as the administrator role.
+  variable_set('user_admin_role', $admin_role->rid);
+
+  // Assign user 1 the "administrator" role.
+  db_insert('users_roles')
+    ->fields(array('uid' => 1, 'rid' => $admin_role->rid))
+    ->execute();
+
+  // Enable the admin theme.
+  db_update('system')
+    ->fields(array('status' => 1))
+    ->condition('type', 'theme')
+    ->condition('name', 'seven')
+    ->execute();
+  variable_set('admin_theme', 'seven');
+  variable_set('node_admin_theme', '1');
 
   // Default page to not be promoted and have comments disabled.
   variable_set('node_options_page', array('status'));
@@ -50,8 +61,12 @@ function cod_install() {
   variable_set('theme_settings', $theme_settings);
 
   // Set adaptivetheme as the default theme.
+  db_update('system')
+      ->fields(array('status' => 1))
+      ->condition('type', 'theme')
+      ->condition('name', 'sky')
+      ->execute();
   variable_set('theme_default', 'sky');
-  variable_set('admin_theme', 'seven');
 
   // Revert features to be sure everything is setup correctly.
   // Currently disabled because we don't want devs enabling them on startup

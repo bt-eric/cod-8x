@@ -15,7 +15,7 @@ projects[jquery_update][subdir] = "contrib"
 projects[adminrole][version] = "1.0"
 projects[adminrole][subdir] = contrib
 
-projects[admin_menu][version] = "3.0-rc3"
+projects[admin_menu][version] = "3.x-dev"
 projects[admin_menu][subdir] = contrib
 
 projects[advanced_help][version] = "1.0"
@@ -185,6 +185,7 @@ projects[registration][subdir] = contrib
 projects[registration][download][type] = "git"
 projects[registration][download][url] = "http://git.drupal.org/project/registration.git"
 projects[registration][download][branch] = "7.x-1.x"
+projects[registration][patch][] = http://drupal.org/files/1899384-entity_load.patch
 
 projects[uuid][type] = "module"
 projects[uuid][subdir] = contrib
