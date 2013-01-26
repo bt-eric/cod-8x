@@ -34,6 +34,7 @@ projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "1.2"
 projects[ctools][patch][] = http://drupal.org/files/ctools-dependent-js-broken-with-jquery-1.7-1494860-30.patch
+projects[ctools][patch][] = http://drupal.org/files/ctools-fix-warning-message-1739718-32.patch
 
 projects[commerce][version] = "1.4"
 projects[commerce][subdir] = contrib
