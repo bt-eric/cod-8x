@@ -103,6 +103,9 @@ projects[flag][subdir] = contrib
 projects[inline_entity_form][version] = "1.0"
 projects[inline_entity_form][subdir] = contrib
 
+projects[i18n][version] = "1.8"
+projects[i18n][subdir] = contrib
+
 projects[link][version] = "1.0"
 projects[link][subdir] = contrib
 
@@ -128,8 +131,14 @@ projects[strongarm][version] = "2.x-dev"
 projects[strongarm][type] = "module"
 projects[strongarm][subdir] = "contrib"
 
+projects[title][version] = "1.0-alpha5"
+projects[title][subdir] = contrib
+
 projects[token][version] = "1.4"
 projects[token][subdir] = contrib
+
+projects[variable][version] = "2.2"
+projects[variable][subdir] = contrib
 
 projects[views][version] = "3.5"
 projects[views][type] = "module"
