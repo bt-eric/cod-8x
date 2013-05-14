@@ -4,7 +4,7 @@ core = 7.x
 
 ; Contributed modules.
 
-projects[addressfield][version] = "1.0-beta3"
+projects[addressfield][version] = "1.0-beta4"
 projects[addressfield][type] = "module"
 projects[addressfield][subdir] = contrib
 
@@ -32,23 +32,21 @@ projects[ckeditor][download][revision] = "f6abbda"
 
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.2"
-projects[ctools][patch][] = http://drupal.org/files/ctools-dependent-js-broken-with-jquery-1.7-1494860-30.patch
-projects[ctools][patch][] = http://drupal.org/files/ctools-fix-warning-message-1739718-32.patch
+projects[ctools][version] = "1.3"
 
-projects[commerce][version] = "1.4"
+projects[commerce][version] = "1.7"
 projects[commerce][subdir] = contrib
 
 projects[commerce_features][version] = "1.0-rc1"
 projects[commerce_features][subdir] = contrib
 
-projects[commerce_registration][version] = "2.0-beta3"
+projects[commerce_registration][version] = "2.0-beta5"
 projects[commerce_registration][subdir] = contrib
 
 projects[commerce_stock][version] = "1.1"
 projects[commerce_stock][subdir] = contrib
 
-projects[content_access][version] = "1.2-beta1"
+projects[content_access][version] = "1.2-beta2"
 projects[content_access][subdir] = contrib
 
 projects[conditional_fields][version] = "3.x-dev"
@@ -73,13 +71,13 @@ projects[diff][version] = "3.2"
 projects[diff][type] = "module"
 projects[diff][subdir] = "contrib"
 
-projects[entity][version] = "1.0"
+projects[entity][version] = "1.1"
 projects[entity][subdir] = contrib
 
 projects[entityreference][version] = "1.0"
 projects[entityreference][subdir] = contrib
 
-projects[entityreference_prepopulate][version] = "1.2"
+projects[entityreference_prepopulate][version] = "1.3"
 projects[entityreference_prepopulate][subdir] = contrib
 
 projects[features][version] = "1.0"
@@ -98,19 +96,19 @@ projects[field_select_ct][subdir] = contrib
 projects[field_collection][version] = "1.0-beta5"
 projects[field_collection][subdir] = contrib
 
-projects[flag][version] = "2.0"
+projects[flag][version] = "2.1"
 projects[flag][subdir] = contrib
 
-projects[inline_entity_form][version] = "1.0"
+projects[inline_entity_form][version] = "1.1"
 projects[inline_entity_form][subdir] = contrib
 
 projects[i18n][version] = "1.8"
 projects[i18n][subdir] = contrib
 
-projects[link][version] = "1.0"
+projects[link][version] = "1.1"
 projects[link][subdir] = contrib
 
-projects[og][version] = "2.0-rc3"
+projects[og][version] = "2.2"
 projects[og][subdir] = contrib
 
 projects[panels][version] = "3.3"
@@ -125,7 +123,7 @@ projects[pathauto][subdir] = contrib
 projects[quicktabs][version] = "3.4"
 projects[quicktabs][subdir] = contrib
 
-projects[rules][version] = "2.2"
+projects[rules][version] = "2.3"
 projects[rules][subdir] = contrib
 
 projects[strongarm][version] = "2.x-dev"
@@ -135,13 +133,13 @@ projects[strongarm][subdir] = "contrib"
 projects[title][version] = "1.0-alpha5"
 projects[title][subdir] = contrib
 
-projects[token][version] = "1.4"
+projects[token][version] = "1.5"
 projects[token][subdir] = contrib
 
 projects[variable][version] = "2.2"
 projects[variable][subdir] = contrib
 
-projects[views][version] = "3.5"
+projects[views][version] = "3.7"
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
 
@@ -192,7 +190,6 @@ projects[registration][subdir] = contrib
 projects[registration][download][type] = "git"
 projects[registration][download][url] = "http://git.drupal.org/project/registration.git"
 projects[registration][download][branch] = "7.x-1.x"
-projects[registration][patch][] = http://drupal.org/files/1899384-entity_load.patch
 
 projects[uuid][type] = "module"
 projects[uuid][subdir] = contrib
