@@ -46,7 +46,7 @@ build_distro() {
     if [[ -d $BUILD_PATH ]]; then
         cd $BUILD_PATH
         tar -czvf $BUILD_PATH/sites.tar.gz publish/sites
-        rm -rf ./publish
+        sudo rm -rf ./publish
         # do we have the profile?
         if [[ -d $BUILD_PATH/cod_profile ]]; then
           if [[ -d $BUILD_PATH/repos ]]; then

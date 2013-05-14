@@ -170,7 +170,10 @@ projects[commons_profile_base][subdir] = "contrib"
 
 ; Themes
 projects[adaptivetheme][version] = "3.1"
+projects[adaptivetheme][subdir] = contrib
+
 projects[sky][version] = "3.0-rc1"
+projects[sky][subdir] = contrib
 
 ; Git sourced Modules
 projects[cod_support][type] = "module"
