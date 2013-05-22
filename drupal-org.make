@@ -143,6 +143,10 @@ projects[views][version] = "3.7"
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
 
+projects[views_autorefresh][version] = "1.0-beta2"
+projects[views_autorefresh][type] = "module"
+projects[views_autorefresh][subdir] = "contrib"
+
 projects[views_field_view][version] = "1.0"
 projects[views_field_view][type] = "module"
 projects[views_field_view][subdir] = "contrib"

@@ -7,7 +7,7 @@ pull_git() {
     if [[ -n $RESET ]]; then
       git reset --hard HEAD
     fi
-    git pull origin 7.x-3.x
+    git pull origin 7.x-1.x
 
     cd $BUILD_PATH/repos/modules
     for i in "${modules[@]}"; do
@@ -16,7 +16,7 @@ pull_git() {
       if [[ -n $RESET ]]; then
         git reset --hard HEAD
       fi
-      git pull origin 7.x-3.x
+      git pull origin 7.x-1.x
       cd ..
     done
 }
@@ -58,10 +58,11 @@ build_distro() {
             mkdir $BUILD_PATH/repos/modules
             cd $BUILD_PATH/repos/modules
             for i in "${modules[@]}"; do
+              echo "bringing in ${i} for $USERNAME";
               if [[ -n $USERNAME ]]; then
-                git clone --branch 7.x-3.x ${USERNAME}@git.drupal.org:project/${i}.git
+                git clone --branch 7.x-1.x ${USERNAME}@git.drupal.org:project/${i}.git
               else
-                git clone --branch 7.x-3.x http://git.drupal.org/project/${i}.git
+                git clone --branch 7.x-1.x http://git.drupal.org/project/${i}.git
               fi
             done
             cd $BUILD_PATH/repos
@@ -69,9 +70,9 @@ build_distro() {
             cd $BUILD_PATH/repos/themes
             for i in "${themes[@]}"; do
               if [[ -n $USERNAME ]]; then
-                git clone --branch 7.x-3.x ${USERNAME}@git.drupal.org:project/${i}.git
+                git clone --branch 7.x-1.x ${USERNAME}@git.drupal.org:project/${i}.git
               else
-                git clone --branch 7.x-3.x http://git.drupal.org/project/${i}.git
+                git clone --branch 7.x-1.x http://git.drupal.org/project/${i}.git
               fi
             done
             build_distro $BUILD_PATH

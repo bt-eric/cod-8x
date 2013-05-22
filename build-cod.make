@@ -3,7 +3,6 @@ core = 7.x
 projects[drupal][version] = 7.22
 
 includes[] = drupal-org-core.make
-includes[] = drupal-org.make
 
 projects[cod][version] = 7.x-1.x
 projects[cod][type] = profile
