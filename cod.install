@@ -67,6 +67,7 @@ function cod_install() {
       ->condition('name', 'sky')
       ->execute();
   variable_set('theme_default', 'sky');
+  variable_set('clean_url', 1);
 
   // Revert features to be sure everything is setup correctly.
   // Currently disabled because we don't want devs enabling them on startup

@@ -4,117 +4,133 @@ core = 7.x
 
 ; Contributed modules.
 
-projects[addressfield][version] = "1.0-beta4"
 projects[addressfield][type] = "module"
 projects[addressfield][subdir] = "contrib"
+projects[addressfield][version] = "1.0-beta4"
+
+; admin_icons is a git sourced module below.
 
 projects[admin_menu][type] = "module"
-projects[admin_menu][version] = "3.x-dev"
 projects[admin_menu][subdir] = "contrib"
+projects[admin_menu][version] = "3.x-dev"
 
 projects[advanced_help][type] = "module"
 projects[advanced_help][version] = "1.0"
 projects[advanced_help][subdir] = "contrib"
 
 projects[auto_nodetitle][type] = "module"
-projects[auto_nodetitle][version] = "1.0"
 projects[auto_nodetitle][subdir] = "contrib"
+projects[auto_nodetitle][version] = "1.0"
+
+projects[breakpoints][type] = "module"
+projects[breakpoints][subdir] = "contrib"
+projects[breakpoints][version] = "1.1"
+
+projects[connector][type] = "module"
+projects[connector][subdir] = "contrib"
+projects[connector][version] = "1.0-beta2"
 
 projects[ckeditor][type] = "module"
 projects[ckeditor][subdir] = "contrib"
-projects[ckeditor][download][type] = "git"
-projects[ckeditor][download][url] = "http://git.drupal.org/project/ckeditor.git"
-; Use Libraries API for ckeditor
-; http://drupal.org/node/1063482#comment-6964504
-projects[ckeditor][download][branch] = "7.x-1.x"
-projects[ckeditor][download][revision] = "4086c0c958d7a4dd8bb0891fb35e235493367397"
+projects[ckeditor][version] = "1.13"
+
+; cod_support is a git sourced repo below.
 
 projects[commerce][type] = "module"
-projects[commerce][version] = "1.7"
+projects[commerce][version] = "1.8"
 projects[commerce][subdir] = "contrib"
 
 projects[commerce_features][type] = "module"
-projects[commerce_features][version] = "1.0-rc1"
 projects[commerce_features][subdir] = "contrib"
+projects[commerce_features][version] = "1.0-rc1"
 
 projects[commerce_registration][type] = "module"
-projects[commerce_registration][version] = "2.0-beta5"
 projects[commerce_registration][subdir] = "contrib"
+projects[commerce_registration][version] = "2.0-beta5"
 
 projects[commerce_stock][type] = "module"
-projects[commerce_stock][version] = "2.0-alpha4"
 projects[commerce_stock][subdir] = "contrib"
+projects[commerce_stock][version] = "2.0-alpha4"
 
 projects[content_access][type] = "module"
-projects[content_access][version] = "1.2-beta2"
 projects[content_access][subdir] = "contrib"
+projects[content_access][version] = "1.2-beta2"
 
 projects[conditional_fields][type] = "module"
-projects[conditional_fields][version] = "3.x-dev"
 projects[conditional_fields][subdir] = "contrib"
+projects[conditional_fields][version] = "3.x-dev"
 
 projects[context][type] = "module"
-projects[context][version] = "3.0-beta6"
 projects[context][subdir] = "contrib"
+projects[context][version] = "3.1"
 
-projects[ctools][type] = "module"
-projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.3"
+; Ctools is a git sourced module below.
 
-projects[date][version] = "2.6"
+; Introduce UUIDs onto panes & displays.
+; http://drupal.org/node/1277908#comment-7216356
+projects[ctools][patch][] = "http://drupal.org/files/ctools-uuids_for_exported_objects-1277908-118.patch"
+
 projects[date][type] = "module"
 projects[date][subdir] = "contrib"
+projects[date][version] = "2.6"
 
-projects[date_ical][version] = "2.2"
 projects[date_ical][type] = "module"
 projects[date_ical][subdir] = "contrib"
+projects[date_ical][version] = "2.2"
 
-projects[devel][version] = "1.3"
+projects[devel][version] = "1.x-dev"
 projects[devel][type] = "module"
 projects[devel][subdir] = "contrib"
 
-projects[diff][version] = "3.2"
 projects[diff][type] = "module"
 projects[diff][subdir] = "contrib"
+projects[diff][version] = "3.2"
 
 projects[entity][type] = "module"
-projects[entity][version] = "1.1"
 projects[entity][subdir] = "contrib"
+projects[entity][version] = "1.2"
 
-projects[entityreference][type] = "module"
-projects[entityreference][version] = "1.0"
-projects[entityreference][subdir] = "contrib"
+; Entitycache is a git sourced module below.
+; Entityreference is a git sourced module below.
 
 projects[entityreference_prepopulate][type] = "module"
-projects[entityreference_prepopulate][version] = "1.3"
 projects[entityreference_prepopulate][subdir] = "contrib"
+projects[entityreference_prepopulate][version] = "1.3"
 
-projects[features][version] = "1.0"
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
+projects[features][version] = "2.0"
 
 projects[field_group][type] = "module"
-projects[field_group][version] = "1.1"
 projects[field_group][subdir] = "contrib"
+projects[field_group][version] = "1.3"
 
 projects[field_permissions][type] = "module"
-projects[field_permissions][version] = "1.0-beta2"
 projects[field_permissions][subdir] = "contrib"
+projects[field_permissions][version] = "1.0-beta2"
 
 projects[field_select_ct][type] = "module"
-projects[field_select_ct][version] = "1.0-alpha1"
 projects[field_select_ct][subdir] = "contrib"
+projects[field_select_ct][version] = "1.0-alpha1"
 
 projects[field_collection][type] = "module"
-projects[field_collection][version] = "1.0-beta5"
 projects[field_collection][subdir] = "contrib"
+projects[field_collection][version] = "1.0-beta5"
 
 projects[flag][type] = "module"
-projects[flag][version] = "2.1"
 projects[flag][subdir] = "contrib"
+projects[flag][version] = "2.1"
+
+; Issue #1965760: Manually set taxonomy term flag types because its different.
+; http://drupal.org/node/1965760
+projects[flag][patch][] = "http://drupal.org/files/1965760-flag-taxonomy-types.patch"
+
+; Issue #1971980: Features export does not take flag_definition_alter into account.
+; http://drupal.org/node/1971980
+projects[flag][patch][] = "http://drupal.org/files/flag-features_export-1971980-3.patch"
 
 projects[inline_entity_form][type] = "module"
-projects[inline_entity_form][version] = "1.2"
+projects[inline_entity_form][version] = "1.3"
 projects[inline_entity_form][subdir] = "contrib"
 
 projects[i18n][type] = "module"
@@ -130,31 +146,37 @@ projects[libraries][subdir] = "contrib"
 projects[libraries][version] = "2.1"
 
 projects[link][type] = "module"
-projects[link][version] = "1.1"
 projects[link][subdir] = "contrib"
+projects[link][version] = "1.1"
 
 projects[module_filter][type] = "module"
 projects[module_filter][subdir] = "contrib"
-projects[module_filter][version] = "1.7"
+projects[module_filter][version] = "1.8"
 
 projects[mollom][type] = "module"
 projects[mollom][subdir] = "contrib"
-projects[mollom][version] = "2.6"
+projects[mollom][version] = "2.7"
 
 projects[oauth][type] = "module"
 projects[oauth][subdir] = "contrib"
 projects[oauth][version] = "3.1"
 
-projects[oauthconnector][type] = "module"
-projects[oauthconnector][subdir] = "contrib"
-projects[oauthconnector][download][type] = "git"
-projects[oauthconnector][download][url] = "http://git.drupal.org/project/oauthconnector.git"
-projects[oauthconnector][download][branch] = "7.x-1.x"
-projects[oauthconnector][download][revision] = "0ce7ac9614710c0f68d0a58cb4ae4667f8bd6fa7"
+;oauthconnector is a git repo below
 
 projects[og][type] = "module"
-projects[og][version] = "2.2"
 projects[og][subdir] = "contrib"
+projects[og][version] = "2.3"
+
+; Auto-assign role to group manager broken on groups with overridden roles.
+; https://drupal.org/node/2005800#comment-7684873
+projects[og][patch][] = "http://drupal.org/files/og-default-role-member-2005800-21.patch"
+
+; og_ui should give users the theme, not admin ui when creating groups
+; http://drupal.org/node/1800208
+projects[og][patch][] = "http://drupal.org/files/og_ui-group_node_add_theme-1800208-5.patch"
+
+; _og_access_verify_access_field_existence() assumes node group type, throws an exception rebuilding node access.
+projects[og][patch][] = "http://drupal.org/files/og-access-rebuild-exception-group-type.patch"
 
 ; og_group_ref field should respect og_user_access()
 ; http://drupal.org/node/1902086#comment-7026516
@@ -162,15 +184,15 @@ projects[og][patch][] = "http://drupal.org/files/1902086-og-ref-respect-og-user-
 
 ; og_ui should give users the theme, not admin ui when creating groups
 ; http://drupal.org/node/1800208
-projects[og][patch][] = "http://drupal.org/files/og_ui-group_node_add_theme-1800208-5.patch"
+;projects[og][patch][] = "http://drupal.org/files/og_ui-group_node_add_theme-1800208-5.patch"
 
 projects[panelizer][type] = "module"
 projects[panelizer][subdir] = "contrib"
 projects[panelizer][version] = "3.1"
 
 projects[panels][type] = "module"
-projects[panels][version] = "3.3"
 projects[panels][subdir] = "contrib"
+projects[panels][version] = "3.3"
 
 ; Fatal error: Call to undefined function panels_get_layouts()
 ; http://drupal.org/node/1828684#comment-6694732
@@ -180,21 +202,29 @@ projects[panels][patch][] = "http://drupal.org/files/1828684-layout-fix-6.patch"
 ; http://drupal.org/node/1632898#comment-6412840
 projects[panels][patch][] = "http://drupal.org/files/panels-n1632898-15.patch"
 
-projects[panels_tabs][type] = "module"
+; Add internationalization support.
+; http://drupal.org/node/1179034#comment-7216342
+projects[panels][patch][] = "http://drupal.org/files/panels-1179034-41_____panels-uuids-127790-100__-80.patch"
+
 projects[panels_tabs][version] = "1.x-dev"
+projects[panels_tabs][type] = "module"
 projects[panels_tabs][subdir] = "contrib"
 
 projects[pathauto][type] = "module"
-projects[pathauto][version] = "1.2"
 projects[pathauto][subdir] = "contrib"
+projects[pathauto][version] = "1.2"
 
 projects[quicktabs][type] = "module"
-projects[quicktabs][version] = "3.4"
+projects[quicktabs][version] = "3.6"
 projects[quicktabs][subdir] = "contrib"
+projects[quicktabs][patch][] = "http://drupal.org/files/2104643-revert-qt-487518-5.patch"
 
-projects[rules][type] = "module"
-projects[rules][version] = "2.3"
-projects[rules][subdir] = "contrib"
+projects[redirect][type] = "module"
+projects[redirect][subdir] = "contrib"
+projects[redirect][version] = "1.0-rc1"
+
+; registration is a git sourced module below.
+; rules is a git sourced module below.
 
 projects[strongarm][version] = "2.x-dev"
 projects[strongarm][type] = "module"
@@ -207,6 +237,9 @@ projects[title][subdir] = "contrib"
 projects[token][type] = "module"
 projects[token][version] = "1.5"
 projects[token][subdir] = "contrib"
+
+; uuid is a git sourced module below.
+; uuid_features is a git sourced module below.
 
 projects[variable][type] = "module"
 projects[variable][version] = "2.2"
@@ -240,15 +273,6 @@ projects[webform][type] = "module"
 projects[webform][version] = "3.19"
 projects[webform][subdir] = "contrib"
 
-; Commons Contrib modules
-projects[commons_wysiwyg][type] = "module"
-projects[commons_wysiwyg][version] = "3.1"
-projects[commons_wysiwyg][subdir] = "contrib"
-
-projects[commons_profile_base][type] = "module"
-projects[commons_profile_base][version] = "3.x-dev"
-projects[commons_profile_base][subdir] = "contrib"
-
 ; Themes
 projects[adaptivetheme][type] = "theme"
 projects[adaptivetheme][version] = "3.1"
@@ -259,23 +283,62 @@ projects[sky][version] = "3.0-rc1"
 projects[sky][subdir] = "contrib"
 
 ; Git sourced Modules
-projects[cod_support][type] = "module"
-projects[cod_support][subdir] = "contrib"
-projects[cod_support][download][type] = "git"
-projects[cod_support][download][url] = "http://git.drupal.org/project/cod_support.git"
-projects[cod_support][download][branch] = "7.x-1.x"
-
 projects[admin_icons][type] = "module"
 projects[admin_icons][subdir] = "contrib"
 projects[admin_icons][download][type] = "git"
 projects[admin_icons][download][url] = "http://git.drupal.org/project/admin_icons.git"
 projects[admin_icons][download][branch] = "7.x-1.x"
 
+projects[cod_support][type] = "module"
+projects[cod_support][subdir] = "contrib"
+projects[cod_support][download][type] = "git"
+projects[cod_support][download][url] = "http://git.drupal.org/project/cod_support.git"
+projects[cod_support][download][branch] = "7.x-1.x"
+
+projects[ctools][type] = "module"
+projects[ctools][subdir] = "contrib"
+projects[ctools][download][type] = "git"
+projects[ctools][download][url] = "http://git.drupal.org/project/ctools.git"
+projects[ctools][download][branch] = "7.x-1.x"
+projects[ctools][download][revision] = "e81da7a57f63ca95d2c713afcec65a5659aada9e"
+
+projects[entitycache][type] = "module"
+projects[entitycache][subdir] = "contrib"
+projects[entitycache][download][type] = "git"
+projects[entitycache][download][url] = "http://git.drupal.org/project/entitycache.git"
+projects[entitycache][download][branch] = "7.x-1.x"
+projects[entitycache][download][revision] = "7e390b5"
+
+; Fix core translation support.
+; http://drupal.org/node/1349566#comment-7781063
+projects[entitycache][patch][] = "http://drupal.org/files/add-translation-information-on-each-request-1349566-12.patch"
+
+projects[entityreference][type] = "module"
+projects[entityreference][subdir] = "contrib"
+projects[entityreference][download][type] = "git"
+projects[entityreference][download][url] = "http://git.drupal.org/project/entityreference.git"
+projects[entityreference][download][branch] = "7.x-1.x"
+projects[entityreference][download][revision] = "1c176daef3e7483389cbebeb34784b3af6521f7f"
+
+projects[oauthconnector][type] = "module"
+projects[oauthconnector][subdir] = "contrib"
+projects[oauthconnector][download][type] = "git"
+projects[oauthconnector][download][url] = "http://git.drupal.org/project/oauthconnector.git"
+projects[oauthconnector][download][branch] = "7.x-1.x"
+projects[oauthconnector][download][revision] = "0ce7ac9614710c0f68d0a58cb4ae4667f8bd6fa7"
+
 projects[registration][type] = "module"
 projects[registration][subdir] = "contrib"
 projects[registration][download][type] = "git"
 projects[registration][download][url] = "http://git.drupal.org/project/registration.git"
 projects[registration][download][branch] = "7.x-1.x"
+
+projects[rules][type] = "module"
+projects[rules][subdir] = "contrib"
+projects[rules][download][type] = "git"
+projects[rules][download][url] = "http://git.drupal.org/project/rules.git"
+projects[rules][download][branch] = "7.x-2.x"
+projects[rules][download][revision] = "8db91e5"
 
 projects[uuid][type] = "module"
 projects[uuid][subdir] = "contrib"
@@ -289,7 +352,20 @@ projects[uuid_features][download][type] = "git"
 projects[uuid_features][download][url] = "http://git.drupal.org/project/uuid_features.git"
 projects[uuid_features][download][branch] = "7.x-1.x"
 
-; Libraries
+; Libraries.
+; NOTE: These need to be listed in http://drupal.org/packaging-whitelist.
+libraries[underscore][download][type] = "get"
+libraries[underscore][type] = "libraries"
+libraries[underscore][download][url] = "https://github.com/jashkenas/underscore/archive/1.4.4.zip"
+
+libraries[backbone][download][type] = "get"
+libraries[backbone][type] = "libraries"
+libraries[backbone][download][url] = "https://github.com/jashkenas/backbone/archive/1.0.0.tar.gz"
+
 libraries[ckeditor][download][type] = "get"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.0/ckeditor_4.0_standard.tar.gz"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.0/ckeditor_4.0_full.tar.gz"
 libraries[ckeditor][type] = "libraries"
+
+libraries[placeholder][download][type] = "get"
+libraries[placeholder][type] = "libraries"
+libraries[placeholder][download][url] = "https://github.com/mathiasbynens/jquery-placeholder/archive/v2.0.7.tar.gz"
