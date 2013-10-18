@@ -45,14 +45,14 @@ release_notes() {
 build_distro() {
     if [[ -d $BUILD_PATH ]]; then
         cd $BUILD_PATH
-        tar -czvf $BUILD_PATH/sites.tar.gz publish/sites
+        #tar -czvf $BUILD_PATH/sites.tar.gz publish/sites
         sudo rm -rf ./publish
         # do we have the profile?
         if [[ -d $BUILD_PATH/cod_profile ]]; then
           if [[ -d $BUILD_PATH/repos ]]; then
-            drush make cod_profile/build-cod.make --no-cache --working-copy --prepare-install ./publish
-            rm -rf publish/profiles/cod/modules/contrib/cod*
-            rm -rf publish/profiles/cod/themes/contrib/cod*
+            sudo rm -f /tmp/cod.tar.gz
+            drush make --no-cache --no-core --contrib-destination --tar $BUILD_PATH/cod_profile/drupal-org.make /tmp/cod
+            drush make --no-cache --prepare-install --drupal-org=core $BUILD_PATH/cod_profile/drupal-org-core.make ./publish
           else
             mkdir $BUILD_PATH/repos
             mkdir $BUILD_PATH/repos/modules
@@ -77,13 +77,20 @@ build_distro() {
             done
             build_distro $BUILD_PATH
           fi
-          ln -sf $BUILD_PATH/repos/modules/cod* publish/profiles/cod/modules/contrib/
-          ln -sf $BUILD_PATH/repos/themes/cod* publish/profiles/cod/themes/contrib/
-          chmod -R 777 publish/sites/default
           # symlink the profile to our dev copy
-          rm -f publish/profiles/cod/*.*
-          rm -rf publish/profiles/cod/images
-          ln -s $BUILD_PATH/cod_profile/* publish/profiles/cod/
+          chmod -R 777 $BUILD_PATH/publish/sites/default
+          rm -rf $BUILD_PATH/publish/profiles/cod
+          cd $BUILD_PATH/publish/profiles
+          tar -zxvf /tmp/cod.tar.gz
+          chmod -R 775 $BUILD_PATH/publish/profiles/cod
+          rm -rf $BUILD_PATH/publish/profiles/cod/modules/contrib/cod*
+          rm -rf $BUILD_PATH/publish/profiles/cod/themes/contrib/cod*
+          ln -sfv $BUILD_PATH/repos/modules/cod* $BUILD_PATH/publish/profiles/cod/modules/contrib/
+          chmod -R 777 $BUILD_PATH/publish/sites/default
+          # symlink the profile to our dev copy
+          rm -f $BUILD_PATH/publish/profiles/cod/*.*
+          rm -rf $BUILD_PATH/publish/profiles/cod/images
+          ln -s $BUILD_PATH/cod_profile/* $BUILD_PATH/publish/profiles/cod/
         else
           git clone http://git.drupal.org/project/cod.git cod_profile
           build_distro $BUILD_PATH
@@ -97,28 +104,26 @@ build_distro() {
 }
 
 # This allows you to test the make file without needing to upload it to drupal.org and run the main make file.
-test_makefile() {
-  if [[ -d $BUILD_PATH ]]; then
-    cd $BUILD_PATH
+update() {
+  if [[ -d $DOCROOT ]]; then
+    cd $DOCROOT
     # do we have the profile?
-    if [[ -d $BUILD_PATH/cod_profile ]]; then
+    if [[ -d $DOCROOT/profiles/cod ]]; then
       # do we have an installed cod profile?
-      if [[ -d $BUILD_PATH/publish ]]; then
-        cd $BUILD_PATH
-        rm -f publish.tar.gz
-        rm -f cod.tar.gz
-        drush make --tar --drupal-org=core cod_profile/drupal-org-core.make publish
-        drush make --tar --drupal-org cod_profile/drupal-org.make cod
-        tar -zxvf publish.tar.gz
-        cd publish/profiles
+        sudo rm -f /tmp/publish.tar.gz
+        sudo rm -f /tmp/cod.tar.gz
+        drush make --tar --drupal-org=core profiles/cod/drupal-org-core.make /tmp/publish
+        drush make --tar --drupal-org profiles/cod/drupal-org.make /tmp/cod
+        cd ..
+        tar -zxvf /tmp/publish.tar.gz
+        cd $DOCROOT/profiles/modules/contrib
         # remove the symlinks in the repos before we execute
-        find . -mindepth 2 -type l | awk -F/ '{print $5}' | sed '/^$/d' > ${BUILD_PATH}/repos.txt
+        find . -mindepth 2 -type l | awk -F/ '{print $5}' | sed '/^$/d' > /tmp/repos.txt
         # exclude repos since we're updating already by linking it to the repos directory.
-        UNTAR="tar -zxvf ${BUILD_PATH}/cod.tar.gz -X ${BUILD_PATH}/repos.txt"
+        UNTAR="tar -zxvf /tmp/cod.tar.gz -X /tmp/repos.txt"
         eval $UNTAR
         echo "Successfully Updated drupal from make files"
         exit 0
-      fi
     fi
   fi
   echo "Unable to find Build path or drupal root. Please run build first"
@@ -150,17 +155,15 @@ case $1 in
     build_distro $BUILD_PATH $USERNAME;;
   update)
     if [[ -n $2 ]]; then
-      BUILD_PATH=$2
-      if [[ $3 == 'dev' ]] || [[ $3 == 'nodev' ]]; then
-        DEV=$3
-      else
-        DEV='dev'
-      fi
+      DOCROOT=$2
     else
-      echo "Usage: build_distro.sh update [build_path] [dev|nodev]"
+      echo "Usage: build_distro.sh test_makefile [build_path]"
       exit 1
     fi
-    update $BUILD_PATH $DEV;;
+    if [[ -n $3 ]]; then
+      USERNAME=$3
+    fi
+    update $DOCROOT;;
   rn)
     if [[ -n $2 ]] && [[ -n $3 ]] && [[ -n $4 ]] && [[ -n $5 ]]; then
       BUILD_PATH=$2
@@ -172,15 +175,4 @@ case $1 in
       exit 1
     fi
     release_notes $BUILD_PATH $RELEASE $FROM_DATE $TO_DATE;;
-  test_makefile)
-    if [[ -n $2 ]]; then
-      BUILD_PATH=$2
-    else
-      echo "Usage: build_distro.sh test_makefile [build_path]"
-      exit 1
-    fi
-    if [[ -n $3 ]]; then
-      USERNAME=$3
-    fi
-    test_makefile $BUILD_PATH;;
 esac
