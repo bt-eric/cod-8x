@@ -54,6 +54,7 @@ dependencies[] = filter
 dependencies[] = flag
 dependencies[] = jquery_update
 dependencies[] = link
+dependencies[] = libraries
 dependencies[] = og
 dependencies[] = og_access
 dependencies[] = og_context

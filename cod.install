@@ -85,3 +85,12 @@ function cod_install() {
   node_access_rebuild(FALSE);
 
 }
+
+/**
+ * Enable the Libraries module.
+ */
+function cod_update_1001() {
+  $module_list = array('libraries');
+  module_enable($module_list);
+  return array();
+}
