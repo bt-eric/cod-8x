@@ -137,7 +137,7 @@ projects[i18n][type] = "module"
 projects[i18n][version] = "1.8"
 projects[i18n][subdir] = "contrib"
 
-projects[jquery_update][version] = "2.x-dev"
+projects[jquery_update][version] = "2.3"
 projects[jquery_update][type] = "module"
 projects[jquery_update][subdir] = "contrib"
 
