@@ -288,6 +288,7 @@ projects[admin_icons][subdir] = "contrib"
 projects[admin_icons][download][type] = "git"
 projects[admin_icons][download][url] = "http://git.drupal.org/project/admin_icons.git"
 projects[admin_icons][download][branch] = "7.x-1.x"
+projects[admin_icons][download][revision] = "60d9f28801533fecc92216a60d444d89d80e7611"
 
 projects[cod_support][type] = "module"
 projects[cod_support][subdir] = "contrib"
@@ -332,6 +333,7 @@ projects[registration][subdir] = "contrib"
 projects[registration][download][type] = "git"
 projects[registration][download][url] = "http://git.drupal.org/project/registration.git"
 projects[registration][download][branch] = "7.x-1.x"
+projects[registration][download][revision] = "45715cf133594ba7c5efe3ae214d029f132f055c"
 
 projects[rules][type] = "module"
 projects[rules][subdir] = "contrib"
@@ -345,12 +347,14 @@ projects[uuid][subdir] = "contrib"
 projects[uuid][download][type] = "git"
 projects[uuid][download][url] = "http://git.drupal.org/project/uuid.git"
 projects[uuid][download][branch] = "7.x-1.x"
+projects[uuid][download][revision] = "a383295fd6cdb87ca90cc6c1907a5ea868da16d7"
 
 projects[uuid_features][type] = "module"
 projects[uuid_features][subdir] = "contrib"
 projects[uuid_features][download][type] = "git"
 projects[uuid_features][download][url] = "http://git.drupal.org/project/uuid_features.git"
 projects[uuid_features][download][branch] = "7.x-1.x"
+projects[uuid_features][download][revision] = "d34d00fac27dde4247fec411f1a196411bd6e913"
 
 ; Libraries.
 ; NOTE: These need to be listed in http://drupal.org/packaging-whitelist.
