@@ -1,7 +1,9 @@
 ;This is a development version. Therefore most cod modules are disabled by default, and devel modules are enabled.
-name = Conference Organizing Distribution (COD)
+name = cod
 description = A tool for building interactive conference websites.
 core = 7.x
+distribution_name = "Conference Organizing Distribution"
+exclusive = TRUE
 
 ; Core modules.
 dependencies[] = block
@@ -94,6 +96,9 @@ dependencies[] = cod_sponsors
 ;dependencies[] = cod_news
 
 ;These are copied from commons into cod_support we will rename someday
-dependencies[] = commons_profile_base
-dependencies[] = commons_wysiwyg
+dependencies[] = cod_profile_base
+dependencies[] = cod_wysiwyg
 files[] = cod.profile
+
+; System Requirements.
+php_memory_limit = 128M

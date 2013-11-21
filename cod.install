@@ -89,7 +89,7 @@ function cod_install() {
 /**
  * Enable the Libraries module.
  */
-function cod_update_1001() {
+function cod_update_7001() {
   $module_list = array('libraries');
   module_enable($module_list);
   return array();

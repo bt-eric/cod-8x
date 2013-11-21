@@ -50,7 +50,7 @@ projects[commerce_registration][version] = "2.0-beta5"
 
 projects[commerce_stock][type] = "module"
 projects[commerce_stock][subdir] = "contrib"
-projects[commerce_stock][version] = "2.0-alpha4"
+projects[commerce_stock][version] = "2.0-rc1"
 
 projects[content_access][type] = "module"
 projects[content_access][subdir] = "contrib"
@@ -76,7 +76,7 @@ projects[date][version] = "2.6"
 
 projects[date_ical][type] = "module"
 projects[date_ical][subdir] = "contrib"
-projects[date_ical][version] = "2.2"
+projects[date_ical][version] = "2.13"
 
 projects[devel][version] = "1.x-dev"
 projects[devel][type] = "module"
@@ -91,7 +91,9 @@ projects[entity][subdir] = "contrib"
 projects[entity][version] = "1.2"
 
 ; Entitycache is a git sourced module below.
-; Entityreference is a git sourced module below.
+projects[entityreference][type] = "module"
+projects[entityreference][subdir] = "contrib"
+projects[entityreference][version] = "1.1"
 
 projects[entityreference_prepopulate][type] = "module"
 projects[entityreference_prepopulate][subdir] = "contrib"
@@ -134,7 +136,7 @@ projects[inline_entity_form][version] = "1.3"
 projects[inline_entity_form][subdir] = "contrib"
 
 projects[i18n][type] = "module"
-projects[i18n][version] = "1.8"
+projects[i18n][version] = "1.10"
 projects[i18n][subdir] = "contrib"
 
 projects[jquery_update][version] = "2.3"
@@ -155,7 +157,7 @@ projects[module_filter][version] = "1.8"
 
 projects[mollom][type] = "module"
 projects[mollom][subdir] = "contrib"
-projects[mollom][version] = "2.7"
+projects[mollom][version] = "2.8"
 
 projects[oauth][type] = "module"
 projects[oauth][subdir] = "contrib"
@@ -165,7 +167,7 @@ projects[oauth][version] = "3.1"
 
 projects[og][type] = "module"
 projects[og][subdir] = "contrib"
-projects[og][version] = "2.3"
+projects[og][version] = "2.4"
 
 ; Auto-assign role to group manager broken on groups with overridden roles.
 ; https://drupal.org/node/2005800#comment-7684873
@@ -175,16 +177,9 @@ projects[og][patch][] = "http://drupal.org/files/og-default-role-member-2005800-
 ; http://drupal.org/node/1800208
 projects[og][patch][] = "http://drupal.org/files/og_ui-group_node_add_theme-1800208-5.patch"
 
-; _og_access_verify_access_field_existence() assumes node group type, throws an exception rebuilding node access.
-projects[og][patch][] = "http://drupal.org/files/og-access-rebuild-exception-group-type.patch"
-
 ; og_group_ref field should respect og_user_access()
 ; http://drupal.org/node/1902086#comment-7026516
 projects[og][patch][] = "http://drupal.org/files/1902086-og-ref-respect-og-user-access-3.patch"
-
-; og_ui should give users the theme, not admin ui when creating groups
-; http://drupal.org/node/1800208
-;projects[og][patch][] = "http://drupal.org/files/og_ui-group_node_add_theme-1800208-5.patch"
 
 projects[panelizer][type] = "module"
 projects[panelizer][subdir] = "contrib"
@@ -224,14 +219,16 @@ projects[redirect][subdir] = "contrib"
 projects[redirect][version] = "1.0-rc1"
 
 ; registration is a git sourced module below.
-; rules is a git sourced module below.
+projects[rules][type] = "module"
+projects[rules][subdir] = "contrib"
+projects[rules][version] = "2.6"
 
 projects[strongarm][version] = "2.x-dev"
 projects[strongarm][type] = "module"
 projects[strongarm][subdir] = "contrib"
 
 projects[title][type] = "module"
-projects[title][version] = "1.0-alpha5"
+projects[title][version] = "1.0-alpha7"
 projects[title][subdir] = "contrib"
 
 projects[token][type] = "module"
@@ -242,7 +239,7 @@ projects[token][subdir] = "contrib"
 ; uuid_features is a git sourced module below.
 
 projects[variable][type] = "module"
-projects[variable][version] = "2.2"
+projects[variable][version] = "2.3"
 projects[variable][subdir] = "contrib"
 
 projects[views][version] = "3.7"
@@ -258,7 +255,7 @@ projects[views_field_view][type] = "module"
 projects[views_field_view][subdir] = "contrib"
 
 projects[views_send][type] = "module"
-projects[views_send][version] = "1.0-alpha1"
+projects[views_send][version] = "1.0-rc3"
 projects[views_send][subdir] = "contrib"
 
 projects[views_data_export][type] = "module"
@@ -314,13 +311,6 @@ projects[entitycache][download][revision] = "7e390b5"
 ; http://drupal.org/node/1349566#comment-7781063
 projects[entitycache][patch][] = "http://drupal.org/files/add-translation-information-on-each-request-1349566-12.patch"
 
-projects[entityreference][type] = "module"
-projects[entityreference][subdir] = "contrib"
-projects[entityreference][download][type] = "git"
-projects[entityreference][download][url] = "http://git.drupal.org/project/entityreference.git"
-projects[entityreference][download][branch] = "7.x-1.x"
-projects[entityreference][download][revision] = "1c176daef3e7483389cbebeb34784b3af6521f7f"
-
 projects[oauthconnector][type] = "module"
 projects[oauthconnector][subdir] = "contrib"
 projects[oauthconnector][download][type] = "git"
@@ -334,13 +324,6 @@ projects[registration][download][type] = "git"
 projects[registration][download][url] = "http://git.drupal.org/project/registration.git"
 projects[registration][download][branch] = "7.x-1.x"
 projects[registration][download][revision] = "45715cf133594ba7c5efe3ae214d029f132f055c"
-
-projects[rules][type] = "module"
-projects[rules][subdir] = "contrib"
-projects[rules][download][type] = "git"
-projects[rules][download][url] = "http://git.drupal.org/project/rules.git"
-projects[rules][download][branch] = "7.x-2.x"
-projects[rules][download][revision] = "8db91e5"
 
 projects[uuid][type] = "module"
 projects[uuid][subdir] = "contrib"
