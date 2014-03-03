@@ -43,67 +43,80 @@ release_notes() {
 }
 
 build_distro() {
-    if [[ -d $BUILD_PATH ]]; then
-        cd $BUILD_PATH
-        #tar -czvf $BUILD_PATH/sites.tar.gz docroot/sites
-        sudo rm -rf ./docroot
-        # do we have the profile?
-        if [[ -d $BUILD_PATH/cod_profile ]]; then
-          if [[ -d $BUILD_PATH/repos ]]; then
-            sudo rm -f /tmp/cod.tar.gz
-            sudo rm -f /tmp/docroot.tar.gz
-            drush make --no-cache --no-core --contrib-destination --tar $BUILD_PATH/cod_profile/drupal-org.make /tmp/cod
-            drush make --no-cache --prepare-install --drupal-org=core $BUILD_PATH/cod_profile/drupal-org-core.make $BUILD_PATH/docroot
-          else
-            mkdir $BUILD_PATH/repos
-            mkdir $BUILD_PATH/repos/modules
-            cd $BUILD_PATH/repos/modules
-            for i in "${modules[@]}"; do
-              echo "bringing in ${i} for $USERNAME";
-              if [[ -n $USERNAME ]]; then
-                git clone --branch 7.x-1.x ${USERNAME}@git.drupal.org:project/${i}.git
-              else
-                git clone --branch 7.x-1.x http://git.drupal.org/project/${i}.git
-              fi
-            done
-            cd $BUILD_PATH/repos
-            mkdir $BUILD_PATH/repos/themes
-            cd $BUILD_PATH/repos/themes
-            for i in "${themes[@]}"; do
-              if [[ -n $USERNAME ]]; then
-                git clone --branch 7.x-1.x ${USERNAME}@git.drupal.org:project/${i}.git
-              else
-                git clone --branch 7.x-1.x http://git.drupal.org/project/${i}.git
-              fi
-            done
-            build_distro $BUILD_PATH
-          fi
-          # untar the docroot
-          cd $BUILD_PATH
-          # symlink the profile to our dev copy
-          chmod -R 777 $BUILD_PATH/docroot/sites/default
-          rm -rf $BUILD_PATH/docroot/profiles/cod
-          cd $BUILD_PATH/docroot/profiles
-          tar -zxvf /tmp/cod.tar.gz
-          chmod -R 775 $BUILD_PATH/docroot/profiles/cod
-          rm -rf $BUILD_PATH/docroot/profiles/cod/modules/contrib/cod*
-          rm -rf $BUILD_PATH/docroot/profiles/cod/themes/contrib/cod*
-          ln -sfv $BUILD_PATH/repos/modules/cod* $BUILD_PATH/docroot/profiles/cod/modules/contrib/
-          chmod -R 777 $BUILD_PATH/docroot/sites/default
-          # symlink the profile to our dev copy
-          rm -f $BUILD_PATH/docroot/profiles/cod/*.*
-          rm -rf $BUILD_PATH/docroot/profiles/cod/images
-          ln -s $BUILD_PATH/cod_profile/* $BUILD_PATH/docroot/profiles/cod/
+  if [[ -d $BUILD_PATH ]]; then
+      cd $BUILD_PATH
+      #backup the sites directory
+      if [[ -d docroot ]]; then
+        rm -rf ./docroot
+      fi
+      # do we have the profile?
+      if [[ -d $BUILD_PATH/cod_profile ]]; then
+        if [[ -d $BUILD_PATH/repos ]]; then
+          rm -f /tmp/cod.tar.gz
+          drush make --no-cache --prepare-install --drupal-org=core $BUILD_PATH/cod_profile/drupal-org-core.make $BUILD_PATH/docroot
+          drush make --no-cache --no-core --contrib-destination --tar $BUILD_PATH/cod_profile/drupal-org.make /tmp/cod
         else
-          git clone http://git.drupal.org/project/cod.git cod_profile
+          mkdir -p $BUILD_PATH/repos/modules/contrib
+          cd $BUILD_PATH/repos/modules/contrib
+          for i in "${modules[@]}"; do
+            echo "bringing in ${i} for $USERNAME";
+            if [[ -n $USERNAME ]]; then
+              git clone ${USERNAME}@git.drupal.org:project/${i}.git
+            else
+              git clone http://git.drupal.org/project/${i}.git
+            fi
+          done
+          cd $BUILD_PATH/repos
+          mkdir -p $BUILD_PATH/repos/themes/contrib
+          cd $BUILD_PATH/repos/themes
+          for i in "${themes[@]}"; do
+            if [[ -n $USERNAME ]]; then
+              git clone ${USERNAME}@git.drupal.org:project/${i}.git
+            else
+              git clone http://git.drupal.org/project/${i}.git
+            fi
+          done
           build_distro $BUILD_PATH
         fi
-        cd $BUILD_PATH
-        tar -zxvf $BUILD_PATH/sites.tar.gz
-    else
-      mkdir $BUILD_PATH
-      build_distro $BUILD_PATH $USERNAME
-    fi
+        # symlink the profile sites folder to our dev copy
+        cd docroot
+        if [[ -d $BUILD_PATH/sites ]]; then
+          rm -rf $BUILD_PATH/docroot/sites
+          ln -s ../sites $BUILD_PATH/docroot/sites
+        else
+          mv $BUILD_PATH/docroot/sites $BUILD_PATH/sites
+          ln -s ../sites $BUILD_PATH/docroot/sites
+        fi
+        chmod -R 777 $BUILD_PATH/docroot/sites/default
+
+        ## put cod profile and modules into the profile folder
+        rm -rf docroot/profiles/cod
+        if [ -a $BUILD_PATH/repos.txt ]; then
+          UNTAR="tar -zxvf /tmp/cod.tar.gz -X $BUILD_PATH/repos.txt"
+        else
+          cd $BUILD_PATH/repos
+          find * -mindepth 1 -maxdepth 2 -type d -not -path ".*" -not -path "modules/.*" -not -path "themes/.*" -not -path "modules/contrib" -not -path "themes/contrib" > /tmp/repos.txt
+          # exclude repos since we're updating already by linking it to the repos directory.
+          UNTAR="tar -zxvf /tmp/cod.tar.gz -X /tmp/repos.txt"
+        fi
+        cd $BUILD_PATH/docroot/profiles
+        eval $UNTAR
+        cd cod
+        ln -s ../../../cod_profile/* .
+        ln -s ../../../../cod_profile/modules/cod ${BUILD_PATH}/docroot/profiles/cod/modules/
+        ln -s ../../../../cod_profile/themes/cod ${BUILD_PATH}/docroot/profiles/cod/themes/
+        for line in $(cat $BUILD_PATH/repos.txt); do
+          ln -s ../../../../../repos/${line} ${BUILD_PATH}/docroot/profiles/cod/$(echo ${line} | awk -F/ '{print $1}')/contrib/
+        done
+        chmod -R 775 $BUILD_PATH/docroot/profiles/cod
+      else
+        git clone --branch 7.x-1.x ${USERNAME}@git.drupal.org:project/cod.git cod_profile
+        build_distro $BUILD_PATH
+      fi
+  else
+    mkdir $BUILD_PATH
+    build_distro $BUILD_PATH $USERNAME
+  fi
 }
 
 # This allows you to test the make file without needing to upload it to drupal.org and run the main make file.

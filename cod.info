@@ -44,6 +44,7 @@ dependencies[] = date_views
 dependencies[] = devel
 dependencies[] = devel_generate
 dependencies[] = diff
+dependencies[] = efq_extra_field
 dependencies[] = entity
 dependencies[] = entityreference
 dependencies[] = entityreference_prepopulate
