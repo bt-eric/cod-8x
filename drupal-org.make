@@ -216,6 +216,10 @@ projects[og][patch][] = "http://drupal.org/files/og_ui-group_node_add_theme-1800
 ; http://drupal.org/node/1902086#comment-7026516
 projects[og][patch][] = "http://drupal.org/files/1902086-og-ref-respect-og-user-access-3.patch"
 
+projects[og_vocab][type] = "module"
+projects[og_vocab][subdir] = "contrib"
+projects[og_vocab][version] = "1.2"
+
 projects[panelizer][type] = "module"
 projects[panelizer][subdir] = "contrib"
 projects[panelizer][version] = "3.1"
