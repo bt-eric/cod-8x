@@ -9,7 +9,7 @@ pull_git() {
     fi
     git pull origin 7.x-1.x
 
-    cd $BUILD_PATH/repos/modules
+    cd $BUILD_PATH/repos/modules/contrib
     for i in "${modules[@]}"; do
       echo $i
       cd $i
@@ -23,12 +23,12 @@ pull_git() {
 
 release_notes() {
   rm -rf rn.txt
-  pull_git $BUILD_PATH
+  #pull_git $BUILD_PATH
   OUTPUT="<h2>Release Notes for $RELEASE</h2>"
   cd $BUILD_PATH/cod_profile
   OUTPUT="$OUTPUT <h3>cod Profile:</h3> `drush rn --date $FROM_DATE $TO_DATE`"
 
-  cd $BUILD_PATH/repos/modules
+  cd $BUILD_PATH/repos/modules/contrib
   for i in "${modules[@]}"; do
     echo $i
     cd $i
@@ -54,7 +54,7 @@ build_distro() {
         if [[ -d $BUILD_PATH/repos ]]; then
           rm -f /tmp/cod.tar.gz
           drush make --no-cache --prepare-install --drupal-org=core $BUILD_PATH/cod_profile/drupal-org-core.make $BUILD_PATH/docroot
-          drush make --no-cache --no-core --contrib-destination --tar $BUILD_PATH/cod_profile/drupal-org.make /tmp/cod
+          drush make --no-cache --no-core --contrib-destination --concurrency=5 --tar $BUILD_PATH/cod_profile/drupal-org.make /tmp/cod
         else
           mkdir -p $BUILD_PATH/repos/modules/contrib
           cd $BUILD_PATH/repos/modules/contrib
@@ -97,7 +97,7 @@ build_distro() {
           cd $BUILD_PATH/repos
           find * -mindepth 1 -maxdepth 2 -type d -not -path ".*" -not -path "modules/.*" -not -path "themes/.*" -not -path "modules/contrib" -not -path "themes/contrib" > /tmp/repos.txt
           # exclude repos since we're updating already by linking it to the repos directory.
-          UNTAR="tar -zxvf /tmp/cod.tar.gz -X /tmp/repos.txt"
+          UNTAR="tar -zxvf /tmp/cod.tar.gz -X $BUILD_PATH/repos.txt"
         fi
         cd $BUILD_PATH/docroot/profiles
         eval $UNTAR
