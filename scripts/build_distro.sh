@@ -110,7 +110,11 @@ build_distro() {
         done
         chmod -R 775 $BUILD_PATH/docroot/profiles/cod
       else
-        git clone --branch 7.x-1.x ${USERNAME}@git.drupal.org:project/cod.git cod_profile
+        if [[ -n $USERNAME ]]; then
+          git clone --branch 7.x-1.x ${USERNAME}@git.drupal.org:project/cod.git cod_profile
+        else
+          git clone http://git.drupal.org/project/cod.git cod_profile
+        fi
         build_distro $BUILD_PATH
       fi
   else
