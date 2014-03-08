@@ -68,7 +68,7 @@ build_distro() {
           done
           cd $BUILD_PATH/repos
           mkdir -p $BUILD_PATH/repos/themes/contrib
-          cd $BUILD_PATH/repos/themes
+          cd $BUILD_PATH/repos/themes/contrib
           for i in "${themes[@]}"; do
             if [[ -n $USERNAME ]]; then
               git clone ${USERNAME}@git.drupal.org:project/${i}.git
@@ -95,7 +95,7 @@ build_distro() {
           UNTAR="tar -zxvf /tmp/cod.tar.gz -X $BUILD_PATH/repos.txt"
         else
           cd $BUILD_PATH/repos
-          find * -mindepth 1 -maxdepth 2 -type d -not -path ".*" -not -path "modules/.*" -not -path "themes/.*" -not -path "modules/contrib" -not -path "themes/contrib" > /tmp/repos.txt
+          find * -mindepth 1 -maxdepth 2 -type d -not -path ".*" -not -path "modules/.*" -not -path "themes/.*" -not -path "modules/contrib" -not -path "themes/contrib" > $BUILD_PATH/repos.txt
           # exclude repos since we're updating already by linking it to the repos directory.
           UNTAR="tar -zxvf /tmp/cod.tar.gz -X $BUILD_PATH/repos.txt"
         fi
@@ -146,6 +146,38 @@ update() {
   exit 1
 }
 
+abspath() {
+  local thePath
+  if [[ ! "$BUILD_PATH" =~ ^/ ]];then
+    thePath="$PWD/$BUILD_PATH"
+  else
+    thePath="$BUILD_PATH"
+  fi
+  echo "$thePath"|(
+    IFS=/
+    read -a parr
+    declare -a outp
+    for i in "${parr[@]}";do
+      case "$i" in
+      ''|.) continue ;;
+      ..)
+        len=${#outp[@]}
+        if ((len==0));then
+          continue
+        else
+          unset outp[$((len-1))]
+        fi
+        ;;
+      *)
+        len=${#outp[@]}
+        outp[$len]="$i"
+        ;;
+      esac
+    done
+    echo /"${outp[*]}"
+  )
+}
+
 case $1 in
   pull)
     if [[ -n $2 ]]; then
@@ -157,6 +189,7 @@ case $1 in
       echo "Usage: build_distro.sh pull [build_path]"
       exit 1
     fi
+    BUILD_PATH=$(abspath)
     pull_git $BUILD_PATH $RESET;;
   build)
     if [[ -n $2 ]]; then
@@ -168,6 +201,7 @@ case $1 in
     if [[ -n $3 ]]; then
       USERNAME=$3
     fi
+    BUILD_PATH=$(abspath)
     build_distro $BUILD_PATH $USERNAME;;
   update)
     if [[ -n $2 ]]; then
@@ -179,6 +213,7 @@ case $1 in
     if [[ -n $3 ]]; then
       USERNAME=$3
     fi
+    BUILD_PATH=$(abspath)
     update $DOCROOT;;
   rn)
     if [[ -n $2 ]] && [[ -n $3 ]] && [[ -n $4 ]] && [[ -n $5 ]]; then
@@ -190,5 +225,6 @@ case $1 in
       echo "Usage: build_distro.sh rn [build_path] [release] [from_date] [to_date]"
       exit 1
     fi
+    BUILD_PATH=$(abspath)
     release_notes $BUILD_PATH $RELEASE $FROM_DATE $TO_DATE;;
 esac
