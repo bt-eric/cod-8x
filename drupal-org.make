@@ -56,10 +56,6 @@ projects[commerce_features][type] = "module"
 projects[commerce_features][subdir] = "contrib"
 projects[commerce_features][version] = "1.0"
 
-projects[commerce_registration][type] = "module"
-projects[commerce_registration][subdir] = "contrib"
-projects[commerce_registration][version] = "2.0-beta5"
-
 projects[commerce_stock][type] = "module"
 projects[commerce_stock][subdir] = "contrib"
 projects[commerce_stock][version] = "2.0-rc1"
@@ -247,13 +243,6 @@ projects[quicktabs][patch][] = "http://drupal.org/files/2104643-revert-qt-487518
 projects[redirect][type] = "module"
 projects[redirect][subdir] = "contrib"
 projects[redirect][version] = "1.0-rc1"
-
-projects[registration][type] = "module"
-projects[registration][subdir] = "contrib"
-projects[registration][download][type] = "git"
-projects[registration][download][url] = "http://git.drupal.org/project/registration.git"
-projects[registration][download][branch] = "7.x-1.x"
-projects[registration][download][revision] = "45715cf133594ba7c5efe3ae214d029f132f055c"
 
 projects[rules][type] = "module"
 projects[rules][subdir] = "contrib"
