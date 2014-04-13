@@ -323,14 +323,13 @@ projects[webform][type] = "module"
 projects[webform][version] = "3.20"
 projects[webform][subdir] = "contrib"
 
-; Themes
-projects[adaptivetheme][type] = "theme"
-projects[adaptivetheme][version] = "3.1"
-projects[adaptivetheme][subdir] = "contrib"
-
-projects[sky][type] = "theme"
-projects[sky][version] = "3.0-rc1"
-projects[sky][subdir] = "contrib"
+; Contributed themes.
+projects[omega][type] = "theme"
+projects[omega][subdir] = "contrib"
+projects[omega][download][type] = "git"
+projects[omega][download][url] = "http://git.drupal.org/project/omega.git"
+projects[omega][download][branch] = "7.x-4.x"
+projects[omega][download][revision] = "3e00917a9843c3e2e0ad4bf8a68eef2dc4c34f09"
 
 ; Libraries.
 ; NOTE: These need to be listed in http://drupal.org/packaging-whitelist.

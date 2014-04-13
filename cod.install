@@ -60,13 +60,9 @@ function cod_install() {
   $theme_settings['toggle_node_info_page'] = FALSE;
   variable_set('theme_settings', $theme_settings);
 
-  // Set adaptivetheme as the default theme.
-  db_update('system')
-      ->fields(array('status' => 1))
-      ->condition('type', 'theme')
-      ->condition('name', 'sky')
-      ->execute();
-  variable_set('theme_default', 'sky');
+  // Enable the Skye theme and set it as the default theme.
+  theme_enable(array('omega', 'pisces'));
+  variable_set('theme_default', 'pisces');
   variable_set('clean_url', 1);
 
   // Revert features to be sure everything is setup correctly.
