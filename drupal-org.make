@@ -107,7 +107,7 @@ projects[date_ical][version] = "3.1"
 projects[date_ical][patch][] = "https://drupal.org/files/issues/date_ical_remove_makefile.patch"
 
 ; Keeping this to the latest version, since it should only be used for development.
-projects[devel][version] = "1.x-dev"
+projects[devel][version] = "1.5"
 projects[devel][type] = "module"
 projects[devel][subdir] = "contrib"
 
