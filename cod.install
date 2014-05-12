@@ -67,17 +67,11 @@ function cod_install() {
 
   // Revert features to be sure everything is setup correctly.
   // Currently disabled because we don't want devs enabling them on startup
-  /*
   $revert = array(
-    'cod_base' => array('variable'),
-    'cod_community' => array('variable'),
-    'cod_events' => array('variable'),
-    'cod_news' => array('variable'),
-    'cod_session' => array('variable'),
-    'cod_sponsors' => array('variable'),
+    'cod_wysiwyg' => array('ckeditor_profile'),
   );
   features_revert($revert);
-  */
+
   node_access_rebuild(FALSE);
 
 }
@@ -87,6 +81,15 @@ function cod_install() {
  */
 function cod_update_7001() {
   $module_list = array('libraries');
+  module_enable($module_list);
+  return array();
+}
+
+/**
+ * Enable new dependencies for COD to work properly.
+ */
+function cod_update_7002() {
+  $module_list = array('inline_entity_form', 'views_autorefresh', 'views_datasource');
   module_enable($module_list);
   return array();
 }
