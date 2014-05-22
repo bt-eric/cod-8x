@@ -1,79 +1,73 @@
-.page-node-schedule .view {
-  .view-header {
-    h2 {
-      margin-bottom: 18px;
-    }
-    .view-cod-event-rooms {
-      display: none;
-    }
-  }
-  .view-content {
-    h3 {
-      font-size: 0.9em;
-      font-weight: normal;
-      margin: 0;
-      padding: 18px 4px 0 4px;
-    }
-    .views-row {
-      background-color: $blue;
-      border: 1px solid $white;
-      color: $white;
-      padding: 18px;
-      margin-bottom: 0;
-      a {
-        color: $white;
-        font-weight: bold;
-        text-decoration: none;
-      }
-    }
-  }
-}
+/* Schedule */
 
-@include breakpoint($tab, true) {
-  .page-node-schedule .view {
-    .view-header {
-      .view-cod-event-rooms {
-        display: table;
-        table-layout: fixed;
-        margin-bottom: 10px;
-        margin-left: 8.56%;
-        width: 91.44%;
+.view-cod-session-schedule, .view-cod-bof-schedule, .view-cod-schedule {
+  ul.quicktabs-tabs.quicktabs-style-zen {
+    background: none;
+    li {
+      &.active {
+        a {
+          background: none;
+          color: $white;
+          padding-bottom: 4px;
+        }
+        background: $gray;
       }
-      .view-cod-event-rooms .views-row {
-        background-color: transparent;
-        color: $gray;
-        display: table-cell;
-        font-size: 0.9em;
-        padding: 4px 6px;
-        text-align: center;
-        width: 2%;
-        margin-bottom: 0;
+      a {
+        background: none;
+        color: $white;
+        padding-bottom: 4px;
       }
+      background: $dk-gray;
+      border-radius: 6px;
+      margin-bottom: 20px;
     }
-    .view-content {
-      h3 {
-        border-top: 1px solid $gray;
-        float: left;
-        font-size: 0.9em;
-        font-weight: normal;
-        margin: 0;
-        padding: 10px 10px 0 0;
-        text-align: right;
-        width: 8.56%;
-      }
-      .timeslot {
-        display: table;
-        table-layout: fixed;
-        margin-left: 8.56%;
-        width: 91.44%;
-      }
-      .views-row {
-        border: 1px solid $white;
-        display: table-cell;
-        padding: 18px;
-        width: 2%;
-        margin-bottom: 0;
-      }
+  }
+  .views-field-field-slot-datetime-1, .views-field-field-evttime-date-1 {
+    background: $blue;
+    clear: both;
+    color: $white;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 6px;
+  }
+  .views-row {
+    border-bottom: 1px solid #CCCCCC;
+    clear: both;
+    float: left;
+    padding-bottom: 20px;
+    padding-top: 24px;
+    width: 100%;
+    &.views-row-last {
+      border-bottom: none;
     }
+  }
+  .views-field-field-experience {
+    float: right;
+  }
+  .views-field-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    a {
+      text-decoration: none;
+    }
+  }
+  .views-field-room, .views-field-name, .views-field-field-speakers, .views-field-field-session-track  {
+    float: left;
+    height: 28px;
+    margin: 0 20px 10px 0;
+    padding-top: 4px;
+    padding-left: 30px;
+
+  }
+  .views-field-room, .views-field-name {
+    background: url(../images/location.png) transparent center left no-repeat;
+  }
+  .views-field-field-speakers {
+    background: url(../images/speaker.png) transparent center left no-repeat;
+  }
+  .views-field-field-session-track {
+    background: url(../images/track.png) transparent center left no-repeat;
   }
 }

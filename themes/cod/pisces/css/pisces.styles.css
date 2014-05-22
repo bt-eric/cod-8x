@@ -1,3 +1,7 @@
+.site-branding__name {
+  font-size: 1.6em;
+  margin-bottom: 40px; }
+
 .l-region--highlighted p .button, p.button {
   border-bottom: solid 3px #25496e;
   -moz-border-radius: 2px;
@@ -86,7 +90,7 @@ table {
 body {
   color: #494747;
   font-size: 16px;
-  font-family: "PT Sans"; }
+  font-family: "PT Sans", sans-serif; }
 
 .front .l-content {
   font-size: 1.5em;
@@ -255,59 +259,57 @@ p.button {
     -khtml-border-radius: 6px 6px 0 0;
     border-radius: 6px 6px 0 0; }
 
-.page-node-schedule .view .view-header h2 {
-  margin-bottom: 18px; }
-.page-node-schedule .view .view-header .view-cod-event-rooms {
-  display: none; }
-.page-node-schedule .view .view-content h3 {
-  font-size: 0.9em;
-  font-weight: normal;
-  margin: 0;
-  padding: 18px 4px 0 4px; }
-.page-node-schedule .view .view-content .views-row {
-  background-color: #326294;
-  border: 1px solid white;
+/* Schedule */
+.view-cod-session-schedule ul.quicktabs-tabs.quicktabs-style-zen, .view-cod-bof-schedule ul.quicktabs-tabs.quicktabs-style-zen, .view-cod-schedule ul.quicktabs-tabs.quicktabs-style-zen {
+  background: none; }
+  .view-cod-session-schedule ul.quicktabs-tabs.quicktabs-style-zen li, .view-cod-bof-schedule ul.quicktabs-tabs.quicktabs-style-zen li, .view-cod-schedule ul.quicktabs-tabs.quicktabs-style-zen li {
+    background: #494747;
+    border-radius: 6px;
+    margin-bottom: 20px; }
+    .view-cod-session-schedule ul.quicktabs-tabs.quicktabs-style-zen li.active, .view-cod-bof-schedule ul.quicktabs-tabs.quicktabs-style-zen li.active, .view-cod-schedule ul.quicktabs-tabs.quicktabs-style-zen li.active {
+      background: #615f5e; }
+      .view-cod-session-schedule ul.quicktabs-tabs.quicktabs-style-zen li.active a, .view-cod-bof-schedule ul.quicktabs-tabs.quicktabs-style-zen li.active a, .view-cod-schedule ul.quicktabs-tabs.quicktabs-style-zen li.active a {
+        background: none;
+        color: white;
+        padding-bottom: 4px; }
+    .view-cod-session-schedule ul.quicktabs-tabs.quicktabs-style-zen li a, .view-cod-bof-schedule ul.quicktabs-tabs.quicktabs-style-zen li a, .view-cod-schedule ul.quicktabs-tabs.quicktabs-style-zen li a {
+      background: none;
+      color: white;
+      padding-bottom: 4px; }
+.view-cod-session-schedule .views-field-field-slot-datetime-1, .view-cod-session-schedule .views-field-field-evttime-date-1, .view-cod-bof-schedule .views-field-field-slot-datetime-1, .view-cod-bof-schedule .views-field-field-evttime-date-1, .view-cod-schedule .views-field-field-slot-datetime-1, .view-cod-schedule .views-field-field-evttime-date-1 {
+  background: #326294;
+  clear: both;
   color: white;
-  padding: 18px;
-  margin-bottom: 0; }
-  .page-node-schedule .view .view-content .views-row a {
-    color: white;
-    font-weight: bold;
+  padding: 15px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 6px; }
+.view-cod-session-schedule .views-row, .view-cod-bof-schedule .views-row, .view-cod-schedule .views-row {
+  border-bottom: 1px solid #CCCCCC;
+  clear: both;
+  float: left;
+  padding-bottom: 20px;
+  padding-top: 24px;
+  width: 100%; }
+  .view-cod-session-schedule .views-row.views-row-last, .view-cod-bof-schedule .views-row.views-row-last, .view-cod-schedule .views-row.views-row-last {
+    border-bottom: none; }
+.view-cod-session-schedule .views-field-field-experience, .view-cod-bof-schedule .views-field-field-experience, .view-cod-schedule .views-field-field-experience {
+  float: right; }
+.view-cod-session-schedule .views-field-title, .view-cod-bof-schedule .views-field-title, .view-cod-schedule .views-field-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 20px; }
+  .view-cod-session-schedule .views-field-title a, .view-cod-bof-schedule .views-field-title a, .view-cod-schedule .views-field-title a {
     text-decoration: none; }
-
-@media (min-width: 768px) {
-  .page-node-schedule .view .view-header .view-cod-event-rooms {
-    display: table;
-    table-layout: fixed;
-    margin-bottom: 10px;
-    margin-left: 8.56%;
-    width: 91.44%; }
-  .page-node-schedule .view .view-header .view-cod-event-rooms .views-row {
-    background-color: transparent;
-    color: #615f5e;
-    display: table-cell;
-    font-size: 0.9em;
-    padding: 4px 6px;
-    text-align: center;
-    width: 2%;
-    margin-bottom: 0; }
-  .page-node-schedule .view .view-content h3 {
-    border-top: 1px solid #615f5e;
-    float: left;
-    font-size: 0.9em;
-    font-weight: normal;
-    margin: 0;
-    padding: 10px 10px 0 0;
-    text-align: right;
-    width: 8.56%; }
-  .page-node-schedule .view .view-content .timeslot {
-    display: table;
-    table-layout: fixed;
-    margin-left: 8.56%;
-    width: 91.44%; }
-  .page-node-schedule .view .view-content .views-row {
-    border: 1px solid white;
-    display: table-cell;
-    padding: 18px;
-    width: 2%;
-    margin-bottom: 0; } }
+.view-cod-session-schedule .views-field-room, .view-cod-session-schedule .views-field-name, .view-cod-session-schedule .views-field-field-speakers, .view-cod-session-schedule .views-field-field-session-track, .view-cod-bof-schedule .views-field-room, .view-cod-bof-schedule .views-field-name, .view-cod-bof-schedule .views-field-field-speakers, .view-cod-bof-schedule .views-field-field-session-track, .view-cod-schedule .views-field-room, .view-cod-schedule .views-field-name, .view-cod-schedule .views-field-field-speakers, .view-cod-schedule .views-field-field-session-track {
+  float: left;
+  height: 28px;
+  margin: 0 20px 10px 0;
+  padding-top: 4px;
+  padding-left: 30px; }
+.view-cod-session-schedule .views-field-room, .view-cod-session-schedule .views-field-name, .view-cod-bof-schedule .views-field-room, .view-cod-bof-schedule .views-field-name, .view-cod-schedule .views-field-room, .view-cod-schedule .views-field-name {
+  background: url(../images/location.png) transparent center left no-repeat; }
+.view-cod-session-schedule .views-field-field-speakers, .view-cod-bof-schedule .views-field-field-speakers, .view-cod-schedule .views-field-field-speakers {
+  background: url(../images/speaker.png) transparent center left no-repeat; }
+.view-cod-session-schedule .views-field-field-session-track, .view-cod-bof-schedule .views-field-field-session-track, .view-cod-schedule .views-field-field-session-track {
+  background: url(../images/track.png) transparent center left no-repeat; }

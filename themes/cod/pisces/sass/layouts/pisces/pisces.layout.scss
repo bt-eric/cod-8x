@@ -90,11 +90,11 @@ $gutters: 1/16;
 @include breakpoint($menu, true) {
   /* Header */
   .l-branding {
-    @include grid-span(4, 1);
+    @include grid-span(5, 1);
     text-align: left;
   }
   .l-region--header {
-    @include grid-span(8, 5);
+    @include grid-span(7, 6);
     text-align: left;
   }
   .l-region--navigation {
