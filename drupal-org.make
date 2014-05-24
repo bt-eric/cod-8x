@@ -167,7 +167,7 @@ projects[field_collection][version] = "1.0-beta7"
 
 projects[flag][type] = "module"
 projects[flag][subdir] = "contrib"
-projects[flag][version] = "2.2"
+projects[flag][version] = "3.5"
 
 projects[inline_entity_form][type] = "module"
 projects[inline_entity_form][version] = "1.5"
