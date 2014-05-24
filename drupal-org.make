@@ -264,6 +264,10 @@ projects[rules][type] = "module"
 projects[rules][subdir] = "contrib"
 projects[rules][version] = "2.7"
 
+projects[smtp][version] = "1.0"
+projects[smtp][type] = "module"
+projects[smtp][subdir] = "contrib"
+
 projects[strongarm][version] = "2.x-dev"
 projects[strongarm][type] = "module"
 projects[strongarm][subdir] = "contrib"
