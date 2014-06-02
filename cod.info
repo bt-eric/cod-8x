@@ -94,14 +94,8 @@ dependencies[] = webform
 
 ;cod specific modules
 dependencies[] = cod_base
-dependencies[] = cod_session
 dependencies[] = cod_events
-dependencies[] = cod_session_pages
 dependencies[] = cod_events_pages
-dependencies[] = cod_community
-dependencies[] = cod_sponsors
-;dependencies[] = cod_front_page
-;dependencies[] = cod_news
 
 ;These are copied from commons into cod_support we will rename someday
 dependencies[] = cod_profile_base
