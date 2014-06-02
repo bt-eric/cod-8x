@@ -315,6 +315,10 @@ function cod_create_first_event_submit($form_id, &$form_state) {
   $first_group->language = LANGUAGE_NONE;
   $first_group->status = 1;
   node_save($first_group);
+
+  // Set the homepage to the first event.
+  variable_set('site_frontpage', 'node/1');
+  variable_set('cod_events_default_event', '1');
 }
 
 /**
