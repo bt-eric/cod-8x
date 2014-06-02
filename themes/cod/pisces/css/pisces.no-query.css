@@ -313,3 +313,13 @@ p.button {
   background: url(../images/speaker.png) transparent center left no-repeat; }
 .view-cod-session-schedule .views-field-field-session-track, .view-cod-bof-schedule .views-field-field-session-track, .view-cod-schedule .views-field-field-session-track {
   background: url(../images/track.png) transparent center left no-repeat; }
+
+.user-profile h2 {
+  margin-bottom: 0; }
+.user-profile h3 {
+  margin-top: 0; }
+.user-profile .user-picture {
+  float: right; }
+  .user-profile .user-picture img {
+    border: 1px solid #c4c8d4;
+    margin: 0.83em 0 12px 12px; }
