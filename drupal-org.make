@@ -167,7 +167,7 @@ projects[field_collection][version] = "1.0-beta7"
 
 projects[flag][type] = "module"
 projects[flag][subdir] = "contrib"
-projects[flag][version] = "2.2"
+projects[flag][version] = "3.5"
 
 projects[inline_entity_form][type] = "module"
 projects[inline_entity_form][version] = "1.5"
@@ -264,6 +264,10 @@ projects[rules][type] = "module"
 projects[rules][subdir] = "contrib"
 projects[rules][version] = "2.7"
 
+projects[smtp][version] = "1.0"
+projects[smtp][type] = "module"
+projects[smtp][subdir] = "contrib"
+
 projects[strongarm][version] = "2.x-dev"
 projects[strongarm][type] = "module"
 projects[strongarm][subdir] = "contrib"
@@ -300,7 +304,7 @@ projects[variable][type] = "module"
 projects[variable][version] = "2.5"
 projects[variable][subdir] = "contrib"
 
-projects[views][version] = "3.7"
+projects[views][version] = "3.8"
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
 

@@ -67,6 +67,8 @@ dependencies[] = og_context
 dependencies[] = og_ui
 dependencies[] = module_filter
 dependencies[] = pathauto
+dependencies[] = panels
+dependencies[] = page_manager
 dependencies[] = quicktabs
 dependencies[] = quicktabs_tabstyles
 dependencies[] = rules
@@ -92,12 +94,8 @@ dependencies[] = webform
 
 ;cod specific modules
 dependencies[] = cod_base
-dependencies[] = cod_session
 dependencies[] = cod_events
-dependencies[] = cod_community
-dependencies[] = cod_sponsors
-;dependencies[] = cod_front_page
-;dependencies[] = cod_news
+dependencies[] = cod_events_pages
 
 ;These are copied from commons into cod_support we will rename someday
 dependencies[] = cod_profile_base
