@@ -117,6 +117,11 @@ function cod_install_finished(&$install_state) {
     _flag_clear_cache();
   }
 
+   // Enable the Pisces theme and set it as the default theme.
+  theme_enable(array('omega', 'pisces'));
+  variable_set('theme_default', 'pisces');
+  variable_set('clean_url', 1);
+
   // Flush all caches to ensure that any full bootstraps during the installer
   // do not leave stale cached data, and that any content types or other items
   // registered by the installation profile are registered correctly.
@@ -380,11 +385,6 @@ function cod_install() {
   $theme_settings = variable_get('theme_settings', array());
   $theme_settings['toggle_node_info_page'] = FALSE;
   variable_set('theme_settings', $theme_settings);
-
-  // Enable the Skye theme and set it as the default theme.
-  theme_enable(array('omega', 'pisces'));
-  variable_set('theme_default', 'pisces');
-  variable_set('clean_url', 1);
 
   // Revert features to be sure everything is setup correctly.
   // Currently disabled because we don't want devs enabling them on startup
