@@ -33,9 +33,9 @@ function cod_requirements($phase) {
 
       // only check if APC var is being set somewhere (usually apc.ini).
       // throw error if there is less than 96MB available
-      if ($shm_size && $shm_size < COMMONS_MINIMUM_APC_CACHE) {
-        $requirements['apc_shm_size']['description'] = $t('APC is installed but %shm_size is not enough APC cache to successfully install Drupal Commons.
-           Find your <em>apc.ini</em> file and change the <em>apc.shm_size</em> value to at least <em>%min_shm_size</em>.', array('%shm_size' => $shm_size . 'M', '%min_shm_size' => COMMONS_MINIMUM_APC_CACHE . 'M'));
+      if ($shm_size && $shm_size < COD_MINIMUM_APC_CACHE) {
+        $requirements['apc_shm_size']['description'] = $t('APC is installed but %shm_size is not enough APC cache to successfully install COD.
+           Find your <em>apc.ini</em> file and change the <em>apc.shm_size</em> value to at least <em>%min_shm_size</em>.', array('%shm_size' => $shm_size . 'M', '%min_shm_size' => COD_MINIMUM_APC_CACHE . 'M'));
         $requirements['apc_shm_size']['severity'] = REQUIREMENT_ERROR;
       }
     }
@@ -52,7 +52,7 @@ function cod_install_tasks() {
     ini_set('memory_limit', '196M');
   }
 
-  $selected_extras = variable_get('commons_selected_extras', array());
+  $selected_extras = variable_get('cod_selected_extras', array());
   // To Do - demo content
   //$demo_content = variable_get('cod_install_example_content', FALSE);
 
@@ -78,11 +78,6 @@ function cod_install_tasks() {
       'display_name' => !empty($selected_extras['example_content']) ? st('Install example content') : st('Install additional functionality'),
       'display' => FALSE,
       'type' => 'batch',
-    ),
-    'cod_rebuild_node_access' => array(
-      'display' => FALSE,
-      'type' => 'batch',
-      'run' => !empty($selected_extras['og_access']) ? INSTALL_TASK_RUN_IF_NOT_COMPLETED : INSTALL_TASK_SKIP,
     ),
     'cod_admin_permissions' => array(
       'display' => FALSE,
@@ -194,6 +189,12 @@ function cod_install_finished(&$install_state) {
   }
 }
 
+function cod_admin_permissions() {
+  //get the administrator role, we set this in the install file
+  $admin_role = user_role_load_by_name('administrator');
+  user_role_grant_permissions($admin_role->rid, array_keys(module_invoke_all('permission')));
+}
+
 /**
  * Task callback: uses Batch API to enable modules based on user selection.
  *
@@ -207,7 +208,7 @@ function cod_install_additional_modules() {
   // to do it later for each individual module (which kills performance).
   $files = system_rebuild_module_data();
   $modules_sorted = array();
-  foreach ($modules as $module) {
+  foreach ($modules as $module_key => $module) {
     if ($files[$module]->requires) {
       // Create a list of dependencies that haven't been installed yet.
       $dependencies = array_keys($files[$module]->requires);
@@ -229,11 +230,10 @@ function cod_install_additional_modules() {
     $operations[] = array('_cod_enable_module', array($module, $files[$module]->info['name']));
   }
 
-
   $batch = array(
     'title' => !empty($selected_extras['example_content']) ? st('Installing example content') : st('Installing additional functionality'),
     'operations' => $operations,
-    'file' => drupal_get_path('profile', 'commons') . '/commons.install_callbacks.inc',
+    'file' => drupal_get_path('profile', 'cod') . '/cod.install_callbacks.inc',
   );
 
   return $batch;
@@ -290,7 +290,7 @@ function cod_create_first_event() {
 /**
  * Save the first group form
  *
- * @see commons_create_first_group().
+ * @see cod_create_first_group().
  */
 function cod_create_first_event_submit($form_id, &$form_state) {
   $values = $form_state['values'];
