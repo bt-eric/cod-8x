@@ -295,8 +295,14 @@ function cod_create_first_event() {
 function cod_create_first_event_submit($form_id, &$form_state) {
   $values = $form_state['values'];
 
+  $enabled_features = array();
   if (isset($values['cod_first_event_modules'])) {
-    variable_set('cod_selected_extras', $values['cod_first_event_modules']);
+    foreach ($values['cod_first_event_modules'] as $module_name => $module_enabled) {
+      if ($module_enabled) {
+        $enabled_features[$module_name] = $module_name;
+      }
+    }
+    variable_set('cod_selected_extras', $enabled_features);
   }
 
   $first_group = new stdClass();
