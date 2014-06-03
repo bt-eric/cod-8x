@@ -314,6 +314,13 @@ p.button {
 .view-cod-session-schedule .views-field-field-session-track, .view-cod-bof-schedule .views-field-field-session-track, .view-cod-schedule .views-field-field-session-track {
   background: url(../images/track.png) transparent center left no-repeat; }
 
+.view-cod-sponsors .level {
+  clear: both; }
+.view-cod-sponsors .sponsor {
+  display: inline-block;
+  padding: 20px;
+  vertical-align: middle; }
+
 .user-profile h2 {
   margin-bottom: 0; }
 .user-profile h3 {
