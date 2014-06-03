@@ -254,7 +254,7 @@ projects[panels_tabs][subdir] = "contrib"
 projects[panels_tabs][download][type] = "git"
 projects[panels_tabs][download][url] = "http://git.drupal.org/project/panels_tabs.git"
 projects[panels_tabs][download][branch] = "7.x-1.x"
-projects[panels_tabs][download][revision] = "	2caec501d"
+projects[panels_tabs][download][revision] = "2caec501d"
 
 projects[pathauto][type] = "module"
 projects[pathauto][subdir] = "contrib"
