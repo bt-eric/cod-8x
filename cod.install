@@ -169,6 +169,12 @@ function cod_install_finished(&$install_state) {
     'hide_label' => array('page' => 0, 'entity' => 0),
   ));
 
+  //TODO: Hardcoded to the first event that is created.
+  if (module_exists('cod_session')) {
+    $first_event = node_load(1);
+    cod_session_generate_session_tracks($first_event, 'node', TRUE);
+  }
+
   // Run cron to populate update status tables (if available) so that users
   // will be warned if they've installed an out of date Drupal version.
   // Will also trigger indexing of profile-supplied content or feeds.
