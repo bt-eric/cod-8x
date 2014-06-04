@@ -25,6 +25,13 @@ projects[admin_menu][download][url] = "http://git.drupal.org/project/admin_menu.
 projects[admin_menu][download][branch] = "7.x-3.x"
 projects[admin_menu][download][revision] = "b07d37b8"
 
+projects[adminimal_admin_menu][type] = "module"
+projects[adminimal_admin_menu][subdir] = "contrib"
+projects[adminimal_admin_menu][download][type] = "git"
+projects[adminimal_admin_menu][download][url] = "http://git.drupal.org/project/adminimal_admin_menu.git"
+projects[adminimal_admin_menu][download][branch] = "7.x-1.x"
+projects[adminimal_admin_menu][download][revision] = "eca2f1c4"
+
 projects[advanced_help][type] = "module"
 projects[advanced_help][version] = "1.1"
 projects[advanced_help][subdir] = "contrib"
@@ -358,6 +365,13 @@ projects[omega][download][type] = "git"
 projects[omega][download][url] = "http://git.drupal.org/project/omega.git"
 projects[omega][download][branch] = "7.x-4.x"
 projects[omega][download][revision] = "3e00917a9843c3e2e0ad4bf8a68eef2dc4c34f09"
+
+projects[adminimal_theme][type] = "theme"
+projects[adminimal_theme][subdir] = "contrib"
+projects[adminimal_theme][download][type] = "git"
+projects[adminimal_theme][download][url] = "http://git.drupal.org/project/adminimal_theme.git"
+projects[adminimal_theme][download][branch] = "7.x-1.x"
+projects[adminimal_theme][download][revision] = "d70f9f4f"
 
 ; Legacy AD Themes -- Will be removed with BETA. You've been warned!
 projects[adaptivetheme][type] = "theme"

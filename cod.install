@@ -122,6 +122,11 @@ function cod_install_finished(&$install_state) {
   variable_set('theme_default', 'pisces');
   variable_set('clean_url', 1);
 
+  // Enable default settings for jquery_update
+  variable_set('jquery_update_compression_type', 'min');
+  variable_set('jquery_update_jquery_admin_version', '1.7');
+  variable_set('jquery_update_jquery_version', '1.8');
+
   // Flush all caches to ensure that any full bootstraps during the installer
   // do not leave stale cached data, and that any content types or other items
   // registered by the installation profile are registered correctly.
@@ -378,9 +383,9 @@ function cod_install() {
   db_update('system')
     ->fields(array('status' => 1))
     ->condition('type', 'theme')
-    ->condition('name', 'seven')
+    ->condition('name', 'adminimal')
     ->execute();
-  variable_set('admin_theme', 'seven');
+  variable_set('admin_theme', 'adminimal');
   variable_set('node_admin_theme', '1');
 
   // Default page to not be promoted and have comments disabled.
@@ -418,5 +423,20 @@ function cod_update_7001() {
 function cod_update_7002() {
   $module_list = array('inline_entity_form', 'views_autorefresh', 'views_datasource');
   module_enable($module_list);
+  return array();
+}
+
+/**
+ * Switch from Seven to Adminimal admin theme.
+ */
+function cod_update_7003() {
+  $module_list = array('adminimal', 'adminimal_admin_menu');
+  module_enable($module_list);
+  variable_set('admin_theme', 'adminimal');
+
+  // Enable default settings for jquery_update
+  variable_set('jquery_update_compression_type', 'min');
+  variable_set('jquery_update_jquery_admin_version', '1.7');
+  variable_set('jquery_update_jquery_version', '1.8');
   return array();
 }
