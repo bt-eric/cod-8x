@@ -42,7 +42,7 @@ projects[auto_nodetitle][version] = "1.0"
 
 projects[breakpoints][type] = "module"
 projects[breakpoints][subdir] = "contrib"
-projects[breakpoints][version] = "1.1"
+projects[breakpoints][version] = "1.2"
 
 projects[connector][type] = "module"
 projects[connector][subdir] = "contrib"
@@ -83,7 +83,7 @@ projects[commerce_features][version] = "1.0"
 
 projects[commerce_stock][type] = "module"
 projects[commerce_stock][subdir] = "contrib"
-projects[commerce_stock][version] = "2.0-rc1"
+projects[commerce_stock][version] = "2.0"
 
 projects[content_access][type] = "module"
 projects[content_access][subdir] = "contrib"
@@ -113,7 +113,7 @@ projects[date][version] = "2.7"
 
 projects[date_ical][type] = "module"
 projects[date_ical][subdir] = "contrib"
-projects[date_ical][version] = "3.1"
+projects[date_ical][version] = "3.2"
 
 ; Remove icalcreator library from the date_ical module
 ; https://drupal.org/node/2209165
@@ -164,7 +164,7 @@ projects[features][version] = "2.0"
 
 projects[field_group][type] = "module"
 projects[field_group][subdir] = "contrib"
-projects[field_group][version] = "1.3"
+projects[field_group][version] = "1.4"
 
 projects[field_permissions][type] = "module"
 projects[field_permissions][subdir] = "contrib"
