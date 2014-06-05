@@ -69,9 +69,10 @@ projects[ckeditor][patch][] = "https://drupal.org/files/issues/ckeditor-remove-e
 
 projects[cod_support][type] = "module"
 projects[cod_support][subdir] = "contrib"
-projects[cod_support][download][type] = "git"
-projects[cod_support][download][url] = "http://git.drupal.org/project/cod_support.git"
-projects[cod_support][download][branch] = "7.x-1.x"
+projects[cod_support][version] = "1.0-beta1"
+;projects[cod_support][download][type] = "git"
+;projects[cod_support][download][url] = "http://git.drupal.org/project/cod_support.git"
+;projects[cod_support][download][branch] = "7.x-1.x"
 
 projects[commerce][type] = "module"
 projects[commerce][version] = "1.9"
@@ -372,15 +373,6 @@ projects[adminimal_theme][download][type] = "git"
 projects[adminimal_theme][download][url] = "http://git.drupal.org/project/adminimal_theme.git"
 projects[adminimal_theme][download][branch] = "7.x-1.x"
 projects[adminimal_theme][download][revision] = "d70f9f4f"
-
-; Legacy AD Themes -- Will be removed with BETA. You've been warned!
-projects[adaptivetheme][type] = "theme"
-projects[adaptivetheme][version] = "3.2"
-projects[adaptivetheme][subdir] = "contrib"
-
-projects[sky][type] = "theme"
-projects[sky][version] = "3.0"
-projects[sky][subdir] = "contrib"
 
 ; Libraries.
 ; NOTE: These need to be listed in http://drupal.org/packaging-whitelist.
