@@ -2,7 +2,7 @@
   font-size: 1.6em;
   margin-bottom: 40px; }
 
-.l-region--highlighted p .button, p.button {
+p.button {
   border-bottom: solid 3px #25496e;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -14,10 +14,10 @@
   font-size: 0.88em;
   height: 40px;
   padding: 10px 20px; }
-  .l-region--highlighted p .button a:link, p.button a:link, .l-region--highlighted p .button a:visited, p.button a:visited, .l-region--highlighted p .button a.active-trail, p.button a.active-trail, .l-region--highlighted p .button a:hover, p.button a:hover, .l-region--highlighted p .button a:active, p.button a:active {
+  p.button a:link, p.button a:visited, p.button a.active-trail, p.button a:hover, p.button a:active {
     color: white;
     text-decoration: none; }
-  .l-region--highlighted p .button:hover, p.button:hover {
+  p.button:hover {
     background-color: #386fa7;
     border-bottom: solid 3px #2f5d8c; }
 
@@ -52,13 +52,9 @@ body {
     font-size: 2em;
     margin-bottom: 1.5em;
     text-align: center; }
-  .l-region--highlighted p {
-    text-align: center; }
-    .l-region--highlighted p .button {
-      clear: left; }
-    .l-region--highlighted p a {
-      color: white;
-      text-decoration: none; }
+  .l-region--highlighted p a {
+    color: white;
+    text-decoration: none; }
 
 .front .l-main-wrapper {
   background-color: white; }
@@ -92,10 +88,6 @@ body {
   font-size: 16px;
   font-family: "PT Sans", sans-serif; }
 
-.front .l-content {
-  font-size: 1.5em;
-  line-height: 1.8em;
-  text-align: center; }
 .front .l-region--footer h2 {
   font-size: 2.25em;
   font-weight: normal;
@@ -132,7 +124,7 @@ p.button {
   .l-region--footer .block img {
     width: 100%; }
 
-.l-region--highlighted p .button, p.button {
+p.button {
   border-bottom: solid 3px #25496e;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -144,10 +136,10 @@ p.button {
   font-size: 0.88em;
   height: 40px;
   padding: 10px 20px; }
-  .l-region--highlighted p .button a:link, p.button a:link, .l-region--highlighted p .button a:visited, p.button a:visited, .l-region--highlighted p .button a.active-trail, p.button a.active-trail, .l-region--highlighted p .button a:hover, p.button a:hover, .l-region--highlighted p .button a:active, p.button a:active {
+  p.button a:link, p.button a:visited, p.button a.active-trail, p.button a:hover, p.button a:active {
     color: white;
     text-decoration: none; }
-  .l-region--highlighted p .button:hover, p.button:hover {
+  p.button:hover {
     background-color: #386fa7;
     border-bottom: solid 3px #2f5d8c; }
 

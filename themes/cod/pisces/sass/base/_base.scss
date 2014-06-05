@@ -38,11 +38,6 @@ body {
     text-align: center;
   }
   p {
-    text-align: center;
-    .button {
-      @extend %button;
-      clear: left;
-    }
     a {
       color: $white;
       text-decoration: none;
