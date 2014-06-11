@@ -177,7 +177,10 @@ projects[field_select_ct][version] = "1.0-alpha1"
 
 projects[field_collection][type] = "module"
 projects[field_collection][subdir] = "contrib"
-projects[field_collection][version] = "1.0-beta7"
+projects[field_collection][download][type] = "git"
+projects[field_collection][download][url] = "http://git.drupal.org/project/field_collection.git"
+projects[field_collection][download][branch] = "7.x-1.x"
+projects[field_collection][download][revision] = "ae778f2"
 
 projects[flag][type] = "module"
 projects[flag][subdir] = "contrib"
