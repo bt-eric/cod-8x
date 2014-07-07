@@ -161,7 +161,14 @@ projects[entityreference][patch][] = "https://www.drupal.org/files/issues/196901
 
 projects[entityreference_prepopulate][type] = "module"
 projects[entityreference_prepopulate][subdir] = "contrib"
-projects[entityreference_prepopulate][version] = "1.5"
+projects[entityreference_prepopulate][download][type] = "git"
+projects[entityreference_prepopulate][download][url] = "http://git.drupal.org/project/entityreference_prepopulate.git"
+projects[entityreference_prepopulate][download][branch] = "7.x-1.x"
+projects[entityreference_prepopulate][download][revision] = "9b40518a"
+
+; Allow entityreference prepopulate function when an ajax callback is performed.
+; https://www.drupal.org/node/1970320 and https://www.drupal.org/node/2295951
+projects[entityreference_prepopulate][patch][] = "https://www.drupal.org/files/issues/er_prepopulate_ajax_values-1.patch"
 
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
