@@ -155,6 +155,10 @@ projects[entityreference][type] = "module"
 projects[entityreference][subdir] = "contrib"
 projects[entityreference][version] = "1.1"
 
+; Fix foreign keys feature revert issue
+; https://www.drupal.org/node/1969018
+projects[entityreference][patch][] = "https://www.drupal.org/files/issues/1969018-update-field-config-foreign-keys-15.patch"
+
 projects[entityreference_prepopulate][type] = "module"
 projects[entityreference_prepopulate][subdir] = "contrib"
 projects[entityreference_prepopulate][version] = "1.5"
