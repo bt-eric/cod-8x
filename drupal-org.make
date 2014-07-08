@@ -69,7 +69,7 @@ projects[ckeditor][patch][] = "https://drupal.org/files/issues/ckeditor-remove-e
 
 projects[cod_support][type] = "module"
 projects[cod_support][subdir] = "contrib"
-projects[cod_support][version] = "1.0-beta1"
+projects[cod_support][version] = "1.0-beta2"
 ;projects[cod_support][download][type] = "git"
 ;projects[cod_support][download][url] = "http://git.drupal.org/project/cod_support.git"
 ;projects[cod_support][download][branch] = "7.x-1.x"
@@ -157,7 +157,7 @@ projects[entityreference][version] = "1.1"
 
 ; Fix foreign keys feature revert issue
 ; https://www.drupal.org/node/1969018
-projects[entityreference][patch][] = "https://www.drupal.org/files/issues/1969018-update-field-config-foreign-keys-15.patch"
+projects[entityreference][patch][] = "https://drupal.org/files/issues/1969018-update-field-config-foreign-keys-15.patch"
 
 projects[entityreference_prepopulate][type] = "module"
 projects[entityreference_prepopulate][subdir] = "contrib"
@@ -168,7 +168,7 @@ projects[entityreference_prepopulate][download][revision] = "9b40518a"
 
 ; Allow entityreference prepopulate function when an ajax callback is performed.
 ; https://www.drupal.org/node/1970320 and https://www.drupal.org/node/2295951
-projects[entityreference_prepopulate][patch][] = "https://www.drupal.org/files/issues/er_prepopulate_ajax_values-1.patch"
+projects[entityreference_prepopulate][patch][] = "https://drupal.org/files/issues/er_prepopulate_ajax_values-1.patch"
 
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
