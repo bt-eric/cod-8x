@@ -362,7 +362,7 @@ projects[views_field_view][type] = "module"
 projects[views_field_view][subdir] = "contrib"
 
 projects[views_send][type] = "module"
-projects[views_send][version] = "1.0"
+projects[views_send][version] = "1.1"
 projects[views_send][subdir] = "contrib"
 
 projects[views_data_export][type] = "module"
