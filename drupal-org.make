@@ -67,12 +67,12 @@ projects[ckeditor][patch][] = "https://drupal.org/files/issues/ckeditor-accomoda
 ; https://drupal.org/comment/8284591#comment-8284591
 projects[ckeditor][patch][] = "https://drupal.org/files/issues/ckeditor-remove-external-plugin-declarations-1-alt.patch"
 
-projects[cod_support][type] = "module"
-projects[cod_support][subdir] = "contrib"
-projects[cod_support][version] = "1.0-beta2"
-;projects[cod_support][download][type] = "git"
-;projects[cod_support][download][url] = "http://git.drupal.org/project/cod_support.git"
-;projects[cod_support][download][branch] = "7.x-1.x"
+;projects[cod_support][type] = "module"
+;projects[cod_support][subdir] = "contrib"
+;projects[cod_support][version] = "1.0-beta2"
+projects[cod_support][download][type] = "git"
+projects[cod_support][download][url] = "http://git.drupal.org/project/cod_support.git"
+projects[cod_support][download][branch] = "7.x-1.x"
 
 projects[commerce][type] = "module"
 projects[commerce][version] = "1.9"
