@@ -42,7 +42,7 @@ projects[auto_nodetitle][version] = "1.0"
 
 projects[breakpoints][type] = "module"
 projects[breakpoints][subdir] = "contrib"
-projects[breakpoints][version] = "1.2"
+projects[breakpoints][version] = "1.3"
 
 projects[connector][type] = "module"
 projects[connector][subdir] = "contrib"
@@ -110,7 +110,7 @@ projects[ctools][download][revision] = "9097155fe25f460c3c98719567f2cf8305dcae14
 
 projects[date][type] = "module"
 projects[date][subdir] = "contrib"
-projects[date][version] = "2.7"
+projects[date][version] = "2.8"
 
 projects[date_ical][type] = "module"
 projects[date_ical][subdir] = "contrib"
@@ -172,7 +172,7 @@ projects[entityreference_prepopulate][patch][] = "https://drupal.org/files/issue
 
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
-projects[features][version] = "2.0"
+projects[features][version] = "2.2"
 
 projects[field_group][type] = "module"
 projects[field_group][subdir] = "contrib"
@@ -226,7 +226,7 @@ projects[mollom][subdir] = "contrib"
 projects[mollom][version] = "2.10"
 
 projects[multiple_entity_form][type] = "module"
-projects[multiple_entity_form][version] = "1.1"
+projects[multiple_entity_form][version] = "1.2"
 projects[multiple_entity_form][subdir] = "contrib"
 
 projects[oauth][type] = "module"
@@ -346,7 +346,7 @@ projects[views][version] = "3.8"
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
 
-projects[views_autorefresh][version] = "1.0-beta2"
+projects[views_autorefresh][version] = "1.0-beta3"
 projects[views_autorefresh][type] = "module"
 projects[views_autorefresh][subdir] = "contrib"
 
@@ -366,7 +366,7 @@ projects[views_send][version] = "1.1"
 projects[views_send][subdir] = "contrib"
 
 projects[views_data_export][type] = "module"
-projects[views_data_export][version] = "3.0-beta7"
+projects[views_data_export][version] = "3.0-beta8"
 projects[views_data_export][subdir] = "contrib"
 
 projects[views_bulk_operations][type] = "module"
