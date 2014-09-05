@@ -138,7 +138,10 @@ projects[efq_extra_field][download][revision] = "c810360"
 
 projects[entity][type] = "module"
 projects[entity][subdir] = "contrib"
-projects[entity][version] = "1.5"
+projects[entity][download][type] = "git"
+projects[entity][download][url] = "http://git.drupal.org/project/entity.git"
+projects[entity][download][branch] = "7.x-1.x"
+projects[entity][download][revision] = "4d2cc6fb1"
 
 projects[entitycache][type] = "module"
 projects[entitycache][subdir] = "contrib"
