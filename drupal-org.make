@@ -75,7 +75,7 @@ projects[cod_support][version] = "1.0-beta3"
 ;projects[cod_support][download][branch] = "7.x-1.x"
 
 projects[commerce][type] = "module"
-projects[commerce][version] = "1.9"
+projects[commerce][version] = "1.10"
 projects[commerce][subdir] = "contrib"
 
 projects[commerce_features][type] = "module"
@@ -290,6 +290,10 @@ projects[quicktabs][version] = "3.6"
 projects[quicktabs][subdir] = "contrib"
 projects[quicktabs][patch][] = "http://drupal.org/files/2104643-revert-qt-487518-5.patch"
 
+projects[realname][type] = "module"
+projects[realname][subdir] = "contrib"
+projects[realname][version] = "1.2"
+
 projects[redirect][type] = "module"
 projects[redirect][subdir] = "contrib"
 projects[redirect][version] = "1.0-rc1"
@@ -358,7 +362,7 @@ projects[views_datasource][subdir] = "contrib"
 projects[views_datasource][download][type] = "git"
 projects[views_datasource][download][url] = "http://git.drupal.org/project/views_datasource.git"
 projects[views_datasource][download][branch] = "7.x-1.x"
-projects[views_datasource][download][revision] = "c15e455cebe36c1a2ef1082da4b0ea7d93db2ed5"
+projects[views_datasource][download][revision] = "0d6849221"
 
 projects[views_field_view][version] = "1.1"
 projects[views_field_view][type] = "module"
