@@ -384,7 +384,7 @@ projects[votingapi][version] = "2.12"
 projects[votingapi][subdir] = "contrib"
 
 projects[webform][type] = "module"
-projects[webform][version] = "3.21"
+projects[webform][version] = "4.1"
 projects[webform][subdir] = "contrib"
 
 ; Contributed themes.
