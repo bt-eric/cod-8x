@@ -180,7 +180,7 @@ projects[field_permissions][version] = "1.0-beta2"
 
 projects[field_select_ct][type] = "module"
 projects[field_select_ct][subdir] = "contrib"
-projects[field_select_ct][version] = "1.0-alpha1"
+projects[field_select_ct][version] = "1.0"
 
 projects[field_collection][type] = "module"
 projects[field_collection][subdir] = "contrib"
@@ -211,7 +211,7 @@ projects[libraries][version] = "2.2"
 
 projects[link][type] = "module"
 projects[link][subdir] = "contrib"
-projects[link][version] = "1.2"
+projects[link][version] = "1.3"
 
 projects[module_filter][type] = "module"
 projects[module_filter][subdir] = "contrib"
