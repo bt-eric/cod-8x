@@ -414,12 +414,13 @@ projects[webform][version] = "4.1"
 projects[webform][subdir] = "contrib"
 
 ; Contributed themes.
+; This hash of Omega Git is before the Susy 1 to 2 re-write.
 projects[omega][type] = "theme"
 projects[omega][subdir] = "contrib"
 projects[omega][download][type] = "git"
 projects[omega][download][url] = "http://git.drupal.org/project/omega.git"
 projects[omega][download][branch] = "7.x-4.x"
-projects[omega][download][revision] = "3e00917a9843c3e2e0ad4bf8a68eef2dc4c34f09"
+projects[omega][download][revision] = "a4d56d4d4868ef"
 
 projects[adminimal_theme][type] = "theme"
 projects[adminimal_theme][subdir] = "contrib"
