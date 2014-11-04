@@ -9,15 +9,14 @@ pull_git() {
     fi
     git pull origin 7.x-1.x
 
-    cd $BUILD_PATH/repos/modules/contrib
-    for i in "${modules[@]}"; do
+    for i in `cat $BUILD_PATH/repos.txt`; do
       echo $i
-      cd $i
+      cd "${BUILD_PATH}/repos/${i}"
       if [[ -n $RESET ]]; then
         git reset --hard HEAD
       fi
-      git pull origin 7.x-1.x
-      cd ..
+      git fetch origin
+      git pull origin
     done
 }
 
@@ -121,6 +120,7 @@ build_distro() {
     mkdir $BUILD_PATH
     build_distro $BUILD_PATH $USERNAME
   fi
+  pull_git $BUILD_PATH
 }
 
 # This allows you to test the make file without needing to upload it to drupal.org and run the main make file.
@@ -150,38 +150,6 @@ update() {
   exit 1
 }
 
-abspath() {
-  local thePath
-  if [[ ! "$BUILD_PATH" =~ ^/ ]];then
-    thePath="$PWD/$BUILD_PATH"
-  else
-    thePath="$BUILD_PATH"
-  fi
-  echo "$thePath"|(
-    IFS=/
-    read -a parr
-    declare -a outp
-    for i in "${parr[@]}";do
-      case "$i" in
-      ''|.) continue ;;
-      ..)
-        len=${#outp[@]}
-        if ((len==0));then
-          continue
-        else
-          unset outp[$((len-1))]
-        fi
-        ;;
-      *)
-        len=${#outp[@]}
-        outp[$len]="$i"
-        ;;
-      esac
-    done
-    echo /"${outp[*]}"
-  )
-}
-
 case $1 in
   pull)
     if [[ -n $2 ]]; then
@@ -193,7 +161,6 @@ case $1 in
       echo "Usage: build_distro.sh pull [build_path]"
       exit 1
     fi
-    BUILD_PATH=$(abspath)
     pull_git $BUILD_PATH $RESET;;
   build)
     if [[ -n $2 ]]; then
