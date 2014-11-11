@@ -297,6 +297,13 @@ projects[og][patch][] = "http://drupal.org/files/issues/og_id_user_access.patch"
 ; http://drupal.org/node/1902086#comment-7026516
 ; projects[og][patch][] = "http://drupal.org/files/1902086-og-ref-respect-og-user-access-3.patch"
 
+projects[og_menu][type] = "module"
+projects[og_menu][subdir] = "contrib"
+projects[og_menu][download][type] = "git"
+projects[og_menu][download][url] = "http://git.drupal.org/project/og_menu.git"
+projects[og_menu][download][branch] = "7.x-3.x"
+projects[og_menu][download][revision] = "fd255c7b900938c2d00c9c2232f2055705e0cca0"
+
 projects[og_vocab][type] = "module"
 projects[og_vocab][subdir] = "contrib"
 projects[og_vocab][version] = "1.2"
