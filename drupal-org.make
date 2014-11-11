@@ -36,6 +36,21 @@ projects[advanced_help][type] = "module"
 projects[advanced_help][version] = "1.1"
 projects[advanced_help][subdir] = "contrib"
 
+projects[apachesolr][type] = "module"
+projects[apachesolr][subdir] = "contrib"
+projects[apachesolr][version] = "1.6"
+
+projects[apachesolr_og][type] = "module"
+projects[apachesolr_og][subdir] = "contrib"
+projects[apachesolr_og][download][type] = "git"
+projects[apachesolr_og][download][url] = "http://git.drupal.org/project/apachesolr_og.git"
+projects[apachesolr_og][download][branch] = "7.x-1.x"
+projects[apachesolr_og][download][revision] = "49820b4a4fcff7c1c4efe449da033fb6d8711ac5"
+
+; Check the user object before trying to display a result.
+; https://drupal.org/node/2077281#comment-7807937
+projects[apachesolr_og][patch][] = "http://drupal.org/files/issues/apachesolr_og-check-for-anonymous.patch"
+
 projects[auto_nodetitle][type] = "module"
 projects[auto_nodetitle][subdir] = "contrib"
 projects[auto_nodetitle][version] = "1.0"
