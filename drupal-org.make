@@ -230,6 +230,10 @@ projects[flag][type] = "module"
 projects[flag][subdir] = "contrib"
 projects[flag][version] = "3.5"
 
+projects[inline_conditions][type] = "module"
+projects[inline_conditions][version] = "1.0-alpha4"
+projects[inline_conditions][subdir] = "contrib"
+
 projects[inline_entity_form][type] = "module"
 projects[inline_entity_form][version] = "1.5"
 projects[inline_entity_form][subdir] = "contrib"
