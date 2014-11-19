@@ -1,4 +1,5 @@
 #!/bin/bash
+set -xe
 modules=(cod_support)
 themes=()
 
@@ -86,7 +87,6 @@ build_distro() {
           mv $BUILD_PATH/docroot/sites $BUILD_PATH/sites
           ln -s ../sites $BUILD_PATH/docroot/sites
         fi
-        chmod -R 777 $BUILD_PATH/docroot/sites/default
 
         ## put cod profile and modules into the profile folder
         rm -rf docroot/profiles/cod
@@ -101,9 +101,9 @@ build_distro() {
         cd $BUILD_PATH/docroot/profiles
         eval $UNTAR
         cd cod
-        ln -s ../../../cod_profile/* .
-        ln -s ../../../../cod_profile/modules/cod ${BUILD_PATH}/docroot/profiles/cod/modules/
-        ln -s ../../../../cod_profile/themes/cod ${BUILD_PATH}/docroot/profiles/cod/themes/
+        for line in $(cat $BUILD_PATH/cod_profile/MANIFEST.txt); do
+          ln -s ${BUILD_PATH}/cod_profile/${line} ${BUILD_PATH}/docroot/profiles/cod/${line}
+        done
         for line in $(cat $BUILD_PATH/repos.txt); do
           ln -s ../../../../../repos/${line} ${BUILD_PATH}/docroot/profiles/cod/$(echo ${line} | awk -F/ '{print $1}')/contrib/
         done
@@ -150,6 +150,38 @@ update() {
   exit 1
 }
 
+abspath() {
+  local thePath
+  if [[ ! "$BUILD_PATH" =~ ^/ ]];then
+    thePath="$PWD/$BUILD_PATH"
+  else
+    thePath="$BUILD_PATH"
+  fi
+  echo "$thePath"|(
+    IFS=/
+    read -a parr
+    declare -a outp
+    for i in "${parr[@]}";do
+      case "$i" in
+      ''|.) continue ;;
+      ..)
+        len=${#outp[@]}
+        if ((len==0));then
+          continue
+        else
+          unset outp[$((len-1))]
+        fi
+        ;;
+      *)
+        len=${#outp[@]}
+        outp[$len]="$i"
+        ;;
+      esac
+    done
+    echo /"${outp[*]}"
+  )
+}
+
 case $1 in
   pull)
     if [[ -n $2 ]]; then
@@ -161,6 +193,7 @@ case $1 in
       echo "Usage: build_distro.sh pull [build_path]"
       exit 1
     fi
+    BUILD_PATH=$(abspath)
     pull_git $BUILD_PATH $RESET;;
   build)
     if [[ -n $2 ]]; then
