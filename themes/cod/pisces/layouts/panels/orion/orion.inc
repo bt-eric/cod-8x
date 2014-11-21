@@ -1,18 +1,18 @@
 <?php
 // Plugin definition
 $plugin = array(
-  'title' => t('Venice'),
-  'icon' => 'venice.png',
-  'category' => t('Panelitist'),
-  'theme' => 'venice',
-  'css' => '../../../css/panels/venice/venice.css',
+  'title' => t('Orion'),
+  'icon' => 'orion.png',
+  'category' => t('COD'),
+  'theme' => 'orion',
+  'css' => '../../../css/panels/orion/orion.css',
   'regions' => array(
     'banner' => t('Banner'),
-    'overlay' => t('Overlay Content'),
-    'headercontent' => t('HeaderContent'),
-    'column1' => t('First Column'),
-    'column2' => t('Second Column'),
-    'footer_column_1' => t('Footer Column 1'),
-    'footer_column_2' => t('Footer Column 2'),
+    'left_header' => t('Left Header'),
+    'right_header' => t('Right Header'),
+    'preface' => t('Preface'),
+    'left_content' => t('Left Content'),
+    'right_content' => t('Right Content'),
+    'footer' => t('Footer'),
   ),
 );

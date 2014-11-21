@@ -570,930 +570,122 @@ body #page .panel-display .width-100 {
       .panel-layout .container .panel-pane.width-25 {
         width: 100%; } }
   @media screen and (min-width: 1075px) and (max-width: 5000px) {
-    .panel-layout .banner .width-25 .img-sm img, .panel-layout .preface .width-25 .img-sm img, .panel-layout .footer .width-25 .img-sm img {
+    .panel-layout .preface .width-25 .img-sm img, .panel-layout .footer .width-25 .img-sm img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 1855px) and (max-width: 5000px) {
-    .panel-layout .banner .width-25 .img-md img, .panel-layout .preface .width-25 .img-md img, .panel-layout .footer .width-25 .img-md img {
+    .panel-layout .preface .width-25 .img-md img, .panel-layout .footer .width-25 .img-md img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 2515px) and (max-width: 5000px) {
-    .panel-layout .banner .width-25 .img-lg img, .panel-layout .preface .width-25 .img-lg img, .panel-layout .footer .width-25 .img-lg img {
+    .panel-layout .preface .width-25 .img-lg img, .panel-layout .footer .width-25 .img-lg img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 3175px) and (max-width: 5000px) {
-    .panel-layout .banner .width-25 .img-xl img, .panel-layout .preface .width-25 .img-xl img, .panel-layout .footer .width-25 .img-xl img {
+    .panel-layout .preface .width-25 .img-xl img, .panel-layout .footer .width-25 .img-xl img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 820px) and (max-width: 5000px) {
-    .panel-layout .banner .width-33 .img-sm img, .panel-layout .preface .width-33 .img-sm img, .panel-layout .footer .width-33 .img-sm img {
+    .panel-layout .preface .width-33 .img-sm img, .panel-layout .footer .width-33 .img-sm img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 1405px) and (max-width: 5000px) {
-    .panel-layout .banner .width-33 .img-md img, .panel-layout .preface .width-33 .img-md img, .panel-layout .footer .width-33 .img-md img {
+    .panel-layout .preface .width-33 .img-md img, .panel-layout .footer .width-33 .img-md img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 1900px) and (max-width: 5000px) {
-    .panel-layout .banner .width-33 .img-lg img, .panel-layout .preface .width-33 .img-lg img, .panel-layout .footer .width-33 .img-lg img {
+    .panel-layout .preface .width-33 .img-lg img, .panel-layout .footer .width-33 .img-lg img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 2395px) and (max-width: 5000px) {
-    .panel-layout .banner .width-33 .img-xl img, .panel-layout .preface .width-33 .img-xl img, .panel-layout .footer .width-33 .img-xl img {
+    .panel-layout .preface .width-33 .img-xl img, .panel-layout .footer .width-33 .img-xl img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 565px) and (max-width: 5000px) {
-    .panel-layout .banner .width-50 .img-sm img, .panel-layout .preface .width-50 .img-sm img, .panel-layout .footer .width-50 .img-sm img {
+    .panel-layout .preface .width-50 .img-sm img, .panel-layout .footer .width-50 .img-sm img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 955px) and (max-width: 5000px) {
-    .panel-layout .banner .width-50 .img-md img, .panel-layout .preface .width-50 .img-md img, .panel-layout .footer .width-50 .img-md img {
+    .panel-layout .preface .width-50 .img-md img, .panel-layout .footer .width-50 .img-md img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 1285px) and (max-width: 5000px) {
-    .panel-layout .banner .width-50 .img-lg img, .panel-layout .preface .width-50 .img-lg img, .panel-layout .footer .width-50 .img-lg img {
+    .panel-layout .preface .width-50 .img-lg img, .panel-layout .footer .width-50 .img-lg img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 1615px) and (max-width: 5000px) {
-    .panel-layout .banner .width-50 .img-xl img, .panel-layout .preface .width-50 .img-xl img, .panel-layout .footer .width-50 .img-xl img {
+    .panel-layout .preface .width-50 .img-xl img, .panel-layout .footer .width-50 .img-xl img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 437.5px) and (max-width: 5000px) {
-    .panel-layout .banner .width-66 .img-sm img, .panel-layout .preface .width-66 .img-sm img, .panel-layout .footer .width-66 .img-sm img {
+    .panel-layout .preface .width-66 .img-sm img, .panel-layout .footer .width-66 .img-sm img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 730px) and (max-width: 5000px) {
-    .panel-layout .banner .width-66 .img-md img, .panel-layout .preface .width-66 .img-md img, .panel-layout .footer .width-66 .img-md img {
+    .panel-layout .preface .width-66 .img-md img, .panel-layout .footer .width-66 .img-md img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 977.5px) and (max-width: 5000px) {
-    .panel-layout .banner .width-66 .img-lg img, .panel-layout .preface .width-66 .img-lg img, .panel-layout .footer .width-66 .img-lg img {
+    .panel-layout .preface .width-66 .img-lg img, .panel-layout .footer .width-66 .img-lg img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 1225px) and (max-width: 5000px) {
-    .panel-layout .banner .width-66 .img-xl img, .panel-layout .preface .width-66 .img-xl img, .panel-layout .footer .width-66 .img-xl img {
+    .panel-layout .preface .width-66 .img-xl img, .panel-layout .footer .width-66 .img-xl img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 394.15px) and (max-width: 5000px) {
-    .panel-layout .banner .width-75 .img-sm img, .panel-layout .preface .width-75 .img-sm img, .panel-layout .footer .width-75 .img-sm img {
+    .panel-layout .preface .width-75 .img-sm img, .panel-layout .footer .width-75 .img-sm img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 653.5px) and (max-width: 5000px) {
-    .panel-layout .banner .width-75 .img-md img, .panel-layout .preface .width-75 .img-md img, .panel-layout .footer .width-75 .img-md img {
+    .panel-layout .preface .width-75 .img-md img, .panel-layout .footer .width-75 .img-md img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 872.95px) and (max-width: 5000px) {
-    .panel-layout .banner .width-75 .img-lg img, .panel-layout .preface .width-75 .img-lg img, .panel-layout .footer .width-75 .img-lg img {
+    .panel-layout .preface .width-75 .img-lg img, .panel-layout .footer .width-75 .img-lg img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 1092.4px) and (max-width: 5000px) {
-    .panel-layout .banner .width-75 .img-xl img, .panel-layout .preface .width-75 .img-xl img, .panel-layout .footer .width-75 .img-xl img {
+    .panel-layout .preface .width-75 .img-xl img, .panel-layout .footer .width-75 .img-xl img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 310px) and (max-width: 5000px) {
-    .panel-layout .banner .width-100 .img-sm img, .panel-layout .preface .width-100 .img-sm img, .panel-layout .footer .width-100 .img-sm img {
+    .panel-layout .preface .width-100 .img-sm img, .panel-layout .footer .width-100 .img-sm img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 505px) and (max-width: 5000px) {
-    .panel-layout .banner .width-100 .img-md img, .panel-layout .preface .width-100 .img-md img, .panel-layout .footer .width-100 .img-md img {
+    .panel-layout .preface .width-100 .img-md img, .panel-layout .footer .width-100 .img-md img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 670px) and (max-width: 5000px) {
-    .panel-layout .banner .width-100 .img-lg img, .panel-layout .preface .width-100 .img-lg img, .panel-layout .footer .width-100 .img-lg img {
+    .panel-layout .preface .width-100 .img-lg img, .panel-layout .footer .width-100 .img-lg img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 835px) and (max-width: 5000px) {
-    .panel-layout .banner .width-100 .img-xl img, .panel-layout .preface .width-100 .img-xl img, .panel-layout .footer .width-100 .img-xl img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  .panel-layout .left-header {
-    width: 100%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none; }
-    @media (min-width: 580px) {
-      .panel-layout .left-header {
-        width: 66.10169%;
-        float: left;
-        margin-right: -100%;
-        margin-left: 0;
-        clear: none; } }
-    @media (min-width: 960px) {
-      .panel-layout .left-header {
-        width: 66.10169%;
-        float: left;
-        margin-right: -100%;
-        margin-left: 0;
-        clear: none; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .left-header .width-25 .img-sm img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .left-header .width-25 .img-md img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .left-header .width-25 .img-lg img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .left-header .width-25 .img-xl img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .left-header .width-33 .img-sm img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .left-header .width-33 .img-md img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .left-header .width-33 .img-lg img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .left-header .width-33 .img-xl img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 565px) and (max-width: 580px) {
-      .panel-layout .left-header .width-50 .img-sm img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .left-header .width-50 .img-md img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .left-header .width-50 .img-lg img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .left-header .width-50 .img-xl img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 437.5px) and (max-width: 580px) {
-      .panel-layout .left-header .width-66 .img-sm img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .left-header .width-66 .img-md img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .left-header .width-66 .img-lg img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .left-header .width-66 .img-xl img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 394.15px) and (max-width: 580px) {
-      .panel-layout .left-header .width-75 .img-sm img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .left-header .width-75 .img-md img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .left-header .width-75 .img-lg img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .left-header .width-75 .img-xl img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 310px) and (max-width: 580px) {
-      .panel-layout .left-header .width-100 .img-sm img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 505px) and (max-width: 580px) {
-      .panel-layout .left-header .width-100 .img-md img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .left-header .width-100 .img-lg img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .left-header .width-100 .img-xl img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 1585px) and (max-width: 5000px) {
-      .panel-layout .left-header .width-25 .img-sm img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 2755px) and (max-width: 5000px) {
-      .panel-layout .left-header .width-25 .img-md img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 3745px) and (max-width: 5000px) {
-      .panel-layout .left-header .width-25 .img-lg img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 4735px) and (max-width: 5000px) {
-      .panel-layout .left-header .width-25 .img-xl img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 1202.5px) and (max-width: 5000px) {
-      .panel-layout .left-header .width-33 .img-sm img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 2080px) and (max-width: 5000px) {
-      .panel-layout .left-header .width-33 .img-md img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 2822.5px) and (max-width: 5000px) {
-      .panel-layout .left-header .width-33 .img-lg img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 3565px) and (max-width: 5000px) {
-      .panel-layout .left-header .width-33 .img-xl img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 960px) and (max-width: 5000px) {
-      .panel-layout .left-header .width-50 .img-sm img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 1405px) and (max-width: 5000px) {
-      .panel-layout .left-header .width-50 .img-md img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 1900px) and (max-width: 5000px) {
-      .panel-layout .left-header .width-50 .img-lg img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 2395px) and (max-width: 5000px) {
-      .panel-layout .left-header .width-50 .img-xl img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 960px) and (max-width: 5000px) {
-      .panel-layout .left-header .width-66 .img-sm img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 1067.5px) and (max-width: 5000px) {
-      .panel-layout .left-header .width-66 .img-md img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 1438.75px) and (max-width: 5000px) {
-      .panel-layout .left-header .width-66 .img-lg img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 1810px) and (max-width: 5000px) {
-      .panel-layout .left-header .width-66 .img-xl img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 960px) and (max-width: 5000px) {
-      .panel-layout .left-header .width-75 .img-sm img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 960px) and (max-width: 5000px) {
-      .panel-layout .left-header .width-75 .img-md img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 1281.925px) and (max-width: 5000px) {
-      .panel-layout .left-header .width-75 .img-lg img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 1611.1px) and (max-width: 5000px) {
-      .panel-layout .left-header .width-75 .img-xl img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 960px) and (max-width: 5000px) {
-      .panel-layout .left-header .width-100 .img-sm img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 960px) and (max-width: 5000px) {
-      .panel-layout .left-header .width-100 .img-md img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 977.5px) and (max-width: 5000px) {
-      .panel-layout .left-header .width-100 .img-lg img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 1225px) and (max-width: 5000px) {
-      .panel-layout .left-header .width-100 .img-xl img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-  .panel-layout .right-header {
-    width: 100%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none; }
-    @media (min-width: 580px) {
-      .panel-layout .right-header {
-        width: 32.20339%;
-        float: right;
-        margin-left: 0;
-        margin-right: 0;
-        clear: none; } }
-    @media (min-width: 960px) {
-      .panel-layout .right-header {
-        width: 32.20339%;
-        float: right;
-        margin-left: 0;
-        margin-right: 0;
-        clear: none; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .right-header .width-25 .img-sm img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .right-header .width-25 .img-md img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .right-header .width-25 .img-lg img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .right-header .width-25 .img-xl img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .right-header .width-33 .img-sm img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .right-header .width-33 .img-md img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .right-header .width-33 .img-lg img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .right-header .width-33 .img-xl img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 565px) and (max-width: 580px) {
-      .panel-layout .right-header .width-50 .img-sm img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .right-header .width-50 .img-md img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .right-header .width-50 .img-lg img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .right-header .width-50 .img-xl img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 437.5px) and (max-width: 580px) {
-      .panel-layout .right-header .width-66 .img-sm img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .right-header .width-66 .img-md img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .right-header .width-66 .img-lg img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .right-header .width-66 .img-xl img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 394.15px) and (max-width: 580px) {
-      .panel-layout .right-header .width-75 .img-sm img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .right-header .width-75 .img-md img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .right-header .width-75 .img-lg img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .right-header .width-75 .img-xl img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 310px) and (max-width: 580px) {
-      .panel-layout .right-header .width-100 .img-sm img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 505px) and (max-width: 580px) {
-      .panel-layout .right-header .width-100 .img-md img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .right-header .width-100 .img-lg img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0) and (max-width: 580px) {
-      .panel-layout .right-header .width-100 .img-xl img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 3115px) and (max-width: 5000px) {
-      .panel-layout .right-header .width-25 .img-sm img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0px) and (max-width: 5000px) {
-      .panel-layout .right-header .width-25 .img-md img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0px) and (max-width: 5000px) {
-      .panel-layout .right-header .width-25 .img-lg img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0px) and (max-width: 5000px) {
-      .panel-layout .right-header .width-25 .img-xl img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 2350px) and (max-width: 5000px) {
-      .panel-layout .right-header .width-33 .img-sm img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 4105px) and (max-width: 5000px) {
-      .panel-layout .right-header .width-33 .img-md img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0px) and (max-width: 5000px) {
-      .panel-layout .right-header .width-33 .img-lg img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 0px) and (max-width: 5000px) {
-      .panel-layout .right-header .width-33 .img-xl img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 1585px) and (max-width: 5000px) {
-      .panel-layout .right-header .width-50 .img-sm img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 2755px) and (max-width: 5000px) {
-      .panel-layout .right-header .width-50 .img-md img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 3745px) and (max-width: 5000px) {
-      .panel-layout .right-header .width-50 .img-lg img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 4735px) and (max-width: 5000px) {
-      .panel-layout .right-header .width-50 .img-xl img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 1202.5px) and (max-width: 5000px) {
-      .panel-layout .right-header .width-66 .img-sm img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 2080px) and (max-width: 5000px) {
-      .panel-layout .right-header .width-66 .img-md img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 2822.5px) and (max-width: 5000px) {
-      .panel-layout .right-header .width-66 .img-lg img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 3565px) and (max-width: 5000px) {
-      .panel-layout .right-header .width-66 .img-xl img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 1072.45px) and (max-width: 5000px) {
-      .panel-layout .right-header .width-75 .img-sm img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 1850.5px) and (max-width: 5000px) {
-      .panel-layout .right-header .width-75 .img-md img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 2508.85px) and (max-width: 5000px) {
-      .panel-layout .right-header .width-75 .img-lg img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 3167.2px) and (max-width: 5000px) {
-      .panel-layout .right-header .width-75 .img-xl img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 820px) and (max-width: 5000px) {
-      .panel-layout .right-header .width-100 .img-sm img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 1405px) and (max-width: 5000px) {
-      .panel-layout .right-header .width-100 .img-md img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 1900px) and (max-width: 5000px) {
-      .panel-layout .right-header .width-100 .img-lg img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-    @media screen and (min-width: 2395px) and (max-width: 5000px) {
-      .panel-layout .right-header .width-100 .img-xl img {
-        float: left;
-        margin-right: 15px;
-        margin-bottom: 10px; } }
-  @media screen and (min-width: 0) and (max-width: 580px) {
-    .panel-layout .left-header .width-25 .img-sm img,
-    .panel-layout .right-header .width-25 .img-sm img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 0) and (max-width: 580px) {
-    .panel-layout .left-header .width-25 .img-md img,
-    .panel-layout .right-header .width-25 .img-md img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 0) and (max-width: 580px) {
-    .panel-layout .left-header .width-25 .img-lg img,
-    .panel-layout .right-header .width-25 .img-lg img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 0) and (max-width: 580px) {
-    .panel-layout .left-header .width-25 .img-xl img,
-    .panel-layout .right-header .width-25 .img-xl img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 0) and (max-width: 580px) {
-    .panel-layout .left-header .width-33 .img-sm img,
-    .panel-layout .right-header .width-33 .img-sm img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 0) and (max-width: 580px) {
-    .panel-layout .left-header .width-33 .img-md img,
-    .panel-layout .right-header .width-33 .img-md img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 0) and (max-width: 580px) {
-    .panel-layout .left-header .width-33 .img-lg img,
-    .panel-layout .right-header .width-33 .img-lg img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 0) and (max-width: 580px) {
-    .panel-layout .left-header .width-33 .img-xl img,
-    .panel-layout .right-header .width-33 .img-xl img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 565px) and (max-width: 580px) {
-    .panel-layout .left-header .width-50 .img-sm img,
-    .panel-layout .right-header .width-50 .img-sm img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 0) and (max-width: 580px) {
-    .panel-layout .left-header .width-50 .img-md img,
-    .panel-layout .right-header .width-50 .img-md img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 0) and (max-width: 580px) {
-    .panel-layout .left-header .width-50 .img-lg img,
-    .panel-layout .right-header .width-50 .img-lg img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 0) and (max-width: 580px) {
-    .panel-layout .left-header .width-50 .img-xl img,
-    .panel-layout .right-header .width-50 .img-xl img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 437.5px) and (max-width: 580px) {
-    .panel-layout .left-header .width-66 .img-sm img,
-    .panel-layout .right-header .width-66 .img-sm img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 0) and (max-width: 580px) {
-    .panel-layout .left-header .width-66 .img-md img,
-    .panel-layout .right-header .width-66 .img-md img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 0) and (max-width: 580px) {
-    .panel-layout .left-header .width-66 .img-lg img,
-    .panel-layout .right-header .width-66 .img-lg img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 0) and (max-width: 580px) {
-    .panel-layout .left-header .width-66 .img-xl img,
-    .panel-layout .right-header .width-66 .img-xl img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 394.15px) and (max-width: 580px) {
-    .panel-layout .left-header .width-75 .img-sm img,
-    .panel-layout .right-header .width-75 .img-sm img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 0) and (max-width: 580px) {
-    .panel-layout .left-header .width-75 .img-md img,
-    .panel-layout .right-header .width-75 .img-md img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 0) and (max-width: 580px) {
-    .panel-layout .left-header .width-75 .img-lg img,
-    .panel-layout .right-header .width-75 .img-lg img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 0) and (max-width: 580px) {
-    .panel-layout .left-header .width-75 .img-xl img,
-    .panel-layout .right-header .width-75 .img-xl img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 310px) and (max-width: 580px) {
-    .panel-layout .left-header .width-100 .img-sm img,
-    .panel-layout .right-header .width-100 .img-sm img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 505px) and (max-width: 580px) {
-    .panel-layout .left-header .width-100 .img-md img,
-    .panel-layout .right-header .width-100 .img-md img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 0) and (max-width: 580px) {
-    .panel-layout .left-header .width-100 .img-lg img,
-    .panel-layout .right-header .width-100 .img-lg img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 0) and (max-width: 580px) {
-    .panel-layout .left-header .width-100 .img-xl img,
-    .panel-layout .right-header .width-100 .img-xl img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 580px) and (max-width: 960px) {
-    .panel-layout .left-header .width-25 .img-sm img,
-    .panel-layout .right-header .width-25 .img-sm img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 580px) and (max-width: 960px) {
-    .panel-layout .left-header .width-25 .img-md img,
-    .panel-layout .right-header .width-25 .img-md img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 580px) and (max-width: 960px) {
-    .panel-layout .left-header .width-25 .img-lg img,
-    .panel-layout .right-header .width-25 .img-lg img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 580px) and (max-width: 960px) {
-    .panel-layout .left-header .width-25 .img-xl img,
-    .panel-layout .right-header .width-25 .img-xl img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 580px) and (max-width: 960px) {
-    .panel-layout .left-header .width-33 .img-sm img,
-    .panel-layout .right-header .width-33 .img-sm img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 580px) and (max-width: 960px) {
-    .panel-layout .left-header .width-33 .img-md img,
-    .panel-layout .right-header .width-33 .img-md img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 580px) and (max-width: 960px) {
-    .panel-layout .left-header .width-33 .img-lg img,
-    .panel-layout .right-header .width-33 .img-lg img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 580px) and (max-width: 960px) {
-    .panel-layout .left-header .width-33 .img-xl img,
-    .panel-layout .right-header .width-33 .img-xl img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 580px) and (max-width: 960px) {
-    .panel-layout .left-header .width-50 .img-sm img,
-    .panel-layout .right-header .width-50 .img-sm img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 580px) and (max-width: 960px) {
-    .panel-layout .left-header .width-50 .img-md img,
-    .panel-layout .right-header .width-50 .img-md img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 580px) and (max-width: 960px) {
-    .panel-layout .left-header .width-50 .img-lg img,
-    .panel-layout .right-header .width-50 .img-lg img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 580px) and (max-width: 960px) {
-    .panel-layout .left-header .width-50 .img-xl img,
-    .panel-layout .right-header .width-50 .img-xl img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 820px) and (max-width: 960px) {
-    .panel-layout .left-header .width-66 .img-sm img,
-    .panel-layout .right-header .width-66 .img-sm img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 580px) and (max-width: 960px) {
-    .panel-layout .left-header .width-66 .img-md img,
-    .panel-layout .right-header .width-66 .img-md img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 580px) and (max-width: 960px) {
-    .panel-layout .left-header .width-66 .img-lg img,
-    .panel-layout .right-header .width-66 .img-lg img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 580px) and (max-width: 960px) {
-    .panel-layout .left-header .width-66 .img-xl img,
-    .panel-layout .right-header .width-66 .img-xl img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 733.3px) and (max-width: 960px) {
-    .panel-layout .left-header .width-75 .img-sm img,
-    .panel-layout .right-header .width-75 .img-sm img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 580px) and (max-width: 960px) {
-    .panel-layout .left-header .width-75 .img-md img,
-    .panel-layout .right-header .width-75 .img-md img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 580px) and (max-width: 960px) {
-    .panel-layout .left-header .width-75 .img-lg img,
-    .panel-layout .right-header .width-75 .img-lg img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 580px) and (max-width: 960px) {
-    .panel-layout .left-header .width-75 .img-xl img,
-    .panel-layout .right-header .width-75 .img-xl img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 580px) and (max-width: 960px) {
-    .panel-layout .left-header .width-100 .img-sm img,
-    .panel-layout .right-header .width-100 .img-sm img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 955px) and (max-width: 960px) {
-    .panel-layout .left-header .width-100 .img-md img,
-    .panel-layout .right-header .width-100 .img-md img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 580px) and (max-width: 960px) {
-    .panel-layout .left-header .width-100 .img-lg img,
-    .panel-layout .right-header .width-100 .img-lg img {
-      float: left;
-      margin-right: 15px;
-      margin-bottom: 10px; } }
-  @media screen and (min-width: 580px) and (max-width: 960px) {
-    .panel-layout .left-header .width-100 .img-xl img,
-    .panel-layout .right-header .width-100 .img-xl img {
+    .panel-layout .preface .width-100 .img-xl img, .panel-layout .footer .width-100 .img-xl img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
@@ -1757,407 +949,694 @@ body #page .panel-display .width-100 {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
-  .panel-layout .right-content {
+  .panel-layout .top-right-content {
     width: 100%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none; }
     @media (min-width: 580px) {
-      .panel-layout .right-content {
+      .panel-layout .top-right-content {
         width: 32.20339%;
         float: right;
         margin-left: 0;
         margin-right: 0;
         clear: none; } }
     @media (min-width: 960px) {
-      .panel-layout .right-content {
+      .panel-layout .top-right-content {
         width: 32.20339%;
         float: right;
         margin-left: 0;
         margin-right: 0;
         clear: none; } }
     @media screen and (min-width: 580px) and (max-width: 960px) {
-      .panel-layout .right-content .width-25 .img-sm img {
+      .panel-layout .top-right-content .width-25 .img-sm img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 580px) and (max-width: 960px) {
-      .panel-layout .right-content .width-25 .img-md img {
+      .panel-layout .top-right-content .width-25 .img-md img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 580px) and (max-width: 960px) {
-      .panel-layout .right-content .width-25 .img-lg img {
+      .panel-layout .top-right-content .width-25 .img-lg img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 580px) and (max-width: 960px) {
-      .panel-layout .right-content .width-25 .img-xl img {
+      .panel-layout .top-right-content .width-25 .img-xl img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 580px) and (max-width: 960px) {
-      .panel-layout .right-content .width-33 .img-sm img {
+      .panel-layout .top-right-content .width-33 .img-sm img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 580px) and (max-width: 960px) {
-      .panel-layout .right-content .width-33 .img-md img {
+      .panel-layout .top-right-content .width-33 .img-md img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 580px) and (max-width: 960px) {
-      .panel-layout .right-content .width-33 .img-lg img {
+      .panel-layout .top-right-content .width-33 .img-lg img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 580px) and (max-width: 960px) {
-      .panel-layout .right-content .width-33 .img-xl img {
+      .panel-layout .top-right-content .width-33 .img-xl img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 733.3px) and (max-width: 960px) {
-      .panel-layout .right-content .width-50 .img-sm img {
+      .panel-layout .top-right-content .width-50 .img-sm img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 580px) and (max-width: 960px) {
-      .panel-layout .right-content .width-50 .img-md img {
+      .panel-layout .top-right-content .width-50 .img-md img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 580px) and (max-width: 960px) {
-      .panel-layout .right-content .width-50 .img-lg img {
+      .panel-layout .top-right-content .width-50 .img-lg img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 580px) and (max-width: 960px) {
-      .panel-layout .right-content .width-50 .img-xl img {
+      .panel-layout .top-right-content .width-50 .img-xl img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 580px) and (max-width: 960px) {
-      .panel-layout .right-content .width-66 .img-sm img {
+      .panel-layout .top-right-content .width-66 .img-sm img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 952.75px) and (max-width: 960px) {
-      .panel-layout .right-content .width-66 .img-md img {
+      .panel-layout .top-right-content .width-66 .img-md img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 580px) and (max-width: 960px) {
-      .panel-layout .right-content .width-66 .img-lg img {
+      .panel-layout .top-right-content .width-66 .img-lg img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 580px) and (max-width: 960px) {
-      .panel-layout .right-content .width-66 .img-xl img {
+      .panel-layout .top-right-content .width-66 .img-xl img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 580px) and (max-width: 960px) {
-      .panel-layout .right-content .width-75 .img-sm img {
+      .panel-layout .top-right-content .width-75 .img-sm img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 851.005px) and (max-width: 960px) {
-      .panel-layout .right-content .width-75 .img-md img {
+      .panel-layout .top-right-content .width-75 .img-md img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 580px) and (max-width: 960px) {
-      .panel-layout .right-content .width-75 .img-lg img {
+      .panel-layout .top-right-content .width-75 .img-lg img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 580px) and (max-width: 960px) {
-      .panel-layout .right-content .width-75 .img-xl img {
+      .panel-layout .top-right-content .width-75 .img-xl img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 580px) and (max-width: 960px) {
-      .panel-layout .right-content .width-100 .img-sm img {
+      .panel-layout .top-right-content .width-100 .img-sm img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 653.5px) and (max-width: 960px) {
-      .panel-layout .right-content .width-100 .img-md img {
+      .panel-layout .top-right-content .width-100 .img-md img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 872.95px) and (max-width: 960px) {
-      .panel-layout .right-content .width-100 .img-lg img {
+      .panel-layout .top-right-content .width-100 .img-lg img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 580px) and (max-width: 960px) {
-      .panel-layout .right-content .width-100 .img-xl img {
+      .panel-layout .top-right-content .width-100 .img-xl img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 4135px) and (max-width: 5000px) {
-      .panel-layout .right-content .width-25 .img-sm img {
+      .panel-layout .top-right-content .width-25 .img-sm img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 0px) and (max-width: 5000px) {
-      .panel-layout .right-content .width-25 .img-md img {
+      .panel-layout .top-right-content .width-25 .img-md img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 0px) and (max-width: 5000px) {
-      .panel-layout .right-content .width-25 .img-lg img {
+      .panel-layout .top-right-content .width-25 .img-lg img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 0px) and (max-width: 5000px) {
-      .panel-layout .right-content .width-25 .img-xl img {
+      .panel-layout .top-right-content .width-25 .img-xl img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 3115px) and (max-width: 5000px) {
-      .panel-layout .right-content .width-33 .img-sm img {
+      .panel-layout .top-right-content .width-33 .img-sm img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 0px) and (max-width: 5000px) {
-      .panel-layout .right-content .width-33 .img-md img {
+      .panel-layout .top-right-content .width-33 .img-md img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 0px) and (max-width: 5000px) {
-      .panel-layout .right-content .width-33 .img-lg img {
+      .panel-layout .top-right-content .width-33 .img-lg img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 0px) and (max-width: 5000px) {
-      .panel-layout .right-content .width-33 .img-xl img {
+      .panel-layout .top-right-content .width-33 .img-xl img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 2095px) and (max-width: 5000px) {
-      .panel-layout .right-content .width-50 .img-sm img {
+      .panel-layout .top-right-content .width-50 .img-sm img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 3655px) and (max-width: 5000px) {
-      .panel-layout .right-content .width-50 .img-md img {
+      .panel-layout .top-right-content .width-50 .img-md img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 4975px) and (max-width: 5000px) {
-      .panel-layout .right-content .width-50 .img-lg img {
+      .panel-layout .top-right-content .width-50 .img-lg img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 0px) and (max-width: 5000px) {
-      .panel-layout .right-content .width-50 .img-xl img {
+      .panel-layout .top-right-content .width-50 .img-xl img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 1585px) and (max-width: 5000px) {
-      .panel-layout .right-content .width-66 .img-sm img {
+      .panel-layout .top-right-content .width-66 .img-sm img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 2755px) and (max-width: 5000px) {
-      .panel-layout .right-content .width-66 .img-md img {
+      .panel-layout .top-right-content .width-66 .img-md img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 3745px) and (max-width: 5000px) {
-      .panel-layout .right-content .width-66 .img-lg img {
+      .panel-layout .top-right-content .width-66 .img-lg img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 4735px) and (max-width: 5000px) {
-      .panel-layout .right-content .width-66 .img-xl img {
+      .panel-layout .top-right-content .width-66 .img-xl img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 1411.6px) and (max-width: 5000px) {
-      .panel-layout .right-content .width-75 .img-sm img {
+      .panel-layout .top-right-content .width-75 .img-sm img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 2449px) and (max-width: 5000px) {
-      .panel-layout .right-content .width-75 .img-md img {
+      .panel-layout .top-right-content .width-75 .img-md img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 3326.8px) and (max-width: 5000px) {
-      .panel-layout .right-content .width-75 .img-lg img {
+      .panel-layout .top-right-content .width-75 .img-lg img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 4204.6px) and (max-width: 5000px) {
-      .panel-layout .right-content .width-75 .img-xl img {
+      .panel-layout .top-right-content .width-75 .img-xl img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 1075px) and (max-width: 5000px) {
-      .panel-layout .right-content .width-100 .img-sm img {
+      .panel-layout .top-right-content .width-100 .img-sm img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 1855px) and (max-width: 5000px) {
-      .panel-layout .right-content .width-100 .img-md img {
+      .panel-layout .top-right-content .width-100 .img-md img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 2515px) and (max-width: 5000px) {
-      .panel-layout .right-content .width-100 .img-lg img {
+      .panel-layout .top-right-content .width-100 .img-lg img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
     @media screen and (min-width: 3175px) and (max-width: 5000px) {
-      .panel-layout .right-content .width-100 .img-xl img {
+      .panel-layout .top-right-content .width-100 .img-xl img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+  .panel-layout .bottom-right-content {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+    clear: right; }
+    @media (min-width: 580px) {
+      .panel-layout .bottom-right-content {
+        width: 32.20339%;
+        float: right;
+        margin-left: 0;
+        margin-right: 0;
+        clear: none;
+        clear: right; } }
+    @media (min-width: 960px) {
+      .panel-layout .bottom-right-content {
+        width: 32.20339%;
+        float: right;
+        margin-left: 0;
+        margin-right: 0;
+        clear: none;
+        clear: right; } }
+    @media screen and (min-width: 580px) and (max-width: 960px) {
+      .panel-layout .bottom-right-content .width-25 .img-sm img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 580px) and (max-width: 960px) {
+      .panel-layout .bottom-right-content .width-25 .img-md img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 580px) and (max-width: 960px) {
+      .panel-layout .bottom-right-content .width-25 .img-lg img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 580px) and (max-width: 960px) {
+      .panel-layout .bottom-right-content .width-25 .img-xl img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 580px) and (max-width: 960px) {
+      .panel-layout .bottom-right-content .width-33 .img-sm img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 580px) and (max-width: 960px) {
+      .panel-layout .bottom-right-content .width-33 .img-md img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 580px) and (max-width: 960px) {
+      .panel-layout .bottom-right-content .width-33 .img-lg img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 580px) and (max-width: 960px) {
+      .panel-layout .bottom-right-content .width-33 .img-xl img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 733.3px) and (max-width: 960px) {
+      .panel-layout .bottom-right-content .width-50 .img-sm img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 580px) and (max-width: 960px) {
+      .panel-layout .bottom-right-content .width-50 .img-md img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 580px) and (max-width: 960px) {
+      .panel-layout .bottom-right-content .width-50 .img-lg img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 580px) and (max-width: 960px) {
+      .panel-layout .bottom-right-content .width-50 .img-xl img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 580px) and (max-width: 960px) {
+      .panel-layout .bottom-right-content .width-66 .img-sm img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 952.75px) and (max-width: 960px) {
+      .panel-layout .bottom-right-content .width-66 .img-md img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 580px) and (max-width: 960px) {
+      .panel-layout .bottom-right-content .width-66 .img-lg img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 580px) and (max-width: 960px) {
+      .panel-layout .bottom-right-content .width-66 .img-xl img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 580px) and (max-width: 960px) {
+      .panel-layout .bottom-right-content .width-75 .img-sm img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 851.005px) and (max-width: 960px) {
+      .panel-layout .bottom-right-content .width-75 .img-md img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 580px) and (max-width: 960px) {
+      .panel-layout .bottom-right-content .width-75 .img-lg img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 580px) and (max-width: 960px) {
+      .panel-layout .bottom-right-content .width-75 .img-xl img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 580px) and (max-width: 960px) {
+      .panel-layout .bottom-right-content .width-100 .img-sm img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 653.5px) and (max-width: 960px) {
+      .panel-layout .bottom-right-content .width-100 .img-md img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 872.95px) and (max-width: 960px) {
+      .panel-layout .bottom-right-content .width-100 .img-lg img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 580px) and (max-width: 960px) {
+      .panel-layout .bottom-right-content .width-100 .img-xl img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 4135px) and (max-width: 5000px) {
+      .panel-layout .bottom-right-content .width-25 .img-sm img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 0px) and (max-width: 5000px) {
+      .panel-layout .bottom-right-content .width-25 .img-md img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 0px) and (max-width: 5000px) {
+      .panel-layout .bottom-right-content .width-25 .img-lg img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 0px) and (max-width: 5000px) {
+      .panel-layout .bottom-right-content .width-25 .img-xl img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 3115px) and (max-width: 5000px) {
+      .panel-layout .bottom-right-content .width-33 .img-sm img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 0px) and (max-width: 5000px) {
+      .panel-layout .bottom-right-content .width-33 .img-md img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 0px) and (max-width: 5000px) {
+      .panel-layout .bottom-right-content .width-33 .img-lg img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 0px) and (max-width: 5000px) {
+      .panel-layout .bottom-right-content .width-33 .img-xl img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 2095px) and (max-width: 5000px) {
+      .panel-layout .bottom-right-content .width-50 .img-sm img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 3655px) and (max-width: 5000px) {
+      .panel-layout .bottom-right-content .width-50 .img-md img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 4975px) and (max-width: 5000px) {
+      .panel-layout .bottom-right-content .width-50 .img-lg img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 0px) and (max-width: 5000px) {
+      .panel-layout .bottom-right-content .width-50 .img-xl img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 1585px) and (max-width: 5000px) {
+      .panel-layout .bottom-right-content .width-66 .img-sm img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 2755px) and (max-width: 5000px) {
+      .panel-layout .bottom-right-content .width-66 .img-md img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 3745px) and (max-width: 5000px) {
+      .panel-layout .bottom-right-content .width-66 .img-lg img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 4735px) and (max-width: 5000px) {
+      .panel-layout .bottom-right-content .width-66 .img-xl img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 1411.6px) and (max-width: 5000px) {
+      .panel-layout .bottom-right-content .width-75 .img-sm img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 2449px) and (max-width: 5000px) {
+      .panel-layout .bottom-right-content .width-75 .img-md img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 3326.8px) and (max-width: 5000px) {
+      .panel-layout .bottom-right-content .width-75 .img-lg img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 4204.6px) and (max-width: 5000px) {
+      .panel-layout .bottom-right-content .width-75 .img-xl img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 1075px) and (max-width: 5000px) {
+      .panel-layout .bottom-right-content .width-100 .img-sm img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 1855px) and (max-width: 5000px) {
+      .panel-layout .bottom-right-content .width-100 .img-md img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 2515px) and (max-width: 5000px) {
+      .panel-layout .bottom-right-content .width-100 .img-lg img {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px; } }
+    @media screen and (min-width: 3175px) and (max-width: 5000px) {
+      .panel-layout .bottom-right-content .width-100 .img-xl img {
         float: left;
         margin-right: 15px;
         margin-bottom: 10px; } }
   @media screen and (min-width: 0) and (max-width: 580px) {
     .panel-layout .left-content .width-25 .img-sm img,
-    .panel-layout .right-content .width-25 .img-sm img {
+    .panel-layout .top-right-content .width-25 .img-sm img,
+    .panel-layout .bottom-right-content .width-25 .img-sm img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 0) and (max-width: 580px) {
     .panel-layout .left-content .width-25 .img-md img,
-    .panel-layout .right-content .width-25 .img-md img {
+    .panel-layout .top-right-content .width-25 .img-md img,
+    .panel-layout .bottom-right-content .width-25 .img-md img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 0) and (max-width: 580px) {
     .panel-layout .left-content .width-25 .img-lg img,
-    .panel-layout .right-content .width-25 .img-lg img {
+    .panel-layout .top-right-content .width-25 .img-lg img,
+    .panel-layout .bottom-right-content .width-25 .img-lg img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 0) and (max-width: 580px) {
     .panel-layout .left-content .width-25 .img-xl img,
-    .panel-layout .right-content .width-25 .img-xl img {
+    .panel-layout .top-right-content .width-25 .img-xl img,
+    .panel-layout .bottom-right-content .width-25 .img-xl img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 0) and (max-width: 580px) {
     .panel-layout .left-content .width-33 .img-sm img,
-    .panel-layout .right-content .width-33 .img-sm img {
+    .panel-layout .top-right-content .width-33 .img-sm img,
+    .panel-layout .bottom-right-content .width-33 .img-sm img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 0) and (max-width: 580px) {
     .panel-layout .left-content .width-33 .img-md img,
-    .panel-layout .right-content .width-33 .img-md img {
+    .panel-layout .top-right-content .width-33 .img-md img,
+    .panel-layout .bottom-right-content .width-33 .img-md img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 0) and (max-width: 580px) {
     .panel-layout .left-content .width-33 .img-lg img,
-    .panel-layout .right-content .width-33 .img-lg img {
+    .panel-layout .top-right-content .width-33 .img-lg img,
+    .panel-layout .bottom-right-content .width-33 .img-lg img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 0) and (max-width: 580px) {
     .panel-layout .left-content .width-33 .img-xl img,
-    .panel-layout .right-content .width-33 .img-xl img {
+    .panel-layout .top-right-content .width-33 .img-xl img,
+    .panel-layout .bottom-right-content .width-33 .img-xl img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 0) and (max-width: 580px) {
     .panel-layout .left-content .width-50 .img-sm img,
-    .panel-layout .right-content .width-50 .img-sm img {
+    .panel-layout .top-right-content .width-50 .img-sm img,
+    .panel-layout .bottom-right-content .width-50 .img-sm img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 0) and (max-width: 580px) {
     .panel-layout .left-content .width-50 .img-md img,
-    .panel-layout .right-content .width-50 .img-md img {
+    .panel-layout .top-right-content .width-50 .img-md img,
+    .panel-layout .bottom-right-content .width-50 .img-md img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 0) and (max-width: 580px) {
     .panel-layout .left-content .width-50 .img-lg img,
-    .panel-layout .right-content .width-50 .img-lg img {
+    .panel-layout .top-right-content .width-50 .img-lg img,
+    .panel-layout .bottom-right-content .width-50 .img-lg img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 0) and (max-width: 580px) {
     .panel-layout .left-content .width-50 .img-xl img,
-    .panel-layout .right-content .width-50 .img-xl img {
+    .panel-layout .top-right-content .width-50 .img-xl img,
+    .panel-layout .bottom-right-content .width-50 .img-xl img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 0) and (max-width: 580px) {
     .panel-layout .left-content .width-66 .img-sm img,
-    .panel-layout .right-content .width-66 .img-sm img {
+    .panel-layout .top-right-content .width-66 .img-sm img,
+    .panel-layout .bottom-right-content .width-66 .img-sm img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 0) and (max-width: 580px) {
     .panel-layout .left-content .width-66 .img-md img,
-    .panel-layout .right-content .width-66 .img-md img {
+    .panel-layout .top-right-content .width-66 .img-md img,
+    .panel-layout .bottom-right-content .width-66 .img-md img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 0) and (max-width: 580px) {
     .panel-layout .left-content .width-66 .img-lg img,
-    .panel-layout .right-content .width-66 .img-lg img {
+    .panel-layout .top-right-content .width-66 .img-lg img,
+    .panel-layout .bottom-right-content .width-66 .img-lg img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 0) and (max-width: 580px) {
     .panel-layout .left-content .width-66 .img-xl img,
-    .panel-layout .right-content .width-66 .img-xl img {
+    .panel-layout .top-right-content .width-66 .img-xl img,
+    .panel-layout .bottom-right-content .width-66 .img-xl img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 0) and (max-width: 580px) {
     .panel-layout .left-content .width-75 .img-sm img,
-    .panel-layout .right-content .width-75 .img-sm img {
+    .panel-layout .top-right-content .width-75 .img-sm img,
+    .panel-layout .bottom-right-content .width-75 .img-sm img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 0) and (max-width: 580px) {
     .panel-layout .left-content .width-75 .img-md img,
-    .panel-layout .right-content .width-75 .img-md img {
+    .panel-layout .top-right-content .width-75 .img-md img,
+    .panel-layout .bottom-right-content .width-75 .img-md img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 0) and (max-width: 580px) {
     .panel-layout .left-content .width-75 .img-lg img,
-    .panel-layout .right-content .width-75 .img-lg img {
+    .panel-layout .top-right-content .width-75 .img-lg img,
+    .panel-layout .bottom-right-content .width-75 .img-lg img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 0) and (max-width: 580px) {
     .panel-layout .left-content .width-75 .img-xl img,
-    .panel-layout .right-content .width-75 .img-xl img {
+    .panel-layout .top-right-content .width-75 .img-xl img,
+    .panel-layout .bottom-right-content .width-75 .img-xl img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 565px) and (max-width: 580px) {
     .panel-layout .left-content .width-100 .img-sm img,
-    .panel-layout .right-content .width-100 .img-sm img {
+    .panel-layout .top-right-content .width-100 .img-sm img,
+    .panel-layout .bottom-right-content .width-100 .img-sm img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 0) and (max-width: 580px) {
     .panel-layout .left-content .width-100 .img-md img,
-    .panel-layout .right-content .width-100 .img-md img {
+    .panel-layout .top-right-content .width-100 .img-md img,
+    .panel-layout .bottom-right-content .width-100 .img-md img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 0) and (max-width: 580px) {
     .panel-layout .left-content .width-100 .img-lg img,
-    .panel-layout .right-content .width-100 .img-lg img {
+    .panel-layout .top-right-content .width-100 .img-lg img,
+    .panel-layout .bottom-right-content .width-100 .img-lg img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
   @media screen and (min-width: 0) and (max-width: 580px) {
     .panel-layout .left-content .width-100 .img-xl img,
-    .panel-layout .right-content .width-100 .img-xl img {
+    .panel-layout .top-right-content .width-100 .img-xl img,
+    .panel-layout .bottom-right-content .width-100 .img-xl img {
       float: left;
       margin-right: 15px;
       margin-bottom: 10px; } }
