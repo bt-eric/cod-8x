@@ -71,8 +71,8 @@ projects[ckeditor][version] = "1.16"
 ; https://drupal.org/node/2159403
 projects[ckeditor][patch][] = "http://drupal.org/files/issues/ckeditor-accomodate-latest-media-changes-81.patch"
 
-;projects[cod_support][type] = "module"
-;projects[cod_support][subdir] = "contrib"
+projects[cod_support][type] = "module"
+projects[cod_support][subdir] = "contrib"
 ;projects[cod_support][version] = "1.0-beta5"
 projects[cod_support][download][type] = "git"
 projects[cod_support][download][url] = "http://git.drupal.org/project/cod_support.git"
@@ -369,8 +369,8 @@ projects[themekey][download][branch] = "7.x-2.x"
 projects[themekey][download][revision] = "7bddcfa2f7ae36abc6d1a27a0b0a8e92d174b568"
 
 ; For COD releases, we peg it to a release of ticket. For dev, we use the dev branch.
-;projects[ticket][type] = "module"
-;projects[ticket][subdir] = "contrib"
+projects[ticket][type] = "module"
+projects[ticket][subdir] = "contrib"
 ;projects[ticket][version] = "1.0-beta2"
 projects[ticket][download][type] = "git"
 projects[ticket][download][url] = "http://git.drupal.org/project/ticket.git"
