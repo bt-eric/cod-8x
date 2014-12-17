@@ -369,12 +369,12 @@ projects[themekey][download][branch] = "7.x-2.x"
 projects[themekey][download][revision] = "7bddcfa2f7ae36abc6d1a27a0b0a8e92d174b568"
 
 ; For COD releases, we peg it to a release of ticket. For dev, we use the dev branch.
-projects[ticket][type] = "module"
-projects[ticket][subdir] = "contrib"
-projects[ticket][version] = "1.0-beta2"
-;projects[ticket][download][type] = "git"
-;projects[ticket][download][url] = "http://git.drupal.org/project/ticket.git"
-;projects[ticket][download][branch] = "7.x-1.x"
+;projects[ticket][type] = "module"
+;projects[ticket][subdir] = "contrib"
+;projects[ticket][version] = "1.0-beta2"
+projects[ticket][download][type] = "git"
+projects[ticket][download][url] = "http://git.drupal.org/project/ticket.git"
+projects[ticket][download][branch] = "7.x-1.x"
 
 projects[title][type] = "module"
 projects[title][version] = "1.0-alpha7"
