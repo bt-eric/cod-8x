@@ -32,6 +32,13 @@ regions[sidebar] = Sidebar
 regions[footer] = Footer
 
 ; ========================================
+; Layout
+; ========================================
+
+; Panels Module layouts
+plugins[panels][layouts] = 'layouts/panels'
+
+; ========================================
 ; Settings
 ; ========================================
 settings[toggle_logo] = 1
