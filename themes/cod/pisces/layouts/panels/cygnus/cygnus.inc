@@ -8,7 +8,7 @@ $plugin = array(
   'css' => '../../../css/panels/cygnus/cygnus.css',
   'regions' => array(
     'preface' => t('Preface'),
-    'left_content' => t('Content'),
+    'content' => t('Content'),
     'footer' => t('Footer'),
   ),
 );
