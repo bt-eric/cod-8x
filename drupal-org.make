@@ -9,7 +9,7 @@ projects[acquia_connector][version] = "2.15"
 
 projects[addressfield][type] = "module"
 projects[addressfield][subdir] = "contrib"
-projects[addressfield][version] = "1.0-beta5"
+projects[addressfield][version] = "1.0-rc1"
 
 projects[admin_icons][type] = "module"
 projects[admin_icons][subdir] = "contrib"
@@ -38,7 +38,7 @@ projects[advanced_help][subdir] = "contrib"
 
 projects[apachesolr][type] = "module"
 projects[apachesolr][subdir] = "contrib"
-projects[apachesolr][version] = "1.6"
+projects[apachesolr][version] = "1.7"
 
 projects[apachesolr_og][type] = "module"
 projects[apachesolr_og][subdir] = "contrib"
@@ -88,7 +88,7 @@ projects[commerce_features][version] = "1.0"
 
 projects[commerce_stock][type] = "module"
 projects[commerce_stock][subdir] = "contrib"
-projects[commerce_stock][version] = "2.0"
+projects[commerce_stock][version] = "2.1"
 
 ; Commerce Coupon 2.x suite
 projects[commerce_coupon][type] = "module"
@@ -125,7 +125,7 @@ projects[conditional_fields][download][revision] = "78ecb0408"
 
 projects[context][type] = "module"
 projects[context][subdir] = "contrib"
-projects[context][version] = "3.3"
+projects[context][version] = "3.5"
 
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
@@ -255,7 +255,7 @@ projects[module_filter][version] = "1.8"
 
 projects[mollom][type] = "module"
 projects[mollom][subdir] = "contrib"
-projects[mollom][version] = "2.12"
+projects[mollom][version] = "2.13"
 
 projects[multiple_entity_form][type] = "module"
 projects[multiple_entity_form][version] = "1.2"
@@ -416,7 +416,11 @@ projects[views_datasource][version] = "1.x-dev"
 projects[views_datasource][download][type] = "git"
 projects[views_datasource][download][url] = "http://git.drupal.org/project/views_datasource.git"
 projects[views_datasource][download][branch] = "7.x-1.x"
-projects[views_datasource][download][revision] = "b17317e72f4e8e018c61"
+projects[views_datasource][download][revision] = "3266097c9e87006c28cac2fbb2ed491c1c70b54e"
+
+; Do a stupid hacky version trick to remove the 'unsupported release' error
+; See https://www.drupal.org/node/1623606#comment-9443189 for more info.
+projects[views_datasource][patch][] = "http://drupal.org/files/issues/1623606-views-datasource-releaseinfo.patch"
 
 projects[views_field_view][version] = "1.1"
 projects[views_field_view][type] = "module"
@@ -439,7 +443,7 @@ projects[votingapi][version] = "2.12"
 projects[votingapi][subdir] = "contrib"
 
 projects[webform][type] = "module"
-projects[webform][version] = "4.1"
+projects[webform][version] = "4.2"
 projects[webform][subdir] = "contrib"
 
 ; Contributed themes.
