@@ -129,7 +129,7 @@ projects[context][version] = "3.5"
 
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.5"
+projects[ctools][version] = "1.6-rc1"
 
 projects[date][type] = "module"
 projects[date][subdir] = "contrib"
@@ -312,7 +312,7 @@ projects[panels][subdir] = "contrib"
 projects[panels][download][type] = "git"
 projects[panels][download][url] = "http://git.drupal.org/project/panels.git"
 projects[panels][download][branch] = "7.x-3.x"
-projects[panels][download][revision] = "ed5fd8c29f2f5c63ae78788e9aabbc3bd35e8dd7"
+projects[panels][download][revision] = "6ecb70f11726e1b1b4856accf0bebfac47d900a4"
 
 projects[panels_tabs][type] = "module"
 projects[panels_tabs][subdir] = "contrib"
