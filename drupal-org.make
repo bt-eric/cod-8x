@@ -19,6 +19,7 @@ projects[admin_icons][download][branch] = "7.x-1.x"
 projects[admin_icons][download][revision] = "60d9f28801533fecc92216a60d444d89d80e7611"
 
 projects[admin_menu][type] = "module"
+projects[admin_menu][version] = "3.0-rc5"
 projects[admin_menu][subdir] = "contrib"
 projects[admin_menu][download][type] = "git"
 projects[admin_menu][download][url] = "http://git.drupal.org/project/admin_menu.git"
@@ -199,7 +200,7 @@ projects[entityreference_prepopulate][patch][] = "https://drupal.org/files/issue
 
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
-projects[features][version] = "2.2"
+projects[features][version] = "2.3"
 
 projects[fivestar][type] = "module"
 projects[fivestar][subdir] = "contrib"
@@ -312,7 +313,7 @@ projects[panels][subdir] = "contrib"
 projects[panels][download][type] = "git"
 projects[panels][download][url] = "http://git.drupal.org/project/panels.git"
 projects[panels][download][branch] = "7.x-3.x"
-projects[panels][download][revision] = "6ecb70f11726e1b1b4856accf0bebfac47d900a4"
+projects[panels][download][revision] = "f7ed1af2a50c0eef9"
 
 projects[panels_tabs][type] = "module"
 projects[panels_tabs][subdir] = "contrib"
@@ -412,15 +413,7 @@ projects[views_autorefresh][subdir] = "contrib"
 
 projects[views_datasource][type] = "module"
 projects[views_datasource][subdir] = "contrib"
-projects[views_datasource][version] = "1.x-dev"
-projects[views_datasource][download][type] = "git"
-projects[views_datasource][download][url] = "http://git.drupal.org/project/views_datasource.git"
-projects[views_datasource][download][branch] = "7.x-1.x"
-projects[views_datasource][download][revision] = "3266097c9e87006c28cac2fbb2ed491c1c70b54e"
-
-; Do a stupid hacky version trick to remove the 'unsupported release' error
-; See https://www.drupal.org/node/1623606#comment-9443189 for more info.
-projects[views_datasource][patch][] = "http://drupal.org/files/issues/1623606-views-datasource-releaseinfo.patch"
+projects[views_datasource][version] = "1.0-alpha1"
 
 projects[views_field_view][version] = "1.1"
 projects[views_field_view][type] = "module"
@@ -448,12 +441,17 @@ projects[webform][subdir] = "contrib"
 
 ; Contributed themes.
 ; This hash of Omega Git is before the Susy 1 to 2 re-write.
+; See https://www.drupal.org/node/2398093 for more details.
 projects[omega][type] = "theme"
 projects[omega][subdir] = "contrib"
 projects[omega][download][type] = "git"
 projects[omega][download][url] = "http://git.drupal.org/project/omega.git"
 projects[omega][download][branch] = "7.x-4.x"
 projects[omega][download][revision] = "a4d56d4d4868ef"
+
+; Undefined property: stdClass::$dir in omega_css_alter() after updating to omega 4.3
+; https://www.drupal.org/node/2364731
+projects[omega][patch][] = "http://drupal.org/files/issues/omega-changes-dir-to-direction-in-276-line-2364731-1.patch"
 
 projects[adminimal_theme][type] = "theme"
 projects[adminimal_theme][subdir] = "contrib"
