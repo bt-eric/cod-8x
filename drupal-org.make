@@ -345,7 +345,7 @@ projects[rules][version] = "2.7"
 
 projects[smtp][type] = "module"
 projects[smtp][subdir] = "contrib"
-projects[smtp][version] = "1.0"
+projects[smtp][version] = "1.1"
 
 projects[subpathauto][type] = "module"
 projects[subpathauto][subdir] = "contrib"
