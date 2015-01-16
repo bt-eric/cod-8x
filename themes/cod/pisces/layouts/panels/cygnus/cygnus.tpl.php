@@ -20,8 +20,8 @@
 
   <div class="container content clearfix">
     <div class="container-inner content-inner panel-panel-inner">
-      <div class="column-content-region top-right-content column panel-panel">
-        <div class="column-content-region-inner top-right-content-inner column-inner panel-panel-inner">
+      <div class="column-content-region content column panel-panel">
+        <div class="column-content-region-inner content-inner column-inner panel-panel-inner">
           <?php print $content['content']; ?>
         </div>
       </div>
