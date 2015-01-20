@@ -9,7 +9,7 @@ projects[acquia_connector][version] = "2.15"
 
 projects[addressfield][type] = "module"
 projects[addressfield][subdir] = "contrib"
-projects[addressfield][version] = "1.0-rc1"
+projects[addressfield][version] = "1.0"
 
 projects[admin_icons][type] = "module"
 projects[admin_icons][subdir] = "contrib"
@@ -80,7 +80,7 @@ projects[cod_support][download][url] = "http://git.drupal.org/project/cod_suppor
 projects[cod_support][download][branch] = "7.x-1.x"
 
 projects[commerce][type] = "module"
-projects[commerce][version] = "1.10"
+projects[commerce][version] = "1.11"
 projects[commerce][subdir] = "contrib"
 
 projects[commerce_features][type] = "module"
@@ -341,11 +341,11 @@ projects[redirect][version] = "1.0-rc1"
 
 projects[rules][type] = "module"
 projects[rules][subdir] = "contrib"
-projects[rules][version] = "2.7"
+projects[rules][version] = "2.8"
 
 projects[smtp][type] = "module"
 projects[smtp][subdir] = "contrib"
-projects[smtp][version] = "1.1"
+projects[smtp][version] = "1.2"
 
 projects[subpathauto][type] = "module"
 projects[subpathauto][subdir] = "contrib"
@@ -451,7 +451,7 @@ projects[omega][patch][] = "http://drupal.org/files/issues/omega-changes-dir-to-
 
 projects[adminimal_theme][type] = "theme"
 projects[adminimal_theme][subdir] = "contrib"
-projects[adminimal_theme][version] = "1.18"
+projects[adminimal_theme][version] = "1.19"
 
 ; Libraries.
 ; NOTE: These need to be listed in http://drupal.org/packaging-whitelist.
