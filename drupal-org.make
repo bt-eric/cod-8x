@@ -271,18 +271,21 @@ projects[oauthconnector][download][revision] = "0ce7ac9614710c0f68d0a58cb4ae4667
 
 projects[og][type] = "module"
 projects[og][subdir] = "contrib"
-projects[og][version] = "2.7"
+projects[og][download][type] = "git"
+projects[og][download][url] = "http://git.drupal.org/project/og.git"
+projects[og][download][branch] = "7.x-2.x"
+projects[og][download][revision] = "35fe6d500142629bbb2e302bb9a6703edaf4dc1f"
 
 ; Auto-assign role to group manager broken on groups with overridden roles.
 ; https://drupal.org/node/2005800#comment-7684873
-projects[og][patch][] = "http://drupal.org/files/issues/og-default-role-member-2005800-23.patch"
+projects[og][patch][] = "http://drupal.org/files/issues/og-default-role-member-2005800-32.patch"
 
 ; og_ui should give users the theme, not admin ui when creating groups
 ; http://drupal.org/node/1800208
 projects[og][patch][] = "http://drupal.org/files/og_ui-group_node_add_theme-1800208-5.patch"
 
 ; Allow non-members with subscribe access to be able to post into a group.
-; http://drupal.org/node/1902086#comment-7026516
+; http://www.drupal.org/node/2357459
 projects[og][patch][] = "http://drupal.org/files/issues/og_id_user_access.patch"
 
 ; og_group_ref field should respect og_user_access()
