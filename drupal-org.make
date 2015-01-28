@@ -130,7 +130,7 @@ projects[context][version] = "3.5"
 
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.6-rc1"
+projects[ctools][version] = "1.6"
 
 projects[date][type] = "module"
 projects[date][subdir] = "contrib"
@@ -231,10 +231,10 @@ projects[inline_entity_form][version] = "1.5"
 projects[inline_entity_form][subdir] = "contrib"
 
 projects[i18n][type] = "module"
-projects[i18n][version] = "1.11"
+projects[i18n][version] = "1.12"
 projects[i18n][subdir] = "contrib"
 
-projects[jquery_update][version] = "2.4"
+projects[jquery_update][version] = "2.5"
 projects[jquery_update][type] = "module"
 projects[jquery_update][subdir] = "contrib"
 
@@ -309,10 +309,7 @@ projects[panelizer][version] = "3.1"
 
 projects[panels][type] = "module"
 projects[panels][subdir] = "contrib"
-projects[panels][download][type] = "git"
-projects[panels][download][url] = "http://git.drupal.org/project/panels.git"
-projects[panels][download][branch] = "7.x-3.x"
-projects[panels][download][revision] = "f7ed1af2a50c0eef9"
+projects[panels][version] = "3.5"
 
 projects[panels_tabs][type] = "module"
 projects[panels_tabs][subdir] = "contrib"
@@ -454,7 +451,7 @@ projects[omega][patch][] = "http://drupal.org/files/issues/omega-changes-dir-to-
 
 projects[adminimal_theme][type] = "theme"
 projects[adminimal_theme][subdir] = "contrib"
-projects[adminimal_theme][version] = "1.19"
+projects[adminimal_theme][version] = "1.20"
 
 ; Libraries.
 ; NOTE: These need to be listed in http://drupal.org/packaging-whitelist.
