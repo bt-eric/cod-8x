@@ -533,3 +533,50 @@ function cod_update_7007() {
     }
   }
 }
+
+/**
+ * Context module has been removed from COD. WARNING: Run Registry Rebuild first if using drush updb!
+ */
+function cod_update_7008() {
+  // Remove stale registry files.
+  db_delete('registry_file')
+    ->condition('filename', 'profiles/cod/modules/contrib/context', 'LIKE')
+    ->execute();
+  db_delete('registry')
+    ->condition('filename', 'profiles/cod/modules/contrib/context', 'LIKE')
+    ->execute();
+
+  // Check to see if context exists somewhere else. If so, we don't have to do
+  // anything else.
+  if (strpos(drupal_get_path('module', 'context'), 'sites') !== FALSE) {
+    return array();
+  }
+  if (db_table_exists('context')) {
+    $num_rows = db_select('context')
+      ->countQuery();
+    if ($num_rows === 0) {
+      variable_del('context_ui_show_empty_regions');
+      variable_del('context_reaction_block_disable_core');
+      variable_del('context_reaction_block_all_regions');
+      db_drop_table('context');
+      // Remove context from system table.
+      db_delete('system')
+        ->condition('name', 'context')
+        ->execute();
+      db_delete('system')
+        ->condition('name', 'context_ui')
+        ->execute();
+    }
+    else {
+      // Inform the administrator that Context is no longer contained in COD.
+      drupal_set_message(t('Due to a security update in Context and its lack of use in COD, Context has been removed and disabled. If you would like to continue using Context, please download the module to /sites/all/contrib/modules.'), 'warning');
+      db_update('system')
+        ->fields(array(
+            'status' => 0,
+          ))
+          ->condition('name', array('context', 'context_ui'), 'IN')
+          ->execute();
+      return array();
+    }
+  }
+}

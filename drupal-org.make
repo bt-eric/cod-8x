@@ -124,10 +124,6 @@ projects[conditional_fields][download][url] = "http://git.drupal.org/project/con
 projects[conditional_fields][download][branch] = "7.x-3.x"
 projects[conditional_fields][download][revision] = "78ecb0408"
 
-projects[context][type] = "module"
-projects[context][subdir] = "contrib"
-projects[context][version] = "3.5"
-
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "1.6"
