@@ -335,9 +335,13 @@ projects[redirect][type] = "module"
 projects[redirect][subdir] = "contrib"
 projects[redirect][version] = "1.0-rc1"
 
+; Do not use rules 2.8, due to a bug causing commerce rules not to fire correctly.
 projects[rules][type] = "module"
 projects[rules][subdir] = "contrib"
-projects[rules][version] = "2.8"
+projects[rules][download][type] = "git"
+projects[rules][download][url] = "http://git.drupal.org/project/rules.git"
+projects[rules][download][branch] = "7.x-2.x"
+projects[rules][download][revision] = "7329e5fc9122efc83e14475eb8ee0b88ba753e4e"
 
 projects[smtp][type] = "module"
 projects[smtp][subdir] = "contrib"
