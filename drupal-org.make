@@ -399,7 +399,7 @@ projects[variable][type] = "module"
 projects[variable][version] = "2.5"
 projects[variable][subdir] = "contrib"
 
-projects[views][version] = "3.8"
+projects[views][version] = "3.10"
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
 
