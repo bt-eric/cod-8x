@@ -99,6 +99,9 @@ projects[commerce_coupon][download][url] = "http://git.drupal.org/project/commer
 projects[commerce_coupon][download][branch] = "7.x-2.x"
 projects[commerce_coupon][download][revision] = "d560b316c72b685882dd8b1d82d79f3bd467d3e3"
 
+; Allowed admins to administer coupons.
+projects[commerce_coupon][patch][] = "http://drupal.org/files/issues/2427457-commerce-admin-permissions-1.patch"
+
 projects[commerce_discount][type] = "module"
 projects[commerce_discount][subdir] = "contrib"
 projects[commerce_discount][download][type] = "git"
