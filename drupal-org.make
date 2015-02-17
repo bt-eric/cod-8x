@@ -489,3 +489,7 @@ libraries[placeholder][download][url] = "https://github.com/mathiasbynens/jquery
 libraries[iCalcreator][download][type] = "get"
 libraries[iCalcreator][type] = "libraries"
 libraries[iCalcreator][download][url] = "https://github.com/iCalcreator/iCalcreator/archive/master.zip"
+
+libraries[dompdf][download][type] = "get"
+libraries[dompdf][type] = "libraries"
+libraries[dompdf][download][url] = "http://dompdf.googlecode.com/files/dompdf_0-6-0_beta3.tar.gz"
