@@ -125,7 +125,7 @@ projects[conditional_fields][subdir] = "contrib"
 projects[conditional_fields][download][type] = "git"
 projects[conditional_fields][download][url] = "http://git.drupal.org/project/conditional_fields.git"
 projects[conditional_fields][download][branch] = "7.x-3.x"
-projects[conditional_fields][download][revision] = "78ecb0408"
+projects[conditional_fields][download][revision] = "0b37992f49ec9f63f78f947168f236e49ef718e0"
 
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
@@ -161,7 +161,7 @@ projects[entity][subdir] = "contrib"
 projects[entity][download][type] = "git"
 projects[entity][download][url] = "http://git.drupal.org/project/entity.git"
 projects[entity][download][branch] = "7.x-1.x"
-projects[entity][download][revision] = "4d2cc6fb1"
+projects[entity][download][revision] = "4d76c5c2302e225fea2db7aba08d48f3558bf275"
 
 projects[entitycache][type] = "module"
 projects[entitycache][subdir] = "contrib"
@@ -195,7 +195,7 @@ projects[entityreference_prepopulate][patch][] = "https://drupal.org/files/issue
 
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
-projects[features][version] = "2.3"
+projects[features][version] = "2.4"
 
 projects[fivestar][type] = "module"
 projects[fivestar][subdir] = "contrib"
@@ -219,7 +219,7 @@ projects[field_collection][version] = "1.0-beta8"
 
 projects[flag][type] = "module"
 projects[flag][subdir] = "contrib"
-projects[flag][version] = "3.5"
+projects[flag][version] = "3.6"
 
 projects[inline_conditions][type] = "module"
 projects[inline_conditions][version] = "1.0-alpha4"
@@ -247,7 +247,7 @@ projects[link][version] = "1.3"
 
 projects[module_filter][type] = "module"
 projects[module_filter][subdir] = "contrib"
-projects[module_filter][version] = "1.8"
+projects[module_filter][version] = "2.0"
 
 projects[mollom][type] = "module"
 projects[mollom][subdir] = "contrib"
@@ -273,7 +273,7 @@ projects[og][subdir] = "contrib"
 projects[og][download][type] = "git"
 projects[og][download][url] = "http://git.drupal.org/project/og.git"
 projects[og][download][branch] = "7.x-2.x"
-projects[og][download][revision] = "35fe6d500142629bbb2e302bb9a6703edaf4dc1f"
+projects[og][download][revision] = "d8a8b9f3181fc6e75fafebabf8983d1ae1515413"
 
 ; Auto-assign role to group manager broken on groups with overridden roles.
 ; https://drupal.org/node/2005800#comment-7684873
@@ -381,7 +381,7 @@ projects[title][version] = "1.0-alpha7"
 projects[title][subdir] = "contrib"
 
 projects[token][type] = "module"
-projects[token][version] = "1.5"
+projects[token][version] = "1.6"
 projects[token][subdir] = "contrib"
 
 projects[uuid][type] = "module"
@@ -412,7 +412,7 @@ projects[views_autorefresh][subdir] = "contrib"
 
 projects[views_datasource][type] = "module"
 projects[views_datasource][subdir] = "contrib"
-projects[views_datasource][version] = "1.0-alpha1"
+projects[views_datasource][version] = "1.0-alpha2"
 
 projects[views_field_view][version] = "1.1"
 projects[views_field_view][type] = "module"
@@ -435,7 +435,7 @@ projects[votingapi][version] = "2.12"
 projects[votingapi][subdir] = "contrib"
 
 projects[webform][type] = "module"
-projects[webform][version] = "4.2"
+projects[webform][version] = "4.4"
 projects[webform][subdir] = "contrib"
 
 ; Contributed themes.
@@ -454,7 +454,7 @@ projects[omega][patch][] = "http://drupal.org/files/issues/omega-changes-dir-to-
 
 projects[adminimal_theme][type] = "theme"
 projects[adminimal_theme][subdir] = "contrib"
-projects[adminimal_theme][version] = "1.20"
+projects[adminimal_theme][version] = "1.21"
 
 ; Libraries.
 ; NOTE: These need to be listed in http://drupal.org/packaging-whitelist.
