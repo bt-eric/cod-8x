@@ -448,9 +448,13 @@ projects[omega][download][url] = "http://git.drupal.org/project/omega.git"
 projects[omega][download][branch] = "7.x-4.x"
 projects[omega][download][revision] = "a4d56d4d4868ef"
 
-; Undefined property: stdClass::$dir in omega_css_alter() after updating to omega 4.3
-; https://www.drupal.org/node/2364731
-projects[omega][patch][] = "http://drupal.org/files/issues/omega-changes-dir-to-direction-in-276-line-2364731-1.patch"
+; Backport all commits that are not susy 2 specific in Omega 4.x
+; https://www.drupal.org/node/2398093#comment-9726835
+projects[omega][patch][] = "https://www.drupal.org/files/issues/2398093-omega4-backports-1.patch"
+
+; Update panels headings in panels 3.5
+; https://www.drupal.org/node/2453475
+projects[omega][patch][] = "https://www.drupal.org/files/issues/omega-2453475-panels-headings-1.patch"
 
 projects[adminimal_theme][type] = "theme"
 projects[adminimal_theme][subdir] = "contrib"
