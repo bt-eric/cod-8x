@@ -74,10 +74,10 @@ projects[ckeditor][patch][] = "http://drupal.org/files/issues/ckeditor-accomodat
 
 projects[cod_support][type] = "module"
 projects[cod_support][subdir] = "contrib"
-;projects[cod_support][version] = "1.0-beta7"
-projects[cod_support][download][type] = "git"
-projects[cod_support][download][url] = "http://git.drupal.org/project/cod_support.git"
-projects[cod_support][download][branch] = "7.x-1.x"
+projects[cod_support][version] = "1.0-beta8"
+;projects[cod_support][download][type] = "git"
+;projects[cod_support][download][url] = "http://git.drupal.org/project/cod_support.git"
+;projects[cod_support][download][branch] = "7.x-1.x"
 
 projects[commerce][type] = "module"
 projects[commerce][version] = "1.11"
@@ -371,9 +371,9 @@ projects[themekey][download][revision] = "7bddcfa2f7ae36abc6d1a27a0b0a8e92d174b5
 ; For COD releases, we peg it to a release of ticket. For dev, we use the dev branch.
 projects[ticket][type] = "module"
 projects[ticket][subdir] = "contrib"
-;projects[ticket][version] = "1.0-beta3"
-projects[ticket][download][type] = "git"
-projects[ticket][download][url] = "http://git.drupal.org/project/ticket.git"
+projects[ticket][version] = "1.0-beta4"
+;projects[ticket][download][type] = "git"
+;projects[ticket][download][url] = "http://git.drupal.org/project/ticket.git"
 projects[ticket][download][branch] = "7.x-1.x"
 
 projects[title][type] = "module"
