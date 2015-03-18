@@ -545,7 +545,8 @@ function cod_update_7008() {
   db_delete('registry')
     ->condition('filename', 'profiles/cod/modules/contrib/context', 'LIKE')
     ->execute();
-
+  
+  registry_rebuild();
   // Check to see if context exists somewhere else. If so, we don't have to do
   // anything else.
   if (strpos(drupal_get_path('module', 'context'), 'sites') !== FALSE) {
