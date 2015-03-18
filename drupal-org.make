@@ -129,7 +129,7 @@ projects[conditional_fields][download][revision] = "0b37992f49ec9f63f78f947168f2
 
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.6"
+projects[ctools][version] = "1.7"
 
 projects[date][type] = "module"
 projects[date][subdir] = "contrib"
@@ -435,7 +435,7 @@ projects[votingapi][version] = "2.12"
 projects[votingapi][subdir] = "contrib"
 
 projects[webform][type] = "module"
-projects[webform][version] = "4.4"
+projects[webform][version] = "4.5"
 projects[webform][subdir] = "contrib"
 
 ; Contributed themes.
