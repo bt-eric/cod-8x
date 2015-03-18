@@ -450,11 +450,11 @@ projects[omega][download][revision] = "a4d56d4d4868ef"
 
 ; Backport all commits that are not susy 2 specific in Omega 4.x
 ; https://www.drupal.org/node/2398093#comment-9726835
-projects[omega][patch][] = "https://www.drupal.org/files/issues/2398093-omega4-backports-1.patch"
+projects[omega][patch][] = "http://drupal.org/files/issues/2398093-omega4-backports-1.patch"
 
 ; Update panels headings in panels 3.5
 ; https://www.drupal.org/node/2453475
-projects[omega][patch][] = "https://www.drupal.org/files/issues/omega-2453475-panels-headings-1.patch"
+projects[omega][patch][] = "http://drupal.org/files/issues/omega-2453475-panels-headings-1.patch"
 
 projects[adminimal_theme][type] = "theme"
 projects[adminimal_theme][subdir] = "contrib"
