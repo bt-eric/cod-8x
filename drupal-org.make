@@ -302,6 +302,10 @@ projects[og_vocab][type] = "module"
 projects[og_vocab][subdir] = "contrib"
 projects[og_vocab][version] = "1.2"
 
+projects[og_theme][type] = "module"
+projects[og_theme][subdir] = "contrib"
+projects[og_theme][version] = "2.0"
+
 projects[panelizer][type] = "module"
 projects[panelizer][subdir] = "contrib"
 projects[panelizer][version] = "3.1"
@@ -360,13 +364,6 @@ projects[strongarm][download][type] = "git"
 projects[strongarm][download][url] = "http://git.drupal.org/project/strongarm.git"
 projects[strongarm][download][branch] = "7.x-2.x"
 projects[strongarm][download][revision] = "5a2326ba67"
-
-projects[themekey][type] = "module"
-projects[themekey][subdir] = "contrib"
-projects[themekey][download][type] = "git"
-projects[themekey][download][url] = "http://git.drupal.org/project/themekey.git"
-projects[themekey][download][branch] = "7.x-2.x"
-projects[themekey][download][revision] = "7bddcfa2f7ae36abc6d1a27a0b0a8e92d174b568"
 
 ; For COD releases, we peg it to a release of ticket. For dev, we use the dev branch.
 projects[ticket][type] = "module"
