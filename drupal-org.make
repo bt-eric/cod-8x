@@ -306,13 +306,24 @@ projects[og_theme][type] = "module"
 projects[og_theme][subdir] = "contrib"
 projects[og_theme][version] = "2.0"
 
-projects[panelizer][type] = "module"
+projects[panelizer][version] = "3.x-dev"
 projects[panelizer][subdir] = "contrib"
-projects[panelizer][version] = "3.1"
+projects[panelizer][download][type] = "git"
+projects[panelizer][download][revision] = "7f28657"
+projects[panelizer][download][branch] = "7.x-3.x"
+; Better Revision Handling
+; http://drupal.org/node/2457113
+projects[panelizer][patch][2457113] = "http://drupal.org/files/issues/2457113-18.patch"
 
+projects[panels][version] = "3.5"
 projects[panels][type] = "module"
 projects[panels][subdir] = "contrib"
-projects[panels][version] = "3.5"
+; Fix IPE JS alert (Panelizer is Incompatible with Moderation)
+; http://drupal.org/node/1402860#comment-9729091
+projects[panels][patch][1402860] = "http://drupal.org/files/issues/panelizer_is-1402860-82-fix-ipe-end-js-alert.patch"
+; IPE Insufficient for working with Panelizer Revisioning
+; https://www.drupal.org/node/2462331#comment-9778921
+projects[panels][patch][2462331] = "http://www.drupal.org/files/issues/2462331-4.patch"
 
 projects[panels_tabs][type] = "module"
 projects[panels_tabs][subdir] = "contrib"
