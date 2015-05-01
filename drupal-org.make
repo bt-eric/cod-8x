@@ -9,7 +9,7 @@ projects[acquia_connector][version] = "2.15"
 
 projects[addressfield][type] = "module"
 projects[addressfield][subdir] = "contrib"
-projects[addressfield][version] = "1.0"
+projects[addressfield][version] = "1.1"
 
 projects[admin_icons][type] = "module"
 projects[admin_icons][subdir] = "contrib"
@@ -34,7 +34,7 @@ projects[adminimal_admin_menu][download][branch] = "7.x-1.x"
 projects[adminimal_admin_menu][download][revision] = "eca2f1c4"
 
 projects[advanced_help][type] = "module"
-projects[advanced_help][version] = "1.1"
+projects[advanced_help][version] = "1.2"
 projects[advanced_help][subdir] = "contrib"
 
 projects[apachesolr][type] = "module"
@@ -97,7 +97,7 @@ projects[commerce_coupon][subdir] = "contrib"
 projects[commerce_coupon][download][type] = "git"
 projects[commerce_coupon][download][url] = "http://git.drupal.org/project/commerce_coupon.git"
 projects[commerce_coupon][download][branch] = "7.x-2.x"
-projects[commerce_coupon][download][revision] = "d560b316c72b685882dd8b1d82d79f3bd467d3e3"
+projects[commerce_coupon][download][revision] = "1cf041a3bec2255c6f309848b425c2eec96499f9"
 
 ; Allowed admins to administer coupons.
 projects[commerce_coupon][patch][] = "http://drupal.org/files/issues/2427457-commerce-admin-permissions-1.patch"
@@ -107,7 +107,7 @@ projects[commerce_discount][subdir] = "contrib"
 projects[commerce_discount][download][type] = "git"
 projects[commerce_discount][download][url] = "http://git.drupal.org/project/commerce_discount.git"
 projects[commerce_discount][download][branch] = "7.x-1.x"
-projects[commerce_discount][download][revision] = "0c0dc8acc9de27cdeebc2d553559da76136cbb8f"
+projects[commerce_discount][download][revision] = "a1241d2ede760ad2d409ebafd90c4f32447508e9"
 
 projects[commerce_coupon_batch][type] = "module"
 projects[commerce_coupon_batch][subdir] = "contrib"
@@ -198,7 +198,7 @@ projects[entityreference_prepopulate][patch][] = "https://drupal.org/files/issue
 
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
-projects[features][version] = "2.4"
+projects[features][version] = "2.5"
 
 projects[fivestar][type] = "module"
 projects[fivestar][subdir] = "contrib"
@@ -360,13 +360,9 @@ projects[redirect][type] = "module"
 projects[redirect][subdir] = "contrib"
 projects[redirect][version] = "1.0-rc1"
 
-; Do not use rules 2.8, due to a bug causing commerce rules not to fire correctly.
 projects[rules][type] = "module"
 projects[rules][subdir] = "contrib"
-projects[rules][download][type] = "git"
-projects[rules][download][url] = "http://git.drupal.org/project/rules.git"
-projects[rules][download][branch] = "7.x-2.x"
-projects[rules][download][revision] = "7329e5fc9122efc83e14475eb8ee0b88ba753e4e"
+projects[rules][version] = "2.9"
 
 projects[smtp][type] = "module"
 projects[smtp][subdir] = "contrib"
@@ -384,12 +380,14 @@ projects[strongarm][download][branch] = "7.x-2.x"
 projects[strongarm][download][revision] = "5a2326ba67"
 
 ; For COD releases, we peg it to a release of ticket. For dev, we use the dev branch.
+; Currently using the ticket_reservation branch for COD.
 projects[ticket][type] = "module"
 projects[ticket][subdir] = "contrib"
-;projects[ticket][version] = "1.0-beta4"
+projects[ticket][version] = "1.0-beta4"
 projects[ticket][download][type] = "git"
 projects[ticket][download][url] = "http://git.drupal.org/project/ticket.git"
-projects[ticket][download][branch] = "7.x-1.x"
+;projects[ticket][download][branch] = "7.x-1.x"
+projects[ticket][download][branch] = "ticket_reservation"
 
 projects[title][type] = "module"
 projects[title][version] = "1.0-alpha7"
@@ -417,7 +415,7 @@ projects[variable][type] = "module"
 projects[variable][version] = "2.5"
 projects[variable][subdir] = "contrib"
 
-projects[views][version] = "3.10"
+projects[views][version] = "3.11"
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
 
@@ -450,7 +448,7 @@ projects[votingapi][version] = "2.12"
 projects[votingapi][subdir] = "contrib"
 
 projects[webform][type] = "module"
-projects[webform][version] = "4.5"
+projects[webform][version] = "4.8"
 projects[webform][subdir] = "contrib"
 
 ; Contributed themes.
