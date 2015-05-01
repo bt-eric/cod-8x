@@ -419,6 +419,9 @@ projects[views][version] = "3.11"
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
 
+; Allow taxonomy term fields to be transformed when being passed as a value.
+projects[views][patch][] = "http://drupal.org/files/issues/views-taxonomy-name-case-transform-1.patch"
+
 projects[views_autorefresh][version] = "1.0-beta3"
 projects[views_autorefresh][type] = "module"
 projects[views_autorefresh][subdir] = "contrib"
