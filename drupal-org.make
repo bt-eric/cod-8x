@@ -74,10 +74,10 @@ projects[ckeditor][patch][] = "http://drupal.org/files/issues/ckeditor-accomodat
 
 projects[cod_support][type] = "module"
 projects[cod_support][subdir] = "contrib"
-;projects[cod_support][version] = "1.0-beta8"
-projects[cod_support][download][type] = "git"
-projects[cod_support][download][url] = "http://git.drupal.org/project/cod_support.git"
-projects[cod_support][download][branch] = "7.x-1.x"
+projects[cod_support][version] = "1.0-beta9"
+;projects[cod_support][download][type] = "git"
+;projects[cod_support][download][url] = "http://git.drupal.org/project/cod_support.git"
+;projects[cod_support][download][branch] = "7.x-1.x"
 
 projects[commerce][type] = "module"
 projects[commerce][version] = "1.11"
@@ -388,6 +388,7 @@ projects[ticket][download][type] = "git"
 projects[ticket][download][url] = "http://git.drupal.org/project/ticket.git"
 ;projects[ticket][download][branch] = "7.x-1.x"
 projects[ticket][download][branch] = "ticket_reservation"
+projects[ticket][download][revision] = "d834077dced70360866f5d98c29cb5b8dceace20"
 
 projects[title][type] = "module"
 projects[title][version] = "1.0-alpha7"
