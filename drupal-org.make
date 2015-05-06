@@ -390,6 +390,10 @@ projects[taxonomy_machine_name][download][url] = "http://git.drupal.org/project/
 projects[taxonomy_machine_name][download][branch] = "7.x-1.x"
 projects[taxonomy_machine_name][download][revision] = "745e5a55ae5cf7e2eb631a7f4f859c7e0b821d95"
 
+; Trim and Lowercase alphanumeric titles
+; https://www.drupal.org/node/2479865
+projects[taxonomy_machine_name][patch][] = "http://drupal.org/files/issues/2479865-lowercase-taxonomy-machine-name-1.patch"
+
 ; For COD releases, we peg it to a release of ticket. For dev, we use the dev branch.
 ; Currently using the ticket_reservation branch for COD.
 projects[ticket][type] = "module"
