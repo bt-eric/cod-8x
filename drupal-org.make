@@ -382,6 +382,14 @@ projects[strongarm][download][url] = "http://git.drupal.org/project/strongarm.gi
 projects[strongarm][download][branch] = "7.x-2.x"
 projects[strongarm][download][revision] = "5a2326ba67"
 
+projects[taxonomy_machine_name][type] = "module"
+projects[taxonomy_machine_name][subdir] = "contrib"
+projects[taxonomy_machine_name][version] = "1.0-beta12"
+projects[taxonomy_machine_name][download][type] = "git"
+projects[taxonomy_machine_name][download][url] = "http://git.drupal.org/project/taxonomy_machine_name.git"
+projects[taxonomy_machine_name][download][branch] = "7.x-1.x"
+projects[taxonomy_machine_name][download][revision] = "745e5a55ae5cf7e2eb631a7f4f859c7e0b821d95"
+
 ; For COD releases, we peg it to a release of ticket. For dev, we use the dev branch.
 ; Currently using the ticket_reservation branch for COD.
 projects[ticket][type] = "module"
