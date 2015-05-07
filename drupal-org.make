@@ -131,6 +131,10 @@ projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "1.7"
 
+; Allow contexts to load in information for existing contexts.
+; See https://www.drupal.org/node/2484541#comment-9899043 for more info.
+projects[ctools][patch][] = "http://drupal.org/files/issues/2484541-context-dependency-1.patch"
+
 projects[date][type] = "module"
 projects[date][subdir] = "contrib"
 projects[date][version] = "2.9-rc1"
