@@ -170,6 +170,10 @@ projects[entity][download][url] = "http://git.drupal.org/project/entity.git"
 projects[entity][download][branch] = "7.x-1.x"
 projects[entity][download][revision] = "4d76c5c2302e225fea2db7aba08d48f3558bf275"
 
+projects[entity_embed][type] = "module"
+projects[entity_embed][subdir] = "contrib"
+projects[entity_embed][version] = "1.0-alpha1"
+
 projects[entitycache][type] = "module"
 projects[entitycache][subdir] = "contrib"
 projects[entitycache][download][type] = "git"
@@ -224,6 +228,13 @@ projects[field_collection][type] = "module"
 projects[field_collection][subdir] = "contrib"
 projects[field_collection][version] = "1.0-beta8"
 
+projects[file_entity][type] = "module"
+projects[file_entity][subdir] = "contrib"
+projects[file_entity][download][type] = "git"
+projects[file_entity][download][url] = "http://git.drupal.org/project/file_entity.git"
+projects[file_entity][download][branch] = "7.x-2.x"
+projects[file_entity][download][revision] = "5effd7a"
+
 projects[flag][type] = "module"
 projects[flag][subdir] = "contrib"
 projects[flag][version] = "3.6"
@@ -255,6 +266,17 @@ projects[link][type] = "module"
 projects[link][subdir] = "contrib"
 projects[link][version] = "1.3"
 
+projects[media][type] = "module"
+projects[media][subdir] = "contrib"
+projects[media][download][type] = "git"
+projects[media][download][url] = "http://git.drupal.org/project/media.git"
+projects[media][download][branch] = "7.x-2.x"
+projects[media][download][revision] = "9f7142b"
+
+projects[media_oembed][type] = "module"
+projects[media_oembed][subdir] = "contrib"
+projects[media_oembed][version] = "2.3"
+
 projects[module_filter][type] = "module"
 projects[module_filter][subdir] = "contrib"
 projects[module_filter][version] = "2.0"
@@ -277,6 +299,17 @@ projects[oauthconnector][download][type] = "git"
 projects[oauthconnector][download][url] = "http://git.drupal.org/project/oauthconnector.git"
 projects[oauthconnector][download][branch] = "7.x-1.x"
 projects[oauthconnector][download][revision] = "0ce7ac9614710c0f68d0a58cb4ae4667f8bd6fa7"
+
+projects[oembed][type] = "module"
+projects[oembed][subdir] = "contrib"
+projects[oembed][download][type] = "git"
+projects[oembed][download][url] = "http://git.drupal.org/project/oembed.git"
+projects[oembed][download][branch] = "7.x-1.x"
+projects[oembed][download][revision] = "9aa5303"
+
+; Remove the media submodule as it conflicts with the Media: oEmbed module.
+; https://drupal.org/node/2269745#comment-8796261
+projects[oembed][patch][] = "https://drupal.org/files/issues/remove-media-submodule-2269745-2.patch"
 
 projects[og][type] = "module"
 projects[og][subdir] = "contrib"
