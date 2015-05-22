@@ -330,9 +330,9 @@ projects[og][patch][] = "http://drupal.org/files/og_ui-group_node_add_theme-1800
 ; http://www.drupal.org/node/2357459
 projects[og][patch][] = "http://drupal.org/files/issues/og_id_user_access.patch"
 
-; og_group_ref field should respect og_user_access()
-; http://drupal.org/node/1902086#comment-7026516
-; projects[og][patch][] = "http://drupal.org/files/1902086-og-ref-respect-og-user-access-3.patch"
+; OG Context is exiting prematurely, not setting the correct conference in some cases.
+; https://www.drupal.org/node/2493277#comment-9950303
+projects[og][patch][] = "http://drupal.org/files/issues/2493277-og-context-premature-empty-1.patch"
 
 projects[og_menu][type] = "module"
 projects[og_menu][subdir] = "contrib"
