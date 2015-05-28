@@ -34,7 +34,7 @@ projects[adminimal_admin_menu][download][branch] = "7.x-1.x"
 projects[adminimal_admin_menu][download][revision] = "eca2f1c4"
 
 projects[advanced_help][type] = "module"
-projects[advanced_help][version] = "1.2"
+projects[advanced_help][version] = "1.3"
 projects[advanced_help][subdir] = "contrib"
 
 projects[apachesolr][type] = "module"
@@ -251,7 +251,7 @@ projects[inline_entity_form][version] = "1.5"
 projects[inline_entity_form][subdir] = "contrib"
 
 projects[i18n][type] = "module"
-projects[i18n][version] = "1.12"
+projects[i18n][version] = "1.13"
 projects[i18n][subdir] = "contrib"
 
 projects[jquery_update][version] = "2.5"
@@ -421,15 +421,11 @@ projects[strongarm][download][revision] = "5a2326ba67"
 
 projects[taxonomy_machine_name][type] = "module"
 projects[taxonomy_machine_name][subdir] = "contrib"
-projects[taxonomy_machine_name][version] = "1.0-beta12"
-projects[taxonomy_machine_name][download][type] = "git"
-projects[taxonomy_machine_name][download][url] = "http://git.drupal.org/project/taxonomy_machine_name.git"
-projects[taxonomy_machine_name][download][branch] = "7.x-1.x"
-projects[taxonomy_machine_name][download][revision] = "745e5a55ae5cf7e2eb631a7f4f859c7e0b821d95"
+projects[taxonomy_machine_name][version] = "1.0"
 
-; Trim and Lowercase alphanumeric titles
-; https://www.drupal.org/node/2479865
-projects[taxonomy_machine_name][patch][] = "http://drupal.org/files/issues/2479865-lowercase-taxonomy-machine-name-1.patch"
+; Taxonomy validator should transform dashes to underscores
+; https://www.drupal.org/node/2496141
+projects[taxonomy_machine_name][patch][2496141] = "http://drupal.org/files/issues/taxonomy_validator-2496141-1.patch"
 
 ; For COD releases, we peg it to a release of ticket. For dev, we use the dev branch.
 ; Currently using the ticket_reservation branch for COD.
@@ -504,7 +500,7 @@ projects[votingapi][version] = "2.12"
 projects[votingapi][subdir] = "contrib"
 
 projects[webform][type] = "module"
-projects[webform][version] = "4.8"
+projects[webform][version] = "4.9"
 projects[webform][subdir] = "contrib"
 
 ; Contributed themes.
