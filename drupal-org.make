@@ -372,6 +372,9 @@ projects[panels][patch][1402860] = "http://drupal.org/files/issues/panelizer_is-
 ; https://www.drupal.org/node/2462331#comment-9778921
 projects[panels][patch][2462331] = "http://drupal.org/files/issues/2462331-4.patch"
 
+; Allow CSS keyword replacements
+projects[panels][patch][1441218] = "http://drupal.org/files/issues/panels-css-keywords-1441218-65.patch"
+
 projects[panels_tabs][type] = "module"
 projects[panels_tabs][subdir] = "contrib"
 projects[panels_tabs][download][type] = "git"
