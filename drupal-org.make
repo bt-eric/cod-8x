@@ -111,7 +111,7 @@ projects[commerce_discount][subdir] = "contrib"
 projects[commerce_discount][download][type] = "git"
 projects[commerce_discount][download][url] = "http://git.drupal.org/project/commerce_discount.git"
 projects[commerce_discount][download][branch] = "7.x-1.x"
-projects[commerce_discount][download][revision] = "a1241d2ede760ad2d409ebafd90c4f32447508e9"
+projects[commerce_discount][download][revision] = "7a78225fb778b2ff0b71aa7d5a13bea824b07b69"
 
 projects[commerce_coupon_batch][type] = "module"
 projects[commerce_coupon_batch][subdir] = "contrib"
