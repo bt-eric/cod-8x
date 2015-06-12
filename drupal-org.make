@@ -101,10 +101,7 @@ projects[commerce_coupon][subdir] = "contrib"
 projects[commerce_coupon][download][type] = "git"
 projects[commerce_coupon][download][url] = "http://git.drupal.org/project/commerce_coupon.git"
 projects[commerce_coupon][download][branch] = "7.x-2.x"
-projects[commerce_coupon][download][revision] = "1cf041a3bec2255c6f309848b425c2eec96499f9"
-
-; Allowed admins to administer coupons.
-projects[commerce_coupon][patch][] = "http://drupal.org/files/issues/2427457-commerce-admin-permissions-1.patch"
+projects[commerce_coupon][download][revision] = "55bdc40eca0f7b32e11a77a94bf5ec21649849cc"
 
 projects[commerce_discount][type] = "module"
 projects[commerce_discount][subdir] = "contrib"
