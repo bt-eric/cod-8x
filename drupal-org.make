@@ -110,6 +110,9 @@ projects[commerce_discount][download][url] = "http://git.drupal.org/project/comm
 projects[commerce_discount][download][branch] = "7.x-1.x"
 projects[commerce_discount][download][revision] = "7a78225fb778b2ff0b71aa7d5a13bea824b07b69"
 
+; Add a weight to commerce_discount. https://www.drupal.org/node/1962484#comment-10026949
+projects[commerce_discount][patch][] = "https://www.drupal.org/files/issues/1962484-add-weight-commerce-discount-1.patch"
+
 projects[commerce_coupon_batch][type] = "module"
 projects[commerce_coupon_batch][subdir] = "contrib"
 projects[commerce_coupon_batch][download][type] = "git"
