@@ -15,4 +15,4 @@ projects[drupal][patch][] = http://drupal.org/files/issues/drupal-7.x-allow_prof
 
 ; Allow to specify SCRIPT HTML element attributes through drupal_add_js()
 ; http://drupal.org/node/1664602#comment-6221066
-projects[drupal][patch][] = http://drupal.org/files/issues/js_attributes-1664602-93.patch
+projects[drupal][patch][] = http://drupal.org/files/1664602-1.patch
