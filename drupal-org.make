@@ -58,7 +58,7 @@ projects[auto_nodetitle][version] = "1.0"
 
 projects[better_exposed_filters][type] = "module"
 projects[better_exposed_filters][subdir] = "contrib"
-projects[better_exposed_filters][version] = "3.0-beta4"
+projects[better_exposed_filters][version] = "3.2"
 
 projects[breakpoints][type] = "module"
 projects[breakpoints][subdir] = "contrib"
@@ -251,14 +251,14 @@ projects[inline_conditions][download][branch] = "7.x-1.x"
 projects[inline_conditions][download][revision] = "3dd9495e0a7b95f7e8a29141a8860b073cba2b6a"
 
 projects[inline_entity_form][type] = "module"
-projects[inline_entity_form][version] = "1.5"
+projects[inline_entity_form][version] = "1.6"
 projects[inline_entity_form][subdir] = "contrib"
 
 projects[i18n][type] = "module"
 projects[i18n][version] = "1.13"
 projects[i18n][subdir] = "contrib"
 
-projects[jquery_update][version] = "2.5"
+projects[jquery_update][version] = "2.6"
 projects[jquery_update][type] = "module"
 projects[jquery_update][subdir] = "contrib"
 
@@ -287,7 +287,7 @@ projects[module_filter][version] = "2.0"
 
 projects[mollom][type] = "module"
 projects[mollom][subdir] = "contrib"
-projects[mollom][version] = "2.13"
+projects[mollom][version] = "2.14"
 
 projects[multiple_entity_form][type] = "module"
 projects[multiple_entity_form][version] = "1.2"
