@@ -87,6 +87,15 @@ projects[commerce][type] = "module"
 projects[commerce][version] = "1.11"
 projects[commerce][subdir] = "contrib"
 
+; Make "Add to cart" button text a display format setting
+; https://www.drupal.org/node/1147690
+projects[commerce][patch][] = http://drupal.org/files/issues/commerce_cart-button_text-1147690-75.patch
+
+; Possibility to show price difference/total price in attributes
+; https://www.drupal.org/node/1226466
+projects[commerce][patch][] = http://drupal.org/files/issues/product_select_options_token_display_alternative-1226466-36.patch
+
+
 projects[commerce_features][type] = "module"
 projects[commerce_features][subdir] = "contrib"
 projects[commerce_features][version] = "1.0"
@@ -539,6 +548,10 @@ projects[omega][download][revision] = "a4d56d4d4868ef"
 ; Backport all commits that are not susy 2 specific in Omega 4.x
 ; https://www.drupal.org/node/2398093#comment-9726835
 projects[omega][patch][] = "http://drupal.org/files/issues/2398093-omega4-backports-1.patch"
+
+; Hide blank messages in Omega 4.x
+; https://www.drupal.org/node/2512542#comment-10059838
+projects[omega][patch][] = "http://drupal.org/files/issues/blank_error_message-2512542-1.patch"
 
 ; Update panels headings in panels 3.5
 ; https://www.drupal.org/node/2453475
