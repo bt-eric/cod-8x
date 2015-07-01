@@ -420,6 +420,10 @@ projects[rules][type] = "module"
 projects[rules][subdir] = "contrib"
 projects[rules][version] = "2.9"
 
+projects[safeword][type] = "module"
+projects[safeword][subdir] = "contrib"
+projects[safeword][version] = "1.13"
+
 projects[smtp][type] = "module"
 projects[smtp][subdir] = "contrib"
 projects[smtp][version] = "1.2"
