@@ -219,7 +219,7 @@ projects[entityreference_prepopulate][patch][] = "http://drupal.org/files/issues
 
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
-projects[features][version] = "2.6"
+projects[features][version] = "2.5"
 
 projects[fivestar][type] = "module"
 projects[fivestar][subdir] = "contrib"
@@ -418,7 +418,7 @@ projects[realname][version] = "1.2"
 
 projects[redirect][type] = "module"
 projects[redirect][subdir] = "contrib"
-projects[redirect][version] = "1.0-rc2"
+projects[redirect][version] = "1.0-rc1"
 
 projects[rules][type] = "module"
 projects[rules][subdir] = "contrib"
@@ -532,7 +532,7 @@ projects[views_data_export][version] = "3.0-beta8"
 projects[views_data_export][subdir] = "contrib"
 
 projects[views_bulk_operations][type] = "module"
-projects[views_bulk_operations][version] = "3.3"
+projects[views_bulk_operations][version] = "3.2"
 projects[views_bulk_operations][subdir] = "contrib"
 
 projects[votingapi][type] = "module"
