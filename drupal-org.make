@@ -302,6 +302,10 @@ projects[multiple_entity_form][type] = "module"
 projects[multiple_entity_form][version] = "1.2"
 projects[multiple_entity_form][subdir] = "contrib"
 
+; Remove warning when users register without any fields attached.
+; https://www.drupal.org/node/2517176#comment-10077594
+projects[multiple_entity_form][patch][] = "https://drupal.org/files/issues/2517176-multi-entity-form-errors-warning-1.patch"
+
 projects[oauth][type] = "module"
 projects[oauth][subdir] = "contrib"
 projects[oauth][version] = "3.2"
