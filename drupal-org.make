@@ -448,15 +448,13 @@ projects[taxonomy_machine_name][version] = "1.0"
 projects[taxonomy_machine_name][patch][2496141] = "http://drupal.org/files/issues/taxonomy_validator-2496141-1.patch"
 
 ; For COD releases, we peg it to a release of ticket. For dev, we use the dev branch.
-; Currently using the ticket_reservation branch for COD.
 projects[ticket][type] = "module"
 projects[ticket][subdir] = "contrib"
 projects[ticket][version] = "1.0-beta4"
 projects[ticket][download][type] = "git"
 projects[ticket][download][url] = "http://git.drupal.org/project/ticket.git"
-;projects[ticket][download][branch] = "7.x-1.x"
-projects[ticket][download][branch] = "ticket_reservation"
-;projects[ticket][download][revision] = "d834077dced70360866f5d98c29cb5b8dceace20"
+projects[ticket][download][branch] = "7.x-1.x"
+;projects[ticket][download][revision] = "1b530acb2d31f2536ef777c98c28fb7fbc8a73b7"
 
 projects[title][type] = "module"
 projects[title][version] = "1.0-alpha7"
