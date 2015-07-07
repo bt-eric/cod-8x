@@ -161,7 +161,7 @@ projects[date_ical][version] = "3.4"
 
 ; Remove icalcreator library from the date_ical module
 ; https://drupal.org/node/2209165
-projects[date_ical][patch][] = "http://drupal.org/files/issues/date_ical_remove_makefile-2.patch"
+projects[date_ical][patch][] = "http://drupal.org/files/issues/date_ical_remove_makefile-3.patch"
 
 ; Keeping this to the latest version, since it should only be used for development.
 projects[devel][version] = "1.5"
