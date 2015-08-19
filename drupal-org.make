@@ -19,19 +19,15 @@ projects[admin_icons][download][branch] = "7.x-1.x"
 projects[admin_icons][download][revision] = "60d9f28801533fecc92216a60d444d89d80e7611"
 
 projects[admin_menu][type] = "module"
-projects[admin_menu][version] = "3.0-rc5"
 projects[admin_menu][subdir] = "contrib"
 projects[admin_menu][download][type] = "git"
 projects[admin_menu][download][url] = "http://git.drupal.org/project/admin_menu.git"
 projects[admin_menu][download][branch] = "7.x-3.x"
-projects[admin_menu][download][revision] = "b07d37b8"
+projects[admin_menu][download][revision] = "67abd3a2e42c28167551b5d0e753ca322bc592ce"
 
 projects[adminimal_admin_menu][type] = "module"
 projects[adminimal_admin_menu][subdir] = "contrib"
-projects[adminimal_admin_menu][download][type] = "git"
-projects[adminimal_admin_menu][download][url] = "http://git.drupal.org/project/adminimal_admin_menu.git"
-projects[adminimal_admin_menu][download][branch] = "7.x-1.x"
-projects[adminimal_admin_menu][download][revision] = "eca2f1c4"
+projects[adminimal_admin_menu][version] = "1.6"
 
 projects[advanced_help][type] = "module"
 projects[advanced_help][version] = "1.3"
@@ -142,7 +138,7 @@ projects[conditional_fields][download][revision] = "0b37992f49ec9f63f78f947168f2
 
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.7"
+projects[ctools][version] = "1.9"
 
 ; Allow contexts to load in information for existing contexts.
 ; See https://www.drupal.org/node/2484541#comment-9899043 for more info.
