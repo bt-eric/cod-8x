@@ -43,6 +43,7 @@ dependencies[] = date_views
 dependencies[] = devel
 dependencies[] = devel_generate
 dependencies[] = diff
+dependencies[] = distro_update
 dependencies[] = efq_extra_field
 dependencies[] = entity
 dependencies[] = entityreference

@@ -168,6 +168,14 @@ projects[diff][type] = "module"
 projects[diff][subdir] = "contrib"
 projects[diff][version] = "3.2"
 
+; Distro Update
+projects[distro_update][version] = "1.x-dev"
+projects[distro_update][type] = "module"
+projects[distro_update][subdir] = "contrib"
+projects[distro_update][download][type] = "git"
+projects[distro_update][download][revision] = "f5ab9fe"
+projects[distro_update][download][branch] = "7.x-1.x"
+
 projects[efq_extra_field][type] = "module"
 projects[efq_extra_field][subdir] = "contrib"
 projects[efq_extra_field][version] = "1.0-alpha1"
