@@ -366,6 +366,10 @@ projects[og_vocab][version] = "1.2"
 ; https://www.drupal.org/node/2481153#comment-9881365
 projects[og_vocab][patch][2457113] = "http://drupal.org/files/issues/2481153-og_vocab-accessible-groups-1.patch"
 
+; Fix fatal error in og_vocab when used with metatag.
+; https://www.drupal.org/node/2531418#comment-10107836
+projects[og_vocab][patch][2531418] = "https://www.drupal.org/files/issues/fatal_error_with_metatag-2531418-1.patch"
+
 projects[og_theme][type] = "module"
 projects[og_theme][subdir] = "contrib"
 projects[og_theme][version] = "2.0"
