@@ -80,6 +80,7 @@ dependencies[] = token
 dependencies[] = update
 dependencies[] = user
 dependencies[] = views
+dependencies[] = views_argument_substitutions
 dependencies[] = views_autorefresh
 dependencies[] = views_field_view
 dependencies[] = views_bulk_operations
