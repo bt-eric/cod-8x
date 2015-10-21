@@ -9,7 +9,7 @@ projects[acquia_connector][version] = "2.15"
 
 projects[addressfield][type] = "module"
 projects[addressfield][subdir] = "contrib"
-projects[addressfield][version] = "1.1"
+projects[addressfield][version] = "1.2"
 
 projects[admin_icons][type] = "module"
 projects[admin_icons][subdir] = "contrib"
@@ -222,7 +222,7 @@ projects[entityreference_prepopulate][patch][] = "http://drupal.org/files/issues
 
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
-projects[features][version] = "2.6"
+projects[features][version] = "2.7"
 
 projects[fivestar][type] = "module"
 projects[fivestar][subdir] = "contrib"
@@ -242,7 +242,7 @@ projects[field_select_ct][version] = "1.0"
 
 projects[field_collection][type] = "module"
 projects[field_collection][subdir] = "contrib"
-projects[field_collection][version] = "1.0-beta8"
+projects[field_collection][version] = "1.0-beta9"
 
 projects[file_entity][type] = "module"
 projects[file_entity][subdir] = "contrib"
@@ -253,7 +253,7 @@ projects[file_entity][download][revision] = "5effd7a"
 
 projects[flag][type] = "module"
 projects[flag][subdir] = "contrib"
-projects[flag][version] = "3.6"
+projects[flag][version] = "3.7"
 
 projects[inline_conditions][type] = "module"
 projects[inline_conditions][subdir] = "contrib"
@@ -270,7 +270,7 @@ projects[i18n][type] = "module"
 projects[i18n][version] = "1.13"
 projects[i18n][subdir] = "contrib"
 
-projects[jquery_update][version] = "2.6"
+projects[jquery_update][version] = "2.7"
 projects[jquery_update][type] = "module"
 projects[jquery_update][subdir] = "contrib"
 
@@ -405,7 +405,7 @@ projects[panels_tabs][download][revision] = "2caec501d"
 
 projects[pathauto][type] = "module"
 projects[pathauto][subdir] = "contrib"
-projects[pathauto][version] = "1.2"
+projects[pathauto][version] = "1.3"
 
 projects[quicktabs][type] = "module"
 projects[quicktabs][version] = "3.6"
@@ -449,11 +449,7 @@ projects[strongarm][download][revision] = "5a2326ba67"
 
 projects[taxonomy_machine_name][type] = "module"
 projects[taxonomy_machine_name][subdir] = "contrib"
-projects[taxonomy_machine_name][version] = "1.0"
-
-; Taxonomy validator should transform dashes to underscores
-; https://www.drupal.org/node/2496141
-projects[taxonomy_machine_name][patch][2496141] = "http://drupal.org/files/issues/taxonomy_validator-2496141-1.patch"
+projects[taxonomy_machine_name][version] = "1.1"
 
 ; For COD releases, we peg it to a release of ticket. For dev, we use the dev branch.
 projects[ticket][type] = "module"
@@ -521,7 +517,7 @@ projects[views_date_format_sql][type] = "module"
 projects[views_date_format_sql][subdir] = "contrib"
 projects[views_date_format_sql][version] = "3.1"
 
-projects[views_field_view][version] = "1.1"
+projects[views_field_view][version] = "1.2"
 projects[views_field_view][type] = "module"
 projects[views_field_view][subdir] = "contrib"
 
@@ -542,7 +538,7 @@ projects[votingapi][version] = "2.12"
 projects[votingapi][subdir] = "contrib"
 
 projects[webform][type] = "module"
-projects[webform][version] = "4.10"
+projects[webform][version] = "4.11"
 projects[webform][subdir] = "contrib"
 
 ; Contributed themes.
@@ -569,7 +565,7 @@ projects[omega][patch][] = "http://drupal.org/files/issues/omega-2453475-panels-
 
 projects[adminimal_theme][type] = "theme"
 projects[adminimal_theme][subdir] = "contrib"
-projects[adminimal_theme][version] = "1.22"
+projects[adminimal_theme][version] = "1.23"
 
 ; Libraries.
 ; NOTE: These need to be listed in http://drupal.org/packaging-whitelist.
