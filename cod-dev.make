@@ -5,7 +5,7 @@
 api = 2
 core = 7.38
 
-projects[drupal] = 7.38
+projects[drupal] = 7.41
 
 projects[cod][type] = "module"
 projects[cod][download][type] = "git"
