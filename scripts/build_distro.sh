@@ -8,7 +8,7 @@ pull_git() {
     if [[ -n $RESET ]]; then
       git reset --hard HEAD
     fi
-    git pull origin 7.x-1.x
+    git pull origin 7.x-2.x
 
     for i in `cat $BUILD_PATH/repos.txt`; do
       echo $i
