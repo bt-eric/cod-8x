@@ -370,6 +370,10 @@ projects[og_vocab][patch][2457113] = "http://drupal.org/files/issues/2481153-og_
 ; https://www.drupal.org/node/2531418#comment-10107836
 projects[og_vocab][patch][2531418] = "https://www.drupal.org/files/issues/fatal_error_with_metatag-2531418-1.patch"
 
+; Support cod_session's taxonomy machine name by event.
+; https://www.drupal.org/node/2604594#comment-10507976
+projects[og_vocab][patch][2604594] = "https://www.drupal.org/files/issues/2604594-og_vocab_get_ogv_by_id-1.patch"
+
 projects[og_theme][type] = "module"
 projects[og_theme][subdir] = "contrib"
 projects[og_theme][version] = "2.0"
