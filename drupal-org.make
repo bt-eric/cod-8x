@@ -381,24 +381,23 @@ projects[og_theme][version] = "2.0"
 projects[panelizer][version] = "3.x-dev"
 projects[panelizer][subdir] = "contrib"
 projects[panelizer][download][type] = "git"
-projects[panelizer][download][revision] = "442d8a9dd2262b8c5fdb3cf439e46e5c9668346f"
+projects[panelizer][download][revision] = "fa9b8617f72a9fde277b456393a0ead6a7862715"
 projects[panelizer][download][branch] = "7.x-3.x"
 ; Better Revision Handling
 ; http://drupal.org/node/2457113
 projects[panelizer][patch][2457113] = "http://drupal.org/files/issues/panelizer-better_revision-2457113-48.patch"
 
-projects[panels][version] = "3.5"
 projects[panels][type] = "module"
 projects[panels][subdir] = "contrib"
+projects[panels][version] = "3.x-dev"
+projects[panels][download][revision] = "e8623b704fb2585bbf77f31f06d4a98721556277"
+
 ; Fix IPE JS alert (Panelizer is Incompatible with Moderation)
 ; http://drupal.org/node/1402860#comment-9729091
 projects[panels][patch][1402860] = "http://drupal.org/files/issues/panelizer_is-1402860-82-fix-ipe-end-js-alert.patch"
 ; IPE Insufficient for working with Panelizer Revisioning
 ; https://www.drupal.org/node/2462331#comment-9778921
 projects[panels][patch][2462331] = "http://drupal.org/files/issues/2462331-4.patch"
-
-; Allow CSS keyword replacements
-projects[panels][patch][1441218] = "http://drupal.org/files/issues/panels-css-keywords-1441218-65.patch"
 
 projects[panels_tabs][type] = "module"
 projects[panels_tabs][subdir] = "contrib"
