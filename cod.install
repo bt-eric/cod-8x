@@ -473,7 +473,7 @@ function cod_install() {
 
   // The installer requires that the system theme settings form
   // be submitted in order for its themes' settings to be properly set
-  // For more background, see http://drupal.org/node/1776730.
+  // For more background, see https://www.drupal.org/node/1776730.
   module_load_include('inc', 'system', 'system.admin');
   foreach ($cod_themes as $theme_name) {
     $form_state = form_state_defaults();
