@@ -27,7 +27,7 @@ projects[admin_menu][download][revision] = "67abd3a2e42c28167551b5d0e753ca322bc5
 
 projects[adminimal_admin_menu][type] = "module"
 projects[adminimal_admin_menu][subdir] = "contrib"
-projects[adminimal_admin_menu][version] = "1.6"
+projects[adminimal_admin_menu][version] = "1.7"
 
 projects[advanced_help][type] = "module"
 projects[advanced_help][version] = "1.3"
@@ -35,7 +35,7 @@ projects[advanced_help][subdir] = "contrib"
 
 projects[apachesolr][type] = "module"
 projects[apachesolr][subdir] = "contrib"
-projects[apachesolr][version] = "1.7"
+projects[apachesolr][version] = "1.8"
 
 projects[apachesolr_og][type] = "module"
 projects[apachesolr_og][subdir] = "contrib"
@@ -97,7 +97,7 @@ projects[commerce_features][version] = "1.1"
 
 projects[commerce_stock][type] = "module"
 projects[commerce_stock][subdir] = "contrib"
-projects[commerce_stock][version] = "2.1"
+projects[commerce_stock][version] = "2.2"
 
 ; Commerce Coupon 2.x suite
 projects[commerce_coupon][type] = "module"
@@ -152,7 +152,7 @@ projects[date][patch][] = "https://www.drupal.org/files/issues/date-views-filter
 
 projects[date_ical][type] = "module"
 projects[date_ical][subdir] = "contrib"
-projects[date_ical][version] = "3.4"
+projects[date_ical][version] = "3.8"
 
 ; Remove icalcreator library from the date_ical module
 ; https://drupal.org/node/2209165
@@ -188,7 +188,7 @@ projects[entity][download][revision] = "4d76c5c2302e225fea2db7aba08d48f3558bf275
 
 projects[entity_embed][type] = "module"
 projects[entity_embed][subdir] = "contrib"
-projects[entity_embed][version] = "1.0-alpha1"
+projects[entity_embed][version] = "1.0-alpha2"
 
 projects[entitycache][type] = "module"
 projects[entitycache][subdir] = "contrib"
@@ -242,7 +242,7 @@ projects[field_select_ct][version] = "1.0"
 
 projects[field_collection][type] = "module"
 projects[field_collection][subdir] = "contrib"
-projects[field_collection][version] = "1.0-beta9"
+projects[field_collection][version] = "1.0-beta10"
 
 projects[file_entity][type] = "module"
 projects[file_entity][subdir] = "contrib"
@@ -291,7 +291,7 @@ projects[media][download][revision] = "9f7142b"
 
 projects[media_oembed][type] = "module"
 projects[media_oembed][subdir] = "contrib"
-projects[media_oembed][version] = "2.3"
+projects[media_oembed][version] = "2.5"
 
 projects[module_filter][type] = "module"
 projects[module_filter][subdir] = "contrib"
@@ -299,7 +299,7 @@ projects[module_filter][version] = "2.0"
 
 projects[mollom][type] = "module"
 projects[mollom][subdir] = "contrib"
-projects[mollom][version] = "2.14"
+projects[mollom][version] = "2.15"
 
 projects[multiple_entity_form][type] = "module"
 projects[multiple_entity_form][version] = "1.3"
@@ -425,7 +425,7 @@ projects[realname][version] = "1.2"
 
 projects[redirect][type] = "module"
 projects[redirect][subdir] = "contrib"
-projects[redirect][version] = "1.0-rc2"
+projects[redirect][version] = "1.0-rc3"
 
 projects[rules][type] = "module"
 projects[rules][subdir] = "contrib"
@@ -489,7 +489,7 @@ projects[variable][type] = "module"
 projects[variable][version] = "2.5"
 projects[variable][subdir] = "contrib"
 
-projects[views][version] = "3.11"
+projects[views][version] = "3.13"
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
 
@@ -504,7 +504,7 @@ projects[views_argument_substitutions][download][url] = "http://git.drupal.org/p
 projects[views_argument_substitutions][download][branch] = "7.x-1.x"
 projects[views_argument_substitutions][download][revision] = "95b810afc0bd8d078fd6ee2bbf96e487db4d0acc"
 
-projects[views_autorefresh][version] = "1.0-beta3"
+projects[views_autorefresh][version] = "1.0"
 projects[views_autorefresh][type] = "module"
 projects[views_autorefresh][subdir] = "contrib"
 
@@ -529,7 +529,7 @@ projects[views_send][version] = "1.1"
 projects[views_send][subdir] = "contrib"
 
 projects[views_data_export][type] = "module"
-projects[views_data_export][version] = "3.0-beta8"
+projects[views_data_export][version] = "3.0-beta9"
 projects[views_data_export][subdir] = "contrib"
 
 projects[views_bulk_operations][type] = "module"
@@ -541,7 +541,7 @@ projects[votingapi][version] = "2.12"
 projects[votingapi][subdir] = "contrib"
 
 projects[webform][type] = "module"
-projects[webform][version] = "4.11"
+projects[webform][version] = "4.12"
 projects[webform][subdir] = "contrib"
 
 ; Contributed themes.
