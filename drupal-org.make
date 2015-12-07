@@ -188,7 +188,7 @@ projects[entity][download][revision] = "4d76c5c2302e225fea2db7aba08d48f3558bf275
 
 projects[entity_embed][type] = "module"
 projects[entity_embed][subdir] = "contrib"
-projects[entity_embed][version] = "1.0-alpha2"
+projects[entity_embed][version] = "1.0-alpha3"
 
 projects[entitycache][type] = "module"
 projects[entitycache][subdir] = "contrib"
