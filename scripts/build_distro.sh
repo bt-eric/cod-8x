@@ -65,7 +65,8 @@ build_distro_raw() {
         fi
 
         ## put cod profile and modules into the profile folder
-        rm -rf docroot/profiles/cod
+        rsync -auv $BUILD_PATH/cod_profile/ $BUILD_PATH/docroot/profiles/cod/
+        ##rm -rf docroot/profiles/cod
         UNTAR="tar -zxvf /tmp/cod.tar.gz"
         cd $BUILD_PATH/docroot/profiles
         eval $UNTAR
