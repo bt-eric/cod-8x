@@ -351,6 +351,10 @@ projects[og][patch][] = "https://www.drupal.org/files/issues/og_id_user_access.p
 ; https://www.drupal.org/node/2493277#comment-9950303
 projects[og][patch][] = "https://www.drupal.org/files/issues/2493277-og-context-premature-empty-1.patch"
 
+// Allow og context to be passed into panels (useful for mini panels)
+// https://www.drupal.org/node/1781652#comment-6473660
+projects[og][patch][] = "https://www.drupal.org/files/og_context_ctools_relationship-1781652-5.patch"
+
 projects[og_menu][type] = "module"
 projects[og_menu][subdir] = "contrib"
 projects[og_menu][download][type] = "git"
