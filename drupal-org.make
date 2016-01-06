@@ -143,6 +143,10 @@ projects[ctools][version] = "1.9"
 ; See https://www.drupal.org/node/2484541#comment-9899043 for more info.
 projects[ctools][patch][] = "https://www.drupal.org/files/issues/2484541-context-dependency-1.patch"
 
+; Add new css classes to the attributes variable
+; See https://www.drupal.org/node/2645612#comment-10723956 for more info.
+projects[ctools][patch][] = "https://www.drupal.org/files/issues/2645612-ctools-attributes-array-1.patch"
+
 projects[date][type] = "module"
 projects[date][subdir] = "contrib"
 projects[date][version] = "2.9"
