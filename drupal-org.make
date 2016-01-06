@@ -230,7 +230,7 @@ projects[fivestar][version] = "2.1"
 
 projects[field_group][type] = "module"
 projects[field_group][subdir] = "contrib"
-projects[field_group][version] = "1.4"
+projects[field_group][version] = "1.5"
 
 projects[field_permissions][type] = "module"
 projects[field_permissions][subdir] = "contrib"
