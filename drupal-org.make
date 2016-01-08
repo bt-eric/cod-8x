@@ -364,7 +364,7 @@ projects[og_menu][subdir] = "contrib"
 projects[og_menu][download][type] = "git"
 projects[og_menu][download][url] = "http://git.drupal.org/project/og_menu.git"
 projects[og_menu][download][branch] = "7.x-3.x"
-projects[og_menu][download][revision] = "fd255c7b900938c2d00c9c2232f2055705e0cca0"
+projects[og_menu][download][revision] = "33b00e2bef6a7a9572315182e50469f56f540785"
 
 projects[og_vocab][type] = "module"
 projects[og_vocab][subdir] = "contrib"
