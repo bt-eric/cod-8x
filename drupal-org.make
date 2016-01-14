@@ -105,7 +105,7 @@ projects[commerce_currency][subdir] = "contrib"
 
 ; Commerce Currency Field is not showing on Rules
 ; See https://www.drupal.org/node/2212615 for more info.
-projects[commerce_currency][patch][] = https://www.drupal.org/files/issues/field_visibility_for_rules.patch
+projects[commerce_currency][patch][] = https://www.drupal.org/files/issues/2212615-field_visibility_for_rules-2.patch
 
 ; Although the field is mark as required, it gets ignored in the node form.
 ; See https://www.drupal.org/node/2327235 for more info.
