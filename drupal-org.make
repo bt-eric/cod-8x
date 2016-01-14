@@ -132,10 +132,14 @@ projects[commerce_discount][subdir] = "contrib"
 projects[commerce_discount][download][type] = "git"
 projects[commerce_discount][download][url] = "http://git.drupal.org/project/commerce_discount.git"
 projects[commerce_discount][download][branch] = "7.x-1.x"
-projects[commerce_discount][download][revision] = "f0f09c5ef68bf1b3469d3ce5268992eb8ec349b3"
+projects[commerce_discount][download][revision] = "185aa9435661be35aaaf3e9c22d80af13d0f22e6"
 
 ; Add a weight to commerce_discount. https://www.drupal.org/node/1962484#comment-10026949
 projects[commerce_discount][patch][] = "https://www.drupal.org/files/issues/1962484-add-weight-commerce-discount-1.patch"
+
+; Add multicurrency support to commerce discount.
+; See https://www.drupal.org/node/2345311#comment-10747624 for more info.
+projects[commerce_discount][patch][] = "https://www.drupal.org/files/issues/2345311-commerce_discount_multicurrency-8.patch"
 
 projects[commerce_coupon_batch][type] = "module"
 projects[commerce_coupon_batch][subdir] = "contrib"
