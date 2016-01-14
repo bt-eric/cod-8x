@@ -82,6 +82,10 @@ projects[cod_support][download][branch] = "7.x-2.x"
 projects[commerce][type] = "module"
 projects[commerce][version] = "1.11"
 projects[commerce][subdir] = "contrib"
+projects[commerce][download][type] = "git"
+projects[commerce][download][url] = "http://git.drupal.org/project/commerce.git"
+projects[commerce][download][branch] = "7.x-1.x"
+projects[commerce][download][revision] = "20c8e8adb4a60a983b8c771cdc8e08c2ba341dd4"
 
 ; Make "Add to cart" button text a display format setting
 ; https://www.drupal.org/node/1147690
@@ -90,6 +94,22 @@ projects[commerce][patch][] = https://www.drupal.org/files/issues/commerce_cart-
 ; Possibility to show price difference/total price in attributes
 ; https://www.drupal.org/node/1226466
 projects[commerce][patch][] = https://www.drupal.org/files/issues/product_select_options_token_display_alternative-1226466-36.patch
+
+; Allow the default currency to be changed via a context.
+; See https://www.drupal.org/node/2415237#comment-10746838 for more info.
+projects[commerce][patch][] = https://www.drupal.org/files/issues/change_site_s_default-2415237-11.patch
+
+projects[commerce_currency][type] = "module"
+projects[commerce_currency][version] = "1.0"
+projects[commerce_currency][subdir] = "contrib"
+
+; Commerce Currency Field is not showing on Rules
+; See https://www.drupal.org/node/2212615 for more info.
+projects[commerce_currency][patch][] = https://www.drupal.org/files/issues/field_visibility_for_rules.patch
+
+; Although the field is mark as required, it gets ignored in the node form.
+; See https://www.drupal.org/node/2327235 for more info.
+projects[commerce_currency][patch][] = https://www.drupal.org/files/issues/required_5.patch
 
 projects[commerce_features][type] = "module"
 projects[commerce_features][subdir] = "contrib"
