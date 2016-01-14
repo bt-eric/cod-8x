@@ -652,5 +652,7 @@ libraries[iCalcreator][download][url] = "https://github.com/iCalcreator/iCalcrea
 
 libraries[dompdf][download][type] = "get"
 libraries[dompdf][type] = "libraries"
-libraries[dompdf][download][url] = "https://github.com/dompdf/dompdf/releases/download/v0.6.1/dompdf-0.6.1.zip"
-libraries[dompdf][patch][] = "https://www.drupal.org/files/issues/dompdf-remove-www-1.patch"
+libraries[dompdf][download][url] = "https://github.com/dompdf/dompdf/releases/download/v0.6.2/dompdf-0.6.2.zip"
+; Remove dompdf example folder.
+; See https://www.drupal.org/node/2434767#comment-10749890 for more info.
+libraries[dompdf][patch][] = "https://www.drupal.org/files/issues/dompdf-remove-www-2.patch"
