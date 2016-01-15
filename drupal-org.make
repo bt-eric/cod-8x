@@ -383,6 +383,10 @@ projects[og][patch][] = "https://www.drupal.org/files/issues/2493277-og-context-
 // https://www.drupal.org/node/1781652#comment-6473660
 projects[og][patch][] = "https://www.drupal.org/files/og_context_ctools_relationship-1781652-5.patch"
 
+// Assign a language to entities that don't assign it themselves inside og.
+// See https://www.drupal.org/node/1865852 for more info.
+projects[og][patch][] = "https://www.drupal.org/files/issues/group-manager-language-1865852.patch"
+
 projects[og_menu][type] = "module"
 projects[og_menu][subdir] = "contrib"
 projects[og_menu][download][type] = "git"
@@ -534,6 +538,10 @@ projects[views_argument_substitutions][download][type] = "git"
 projects[views_argument_substitutions][download][url] = "http://git.drupal.org/project/views_argument_substitutions.git"
 projects[views_argument_substitutions][download][branch] = "7.x-1.x"
 projects[views_argument_substitutions][download][revision] = "95b810afc0bd8d078fd6ee2bbf96e487db4d0acc"
+
+; Remove notice thrown on arrays being passed as input values
+; See https://www.drupal.org/node/2650642#comment-10750768 for more info.
+projects[views_argument_substitutions][patch][] = "https://www.drupal.org/files/issues/2650642-check-array-values-input-1.patch"
 
 projects[views_autorefresh][version] = "1.0"
 projects[views_autorefresh][type] = "module"
