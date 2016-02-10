@@ -68,10 +68,6 @@ projects[ckeditor][type] = "module"
 projects[ckeditor][subdir] = "contrib"
 projects[ckeditor][version] = "1.17"
 
-; Accomodate latest Media changes.
-; https://drupal.org/node/2159403
-projects[ckeditor][patch][] = "https://www.drupal.org/files/issues/ckeditor-accomodate-latest-media-changes-81.patch"
-
 projects[cod_support][type] = "module"
 projects[cod_support][subdir] = "contrib"
 ;projects[cod_support][version] = "2.0-alpha2"
