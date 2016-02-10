@@ -276,6 +276,10 @@ projects[field_collection][type] = "module"
 projects[field_collection][subdir] = "contrib"
 projects[field_collection][version] = "1.0-beta11"
 
+; Fix undefined index from field_collection_field_attach_form().
+; See https://www.drupal.org/node/1716526 for more info.
+projects[field_collection][patch][] = "https://www.drupal.org/files/issues/undefined_langcode-1716526-12.patch"
+
 projects[file_entity][type] = "module"
 projects[file_entity][subdir] = "contrib"
 projects[file_entity][download][type] = "git"
