@@ -256,6 +256,10 @@ projects[fivestar][type] = "module"
 projects[fivestar][subdir] = "contrib"
 projects[fivestar][version] = "2.1"
 
+projects[field_extrawidgets][type] = "module"
+projects[field_extrawidgets][subdir] = "contrib"
+projects[field_extrawidgets][version] = "1.1"
+
 projects[field_group][type] = "module"
 projects[field_group][subdir] = "contrib"
 projects[field_group][version] = "1.5"
