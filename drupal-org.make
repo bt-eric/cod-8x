@@ -203,6 +203,10 @@ projects[distro_update][download][type] = "git"
 projects[distro_update][download][revision] = "f5ab9fe"
 projects[distro_update][download][branch] = "7.x-1.x"
 
+projects[eck][type] = "module"
+projects[eck][subdir] = "contrib"
+projects[eck][version] = "2.0-rc8"
+
 projects[efq_extra_field][type] = "module"
 projects[efq_extra_field][subdir] = "contrib"
 projects[efq_extra_field][version] = "1.0-alpha1"
