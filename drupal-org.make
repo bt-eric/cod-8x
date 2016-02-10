@@ -5,7 +5,7 @@ core = 7.x
 ; Contributed modules.
 projects[acquia_connector][type] = "module"
 projects[acquia_connector][subdir] = "contrib"
-projects[acquia_connector][version] = "2.15"
+projects[acquia_connector][version] = "2.16"
 
 projects[addressfield][type] = "module"
 projects[addressfield][subdir] = "contrib"
@@ -58,7 +58,7 @@ projects[better_exposed_filters][version] = "3.2"
 
 projects[breakpoints][type] = "module"
 projects[breakpoints][subdir] = "contrib"
-projects[breakpoints][version] = "1.3"
+projects[breakpoints][version] = "1.4"
 
 projects[connector][type] = "module"
 projects[connector][subdir] = "contrib"
@@ -66,7 +66,7 @@ projects[connector][version] = "1.0-beta2"
 
 projects[ckeditor][type] = "module"
 projects[ckeditor][subdir] = "contrib"
-projects[ckeditor][version] = "1.16"
+projects[ckeditor][version] = "1.17"
 
 ; Accomodate latest Media changes.
 ; https://drupal.org/node/2159403
@@ -220,7 +220,7 @@ projects[entity][download][revision] = "4d76c5c2302e225fea2db7aba08d48f3558bf275
 
 projects[entity_embed][type] = "module"
 projects[entity_embed][subdir] = "contrib"
-projects[entity_embed][version] = "1.0-alpha3"
+projects[entity_embed][version] = "1.0-alpha4"
 
 projects[entitycache][type] = "module"
 projects[entitycache][subdir] = "contrib"
@@ -274,7 +274,7 @@ projects[field_select_ct][version] = "1.0"
 
 projects[field_collection][type] = "module"
 projects[field_collection][subdir] = "contrib"
-projects[field_collection][version] = "1.0-beta10"
+projects[field_collection][version] = "1.0-beta11"
 
 projects[file_entity][type] = "module"
 projects[file_entity][subdir] = "contrib"
@@ -312,7 +312,7 @@ projects[libraries][version] = "2.2"
 
 projects[link][type] = "module"
 projects[link][subdir] = "contrib"
-projects[link][version] = "1.3"
+projects[link][version] = "1.4"
 
 projects[media][type] = "module"
 projects[media][subdir] = "contrib"
@@ -477,7 +477,7 @@ projects[safeword][version] = "1.13"
 
 projects[smtp][type] = "module"
 projects[smtp][subdir] = "contrib"
-projects[smtp][version] = "1.2"
+projects[smtp][version] = "1.3"
 
 projects[subpathauto][type] = "module"
 projects[subpathauto][subdir] = "contrib"
@@ -492,7 +492,7 @@ projects[strongarm][download][revision] = "5a2326ba67"
 
 projects[taxonomy_machine_name][type] = "module"
 projects[taxonomy_machine_name][subdir] = "contrib"
-projects[taxonomy_machine_name][version] = "1.1"
+projects[taxonomy_machine_name][version] = "1.2"
 
 ; For COD releases, we peg it to a release of ticket. For dev, we use the dev branch.
 projects[ticket][type] = "module"
@@ -561,7 +561,7 @@ projects[views_datasource][version] = "1.0-alpha2"
 
 projects[views_date_format_sql][type] = "module"
 projects[views_date_format_sql][subdir] = "contrib"
-projects[views_date_format_sql][version] = "3.1"
+projects[views_date_format_sql][version] = "3.3"
 
 projects[views_field_view][version] = "1.2"
 projects[views_field_view][type] = "module"
