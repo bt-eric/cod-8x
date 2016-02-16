@@ -68,6 +68,7 @@ projects[ckeditor][type] = "module"
 projects[ckeditor][subdir] = "contrib"
 projects[ckeditor][version] = "1.17"
 
+; Cod Alpha4 -- but we're using a few commits above it.
 projects[cod_support][type] = "module"
 projects[cod_support][subdir] = "contrib"
 projects[cod_support][version] = "2.0-alpha4"
