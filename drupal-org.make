@@ -391,8 +391,8 @@ projects[og][patch][] = "https://www.drupal.org/files/issues/2493277-og-context-
 // https://www.drupal.org/node/1781652#comment-6473660
 projects[og][patch][] = "https://www.drupal.org/files/og_context_ctools_relationship-1781652-5.patch"
 
-// Assign a language to entities that don't assign it themselves inside og.
-// See https://www.drupal.org/node/1865852 for more info.
+; Assign a language to entities that don't assign it themselves inside og.
+; See https://www.drupal.org/node/1865852 for more info.
 projects[og][patch][] = "https://www.drupal.org/files/issues/group-manager-language-1865852.patch"
 
 projects[og_menu][type] = "module"
