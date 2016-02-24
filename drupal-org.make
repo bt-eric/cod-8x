@@ -616,7 +616,7 @@ projects[omega][patch][] = "https://www.drupal.org/files/issues/omega-2453475-pa
 
 projects[adminimal_theme][type] = "theme"
 projects[adminimal_theme][subdir] = "contrib"
-projects[adminimal_theme][version] = "1.23"
+projects[adminimal_theme][version] = "1.24"
 
 ; Libraries.
 ; NOTE: These need to be listed in https://www.drupal.org/packaging-whitelist.
