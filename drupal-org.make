@@ -96,6 +96,26 @@ projects[commerce][patch][] = https://www.drupal.org/files/issues/product_select
 ; See https://www.drupal.org/node/2415237#comment-10746838 for more info.
 projects[commerce][patch][] = https://www.drupal.org/files/issues/change_site_s_default-2415237-11.patch
 
+projects[commerce_billy][type] = "module"
+projects[commerce_billy][subdir] = "contrib"
+projects[commerce_billy][version] = "1.0"
+
+; Allow CSS styling to be programatically altered.
+; See https://www.drupal.org/node/2653972#comment-10770308 for more info.
+projects[commerce_billy][patch][] = "https://www.drupal.org/files/issues/2653972-billy-css-alter-2.patch"
+
+projects[commerce_billy_mail][type] = "module"
+projects[commerce_billy_mail][subdir] = "contrib"
+projects[commerce_billy_mail][version] = "1.0-beta3"
+projects[commerce_billy_mail][download][type] = "git"
+projects[commerce_billy_mail][download][url] = "http://git.drupal.org/project/commerce_billy_mail.git"
+projects[commerce_billy_mail][download][branch] = "7.x-1.x"
+projects[commerce_billy_mail][download][revision] = "6e9efbf95d1719a6b852e263b203da0cf86c02fd"
+
+; Clear out tokens if the values are empty.
+; See https://www.drupal.org/node/2434981#comment-9658333 for more info.
+projects[commerce_billy_mail][patch][] = "https://www.drupal.org/files/issues/2434981-billy-mail-token-clear-1.patch"
+
 projects[commerce_currency][type] = "module"
 projects[commerce_currency][version] = "1.0"
 projects[commerce_currency][subdir] = "contrib"
