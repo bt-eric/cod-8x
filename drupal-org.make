@@ -77,12 +77,8 @@ projects[cod_support][download][url] = "http://git.drupal.org/project/cod_suppor
 projects[cod_support][download][branch] = "7.x-2.x"
 
 projects[commerce][type] = "module"
-projects[commerce][version] = "1.11"
 projects[commerce][subdir] = "contrib"
-projects[commerce][download][type] = "git"
-projects[commerce][download][url] = "http://git.drupal.org/project/commerce.git"
-projects[commerce][download][branch] = "7.x-1.x"
-projects[commerce][download][revision] = "20c8e8adb4a60a983b8c771cdc8e08c2ba341dd4"
+projects[commerce][version] = "1.13"
 
 ; Make "Add to cart" button text a display format setting
 ; https://www.drupal.org/node/1147690
@@ -94,7 +90,7 @@ projects[commerce][patch][] = https://www.drupal.org/files/issues/product_select
 
 ; Allow the default currency to be changed via a context.
 ; See https://www.drupal.org/node/2415237#comment-10746838 for more info.
-projects[commerce][patch][] = https://www.drupal.org/files/issues/change_site_s_default-2415237-11.patch
+projects[commerce][patch][] = https://www.drupal.org/files/issues/2657718-static_cache_default_currency-1.patch
 
 projects[commerce_billy][type] = "module"
 projects[commerce_billy][subdir] = "contrib"
@@ -134,7 +130,7 @@ projects[commerce_features][version] = "1.1"
 
 projects[commerce_stock][type] = "module"
 projects[commerce_stock][subdir] = "contrib"
-projects[commerce_stock][version] = "2.2"
+projects[commerce_stock][version] = "2.3"
 
 ; Commerce Coupon 2.x suite
 projects[commerce_coupon][type] = "module"
@@ -271,7 +267,7 @@ projects[entityreference_prepopulate][patch][] = "https://www.drupal.org/files/i
 
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
-projects[features][version] = "2.7"
+projects[features][version] = "2.8"
 
 projects[fivestar][type] = "module"
 projects[fivestar][subdir] = "contrib"
@@ -348,7 +344,7 @@ projects[media][download][revision] = "9f7142b"
 
 projects[media_oembed][type] = "module"
 projects[media_oembed][subdir] = "contrib"
-projects[media_oembed][version] = "2.5"
+projects[media_oembed][version] = "2.6"
 
 projects[module_filter][type] = "module"
 projects[module_filter][subdir] = "contrib"
@@ -528,7 +524,7 @@ projects[ticket][download][branch] = "7.x-1.x"
 ;projects[ticket][download][revision] = "9f94b5fb06c98a8547b0666f97c381992a4abdbc"
 
 projects[title][type] = "module"
-projects[title][version] = "1.0-alpha7"
+projects[title][version] = "1.0-alpha8"
 projects[title][subdir] = "contrib"
 
 projects[token][type] = "module"
@@ -593,7 +589,7 @@ projects[views_field_view][type] = "module"
 projects[views_field_view][subdir] = "contrib"
 
 projects[views_send][type] = "module"
-projects[views_send][version] = "1.1"
+projects[views_send][version] = "1.2"
 projects[views_send][subdir] = "contrib"
 
 projects[views_data_export][type] = "module"
