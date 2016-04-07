@@ -68,10 +68,10 @@ projects[ckeditor][type] = "module"
 projects[ckeditor][subdir] = "contrib"
 projects[ckeditor][version] = "1.17"
 
-; Cod Alpha4 -- but we're using a few commits above it.
+; Cod Alpha5
 projects[cod_support][type] = "module"
 projects[cod_support][subdir] = "contrib"
-projects[cod_support][version] = "2.0-alpha4"
+projects[cod_support][version] = "2.0-alpha5"
 projects[cod_support][download][type] = "git"
 projects[cod_support][download][url] = "http://git.drupal.org/project/cod_support.git"
 projects[cod_support][download][branch] = "7.x-2.x"
