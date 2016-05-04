@@ -126,7 +126,7 @@ projects[commerce_currency][patch][] = https://www.drupal.org/files/issues/requi
 
 projects[commerce_features][type] = "module"
 projects[commerce_features][subdir] = "contrib"
-projects[commerce_features][version] = "1.1"
+projects[commerce_features][version] = "1.2"
 
 projects[commerce_stock][type] = "module"
 projects[commerce_stock][subdir] = "contrib"
@@ -193,7 +193,7 @@ projects[date][patch][] = "https://www.drupal.org/files/issues/date-views-filter
 
 projects[date_ical][type] = "module"
 projects[date_ical][subdir] = "contrib"
-projects[date_ical][version] = "3.8"
+projects[date_ical][version] = "3.9"
 
 ; Remove icalcreator library from the date_ical module
 ; https://drupal.org/node/2209165
@@ -271,7 +271,7 @@ projects[features][version] = "2.9"
 
 projects[fivestar][type] = "module"
 projects[fivestar][subdir] = "contrib"
-projects[fivestar][version] = "2.1"
+projects[fivestar][version] = "2.2"
 
 projects[field_extrawidgets][type] = "module"
 projects[field_extrawidgets][subdir] = "contrib"
@@ -316,7 +316,7 @@ projects[inline_conditions][download][branch] = "7.x-1.x"
 projects[inline_conditions][download][revision] = "3dd9495e0a7b95f7e8a29141a8860b073cba2b6a"
 
 projects[inline_entity_form][type] = "module"
-projects[inline_entity_form][version] = "1.6"
+projects[inline_entity_form][version] = "1.8"
 projects[inline_entity_form][subdir] = "contrib"
 
 projects[i18n][type] = "module"
