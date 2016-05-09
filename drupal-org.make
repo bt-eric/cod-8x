@@ -68,13 +68,13 @@ projects[ckeditor][type] = "module"
 projects[ckeditor][subdir] = "contrib"
 projects[ckeditor][version] = "1.17"
 
-; Cod 2.0-Alpha6
+; Cod 2.x-dev
 projects[cod_support][type] = "module"
 projects[cod_support][subdir] = "contrib"
-projects[cod_support][version] = "2.0-alpha6"
-;projects[cod_support][download][type] = "git"
-;projects[cod_support][download][url] = "http://git.drupal.org/project/cod_support.git"
-;projects[cod_support][download][branch] = "7.x-2.x"
+;projects[cod_support][version] = "2.0-alpha6"
+projects[cod_support][download][type] = "git"
+projects[cod_support][download][url] = "http://git.drupal.org/project/cod_support.git"
+projects[cod_support][download][branch] = "7.x-2.x"
 
 projects[commerce][type] = "module"
 projects[commerce][subdir] = "contrib"
