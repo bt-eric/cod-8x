@@ -329,7 +329,7 @@ projects[jquery_update][subdir] = "contrib"
 
 projects[libraries][type] = "module"
 projects[libraries][subdir] = "contrib"
-projects[libraries][version] = "2.2"
+projects[libraries][version] = "2.3"
 
 projects[link][type] = "module"
 projects[link][subdir] = "contrib"
