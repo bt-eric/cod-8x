@@ -498,7 +498,7 @@ projects[safeword][version] = "1.13"
 
 projects[smtp][type] = "module"
 projects[smtp][subdir] = "contrib"
-projects[smtp][version] = "1.3"
+projects[smtp][version] = "1.4"
 
 projects[subpathauto][type] = "module"
 projects[subpathauto][subdir] = "contrib"
