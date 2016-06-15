@@ -94,7 +94,7 @@ projects[commerce][patch][] = https://www.drupal.org/files/issues/2657718-static
 
 projects[commerce_billy][type] = "module"
 projects[commerce_billy][subdir] = "contrib"
-projects[commerce_billy][version] = "1.0"
+projects[commerce_billy][version] = "1.1"
 
 ; Allow CSS styling to be programatically altered.
 ; See https://www.drupal.org/node/2653972#comment-10770308 for more info.
