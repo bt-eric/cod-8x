@@ -267,7 +267,7 @@ projects[entityreference_prepopulate][patch][] = "https://www.drupal.org/files/i
 
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
-projects[features][version] = "2.9"
+projects[features][version] = "2.10"
 
 projects[fivestar][type] = "module"
 projects[fivestar][subdir] = "contrib"
