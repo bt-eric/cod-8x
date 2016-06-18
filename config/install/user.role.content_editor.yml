@@ -1,0 +1,6 @@
+id: content_editor
+label: Content Editor
+weight: 3
+langcode: en
+is_admin: false
+
