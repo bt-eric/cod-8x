@@ -1,0 +1,9 @@
+name: COD Front Page
+description: Displays promoted content, sessions, and news on front page.
+core: 8.x
+type: module
+package: COD
+dependencies:
+  - cod_events
+  - cod_news
+  - cod_sessions

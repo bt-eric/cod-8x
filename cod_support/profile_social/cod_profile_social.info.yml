@@ -1,0 +1,7 @@
+name: COD Profile (Social fields)
+description: Provide a set of link fields to the user's profile for the user's Facebook, Linkedin and Twitter accounts.
+core: 8.x
+type: module
+package: COD
+dependencies:
+  - profile

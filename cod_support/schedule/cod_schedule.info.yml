@@ -1,0 +1,8 @@
+name: COD Schedule
+description: Scheduling for Sessions, BoFs, etc.
+type: module
+core: 8.x
+package: COD
+dependencies:
+  - cod_events
+  - cod_session

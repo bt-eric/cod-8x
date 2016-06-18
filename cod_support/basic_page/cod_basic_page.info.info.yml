@@ -8,3 +8,4 @@ dependencies:
   - og
   - page_manager
   - views
+  - cod_events

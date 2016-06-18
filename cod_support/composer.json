@@ -1,0 +1,7 @@
+{
+  "name": "drupal/cod_support",
+  "type": "drupal-module",
+  "description": "Conference Organizing Distribution Support Modules",
+  "homepage": "httsp://github.com/mglaman/cod-8x",
+  "license": "GPL-2.0+"
+}

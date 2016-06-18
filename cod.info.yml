@@ -45,9 +45,11 @@ dependencies:
   - og
   - rules
   # cod
+  - cod_base
   - cod_basic_page
   - cod_events
-  - cod_sponsors
+  - cod_events_pages
+  - cod_profile_base
 
 themes:
   - bartik

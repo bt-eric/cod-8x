@@ -1,0 +1,7 @@
+name: COD Session
+description: Sessions, Session Items, and Voting Functionality
+type: module
+core: 8.x
+package: COD
+dependencies:
+  - cod_events

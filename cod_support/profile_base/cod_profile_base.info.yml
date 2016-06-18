@@ -1,0 +1,7 @@
+name: COD Profile Base
+description: Provides a base set of profile fields for user profiles.
+core: 8.x
+type: module
+package: COD
+dependencies:
+  - profile

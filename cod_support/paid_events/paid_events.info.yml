@@ -1,0 +1,9 @@
+name: COD Paid Events
+description: Provides paid events options
+core: 8.x
+type: module
+package: cod
+dependencies:
+  - cod_events
+  - cod_registration
+  - cod_commerce

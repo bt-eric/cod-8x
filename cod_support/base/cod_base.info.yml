@@ -1,0 +1,4 @@
+name: COD Base
+description: Contains dependencies shared by other COD feature modules.
+core: 8.x
+type: module

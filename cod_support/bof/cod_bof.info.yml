@@ -1,0 +1,8 @@
+name: COD BoF Session
+description: Self-scheduled, unconference style sessions (BoFs)
+type: module
+core: 8.x
+package: COD
+dependencies:
+  - cod_schedule
+  - cod_sessions

@@ -1,0 +1,7 @@
+name: COD Profile (Optional fields)
+description: Additional fields such as dietary needs and t-shirt size.
+core: 8.x
+type: module
+package: COD
+dependencies:
+  - profile

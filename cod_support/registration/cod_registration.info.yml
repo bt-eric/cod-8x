@@ -1,0 +1,7 @@
+name: COD Registration
+description: Provide registration options to attendees
+type: module
+core: 8.x
+package: COD
+dependencies:
+  - cod_events

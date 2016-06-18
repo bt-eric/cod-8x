@@ -1,0 +1,10 @@
+name: COD Commerce
+description: Provides Drupal Commerce integration between conferences and COD
+core: 8.x
+type: module
+dependencies:
+  - commerce_cart
+  - commerce_checkout
+  - commerce_order
+  - commerce_product
+  - commerce_store
