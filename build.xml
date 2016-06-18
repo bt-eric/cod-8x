@@ -14,6 +14,7 @@
   <property name="docroot" value="docroot" />
   <property name="profile" value="${docroot}/profiles/cod" />
   <property name="site" value="${docroot}/sites/default" />
+  <property name="sync-settings" value="false" />
 
   <!-- Finds Composer, NPM, and rsync. -->
   <target name="env">
@@ -45,7 +46,17 @@
     <!-- rsync the profile, excluding developer flotsam. -->
     <filesync destinationDir="${profile}" rsyncPath="${rsync}" sourceDir="." verbose="false" exclude=".idea,bin,build.xml,.git,.gitignore,${docroot},karma.conf.js,*.make,node_modules,.travis.yml,vendor,cod_support" />
     <!-- @todo temp for development of COD and COD Support 8.x -->
+    <delete dir="${profile}/modules/cod_support" />
     <filesync destinationDir="${profile}/modules" rsyncPath="${rsync}" sourceDir="cod_support" verbose="false" />
+
+    <if>
+      <equals arg1="${sync-settings}" arg2="true" />
+      <then>
+        <symlink target="../../../../shared/settings.php" link="docroot/sites/default/settings.php" />
+        <symlink target="../../../../shared/settings.local.php" link="docroot/sites/default/settings.local.php" />
+        <symlink target="../../../../shared/drushrc.php" link="docroot/sites/default/drushrc.php" />
+      </then>
+    </if>
 
     <!-- JS libraries and contrib modules were copied over by the file sync. -->
     <delete dir="libraries" failonerror="true" quiet="true" />

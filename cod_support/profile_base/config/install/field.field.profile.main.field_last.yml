@@ -1,0 +1,19 @@
+uuid: 52bdd7ab-4027-41ef-af46-a9a15eaa76a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_last
+    - profile.type.main
+id: profile.main.field_last
+field_name: field_last
+entity_type: profile
+bundle: main
+label: Last
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

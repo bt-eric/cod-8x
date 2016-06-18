@@ -4,4 +4,7 @@ core: 8.x
 type: module
 package: COD
 dependencies:
+  - address
   - profile
+  - telephone
+  - text

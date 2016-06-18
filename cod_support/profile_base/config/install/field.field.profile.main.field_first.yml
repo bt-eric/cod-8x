@@ -1,0 +1,19 @@
+uuid: 93745181-6810-416e-83ff-fa43be87c00d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_first
+    - profile.type.main
+id: profile.main.field_first
+field_name: field_first
+entity_type: profile
+bundle: main
+label: First
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

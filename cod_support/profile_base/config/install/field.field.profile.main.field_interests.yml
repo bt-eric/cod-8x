@@ -1,0 +1,21 @@
+uuid: 2c60a68f-fbfa-4527-a967-b55b72656935
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_interests
+    - profile.type.main
+  module:
+    - text
+id: profile.main.field_interests
+field_name: field_interests
+entity_type: profile
+bundle: main
+label: Interests
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
