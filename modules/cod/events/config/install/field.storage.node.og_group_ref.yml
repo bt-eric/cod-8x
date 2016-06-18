@@ -1,0 +1,20 @@
+uuid: e006b97f-0cde-436d-89db-fdf6e6094f2b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - og
+id: node.og_group_ref
+field_name: og_group_ref
+entity_type: node
+type: og_standard_reference
+settings:
+  target_type: node
+module: og
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

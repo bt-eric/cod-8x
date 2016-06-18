@@ -1,0 +1,10 @@
+<?php
+
+function cod_events_install() {
+  // Mark the event node as a group.
+  $og_settings = \Drupal::configFactory()->getEditable('og.settings');
+  $groups = $og_settings->get('groups');
+  $groups['node'][] = 'event';
+  $og_settings->set('groups', $groups);
+  $og_settings->save();
+}

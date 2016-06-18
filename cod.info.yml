@@ -44,6 +44,9 @@ dependencies:
   - metatag
   - og
   - rules
+  # cod
+  - cod_basic_page
+  - cod_events
 
 themes:
   - bartik

@@ -1,0 +1,10 @@
+name: COD Basic Page
+description: Basic pages (program, hotel, etc) for COD Events
+type: module
+core: 8.x
+package: COD
+dependencies:
+  - ctools
+  - og
+  - page_manager
+  - views

@@ -1,0 +1,7 @@
+name: COD Events
+type: module
+description: Provides base event management
+core: 8.x
+package: COD
+dependencies:
+  - datetime
