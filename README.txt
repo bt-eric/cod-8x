@@ -63,5 +63,3 @@ The most important configuration options are the access rules for anonymous user
 you don't want anonymous users to be able to edit pages, go to
 
 'administer > users > access control'
-
-
