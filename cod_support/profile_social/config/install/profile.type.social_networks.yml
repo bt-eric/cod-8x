@@ -1,0 +1,13 @@
+uuid: 970dad06-5a9b-426f-9bcd-0d13e037ec8f
+langcode: en
+status: true
+dependencies: {  }
+id: social_networks
+label: 'Social networks'
+registration: false
+multiple: false
+roles:
+  authenticated: '0'
+  administrator: '0'
+  content_editor: '0'
+weight: 0

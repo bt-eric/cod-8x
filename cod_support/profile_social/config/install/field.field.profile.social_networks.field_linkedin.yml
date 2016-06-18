@@ -1,0 +1,23 @@
+uuid: f7194632-2c8b-4bbc-a63b-08b256e126c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_linkedin
+    - profile.type.social_networks
+  module:
+    - link
+id: profile.social_networks.field_linkedin
+field_name: field_linkedin
+entity_type: profile
+bundle: social_networks
+label: LinkedIn
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

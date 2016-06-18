@@ -1,0 +1,38 @@
+uuid: e6ee95f8-569a-4411-85ce-26abef35a8e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.social_networks.field_facebook
+    - field.field.profile.social_networks.field_linkedin
+    - field.field.profile.social_networks.field_twitter
+    - profile.type.social_networks
+  module:
+    - link
+id: profile.social_networks.default
+targetEntityType: profile
+bundle: social_networks
+mode: default
+content:
+  field_facebook:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_linkedin:
+    weight: 5
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_twitter:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+hidden: {  }

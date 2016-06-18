@@ -1,0 +1,13 @@
+uuid: 5a660464-5436-45dd-961c-c5b95fc6bbea
+langcode: en
+status: true
+dependencies: {  }
+id: attendee_information
+label: 'Attendee information'
+registration: false
+multiple: false
+roles:
+  authenticated: '0'
+  administrator: '0'
+  content_editor: '0'
+weight: 0
