@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c59df6f2cbc0b66032a7ac2c58dcaf72",
-    "content-hash": "98e3c6e6c50d6823742f0de10a05d94d",
+    "hash": "a7beabc5323b7e8c770f13eb675d7bcb",
+    "content-hash": "213c0da82c3f2db629b68e37954a7a2a",
     "packages": [
         {
             "name": "codegyre/robo",
@@ -5963,19 +5963,20 @@
         },
         {
             "name": "jakoch/phantomjs-installer",
-            "version": "1.9.8",
+            "version": "2.1.1-p03",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jakoch/phantomjs-installer.git",
-                "reference": "fd6459094404f698a4edb9609e5e8c55c6418824"
+                "reference": "d4e9db3d16d5b6e70d1d4941cb84425f9d9fa801"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jakoch/phantomjs-installer/zipball/fd6459094404f698a4edb9609e5e8c55c6418824",
-                "reference": "fd6459094404f698a4edb9609e5e8c55c6418824",
+                "url": "https://api.github.com/repos/jakoch/phantomjs-installer/zipball/d4e9db3d16d5b6e70d1d4941cb84425f9d9fa801",
+                "reference": "d4e9db3d16d5b6e70d1d4941cb84425f9d9fa801",
                 "shasum": ""
             },
             "require": {
+                "ext-bz2": "*",
                 "ext-openssl": "*"
             },
             "type": "custom-installer",
@@ -6000,7 +6001,7 @@
                 "headless",
                 "phantomjs"
             ],
-            "time": "2014-12-05 17:57:27"
+            "time": "2016-05-22 09:49:40"
         },
         {
             "name": "jakub-onderka/php-console-color",

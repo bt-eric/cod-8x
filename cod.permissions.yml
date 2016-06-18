@@ -1,0 +1,3 @@
+administer conferences:
+  title: Administer Conferences
+  description: Allows users change global conference settings.

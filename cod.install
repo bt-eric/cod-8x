@@ -1,5 +1,7 @@
 <?php
 
+use Drupal\user\Entity\User;
+
 /**
  * Implements hook_requirements().
  */
@@ -74,12 +76,7 @@ function cod_install_tasks() {
     ini_set('memory_limit', '196M');
   }
 
-  $selected_extras = variable_get('cod_selected_extras', array());
-  // To Do - demo content
-  //$demo_content = variable_get('cod_install_example_content', FALSE);
-
-  // To Do - Acquia Connector
-  //$acquia_connector = variable_get('cod_install_acquia_connector', FALSE);
+  $selected_extras = \Drupal::config('cod.selected_extras')->getRawData();
 
   return array(
     //'cod_acquia_connector_enable' => array(
@@ -91,19 +88,19 @@ function cod_install_tasks() {
     //  'display' => FALSE,
     //  'type' => '',
     //  'run'
-    'cod_create_first_event' => array(
-      'display_name' => st('Create the first conference'),
-      'display' => TRUE,
-      'type' => 'form',
-    ),
-    'cod_install_additional_modules' => array(
-      'display_name' => !empty($selected_extras['example_content']) ? st('Install example content') : st('Install additional functionality'),
-      'display' => FALSE,
-      'type' => 'batch',
-    ),
-    'cod_admin_permissions' => array(
-      'display' => FALSE,
-    ),
+//    'cod_create_first_event' => array(
+//      'display_name' => t('Create the first conference'),
+//      'display' => TRUE,
+//      'type' => 'form',
+//    ),
+//    'cod_install_additional_modules' => array(
+//      'display_name' => !empty($selected_extras['example_content']) ? t('Install example content') : t('Install additional functionality'),
+//      'display' => FALSE,
+//      'type' => 'batch',
+//    ),
+//    'cod_admin_permissions' => array(
+//      'display' => FALSE,
+//    ),
   );
 }
 
@@ -112,7 +109,7 @@ function cod_install_tasks() {
  */
 function cod_install_tasks_alter(&$tasks, $install_state) {
   global $install_state;
-  $tasks['install_profile_modules']['display_name'] = st('Install Conference Organizing Distribution');
+  $tasks['install_profile_modules']['display_name'] = t('Install Conference Organizing Distribution');
 
   // Skip profile selection step.
   $tasks['install_select_profile']['display'] = FALSE;
@@ -123,9 +120,8 @@ function cod_install_tasks_alter(&$tasks, $install_state) {
   $install_state['parameters']['locale'] = 'en';
 
   // Override "install_finished" task to redirect people to home page.
-  $tasks['install_finished']['function'] = 'cod_install_finished';
+//  $tasks['install_finished']['function'] = 'cod_install_finished';
 }
-
 
 /**
  * Override of install_finished() without the useless text.
@@ -138,19 +134,12 @@ function cod_install_finished(&$install_state) {
 
   // BEGIN copy/paste from install_finished().
   // Remove the bookmarks flag
-  $flag = flag_get_flag('bookmarks');
-  if($flag) {
-    $flag->delete();
-    $flag->disable();
-    _flag_clear_cache();
-  }
-
-  variable_set('clean_url', 1);
-
-  // Enable default settings for jquery_update
-  variable_set('jquery_update_compression_type', 'min');
-  variable_set('jquery_update_jquery_admin_version', '1.7');
-  variable_set('jquery_update_jquery_version', '1.8');
+//  $flag = flag_get_flag('bookmarks');
+//  if($flag) {
+//    $flag->delete();
+//    $flag->disable();
+//    _flag_clear_cache();
+//  }
 
   // Flush all caches to ensure that any full bootstraps during the installer
   // do not leave stale cached data, and that any content types or other items
@@ -178,11 +167,11 @@ function cod_install_finished(&$install_state) {
   variable_set('configurable_timezones', 0);
 
   // We make custom code for the footer here because we want people to be able to freely edit it if they wish.
-  $footer_body = '<p>'. st('A community events site, powered by the <a href="@drupal">Conference Organizing Distribution</a>', array('@drupal' => url('https://drupal.org/project/cod'))) . '</p>';
+  $footer_body = '<p>'. t('A community events site, powered by the <a href="@drupal">Conference Organizing Distribution</a>', array('@drupal' => url('https://drupal.org/project/cod'))) . '</p>';
 
   $footer_block_text = array(
-    'body' => st($footer_body),
-    'info' => st('Default Footer'),
+    'body' => t($footer_body),
+    'info' => t('Default Footer'),
     'format' => 'full_html',
   );
 
@@ -258,7 +247,7 @@ function cod_install_finished(&$install_state) {
   }
 
   if (isset($messages['error'])) {
-    $output = '<p>' . (isset($messages['error']) ? st('Review the messages above before visiting <a href="@url">your new site</a>.', array('@url' => url(''))) : st('<a href="@url">Visit your new site</a>.', array('@url' => url('')))) . '</p>';
+    $output = '<p>' . (isset($messages['error']) ? t('Review the messages above before visiting <a href="@url">your new site</a>.', array('@url' => url(''))) : t('<a href="@url">Visit your new site</a>.', array('@url' => url('')))) . '</p>';
     return $output;
   }
   else {
@@ -318,7 +307,7 @@ function cod_install_additional_modules() {
   }
 
   $batch = array(
-    'title' => !empty($selected_extras['example_content']) ? st('Installing example content') : st('Installing additional functionality'),
+    'title' => !empty($selected_extras['example_content']) ? t('Installing example content') : t('Installing additional functionality'),
     'operations' => $operations,
     'file' => drupal_get_path('profile', 'cod') . '/cod.install_callbacks.inc',
   );
@@ -338,37 +327,37 @@ function _cod_filter_dependencies($dependency) {
  */
 function cod_create_first_event() {
   $form['cod_first_event_explanation'] = array(
-    '#markup' => '<h2>' . st('Create your first conference.') . '</h2>' . st("COD allows you to create multiple conferences and organizes content related to a particular conference, such as sessions, attendees, and announcements."),
+    '#markup' => '<h2>' . t('Create your first conference.') . '</h2>' . t("COD allows you to create multiple conferences and organizes content related to a particular conference, such as sessions, attendees, and announcements."),
     '#weight' => -1,
   );
 
   $form['cod_first_event_title'] = array(
     '#type' => 'textfield',
-    '#title' => st("Conference name"),
-    '#description' => st('This is the name of your first conference. You may want to include the year or date if this is a repeating event.'),
+    '#title' => t("Conference name"),
+    '#description' => t('This is the name of your first conference. You may want to include the year or date if this is a repeating event.'),
     '#required' => TRUE,
-    '#default_value' => st('DrupalCamp Antarctica'),
+    '#default_value' => t('DrupalCamp Antarctica'),
   );
 
   $form['cod_first_event_body'] = array(
     '#type' => 'textarea',
-    '#title' => st('Conference description'),
-    '#description' => st("This text will appear on the conference homepage and gives a general overview. You can always change this text later."),
+    '#title' => t('Conference description'),
+    '#description' => t("This text will appear on the conference homepage and gives a general overview. You can always change this text later."),
     '#required' => TRUE,
-    '#default_value' => st('DrupalCamp Antarctica is held once a year at the South Pole, with a regular attendance of around 200 penguins'),
+    '#default_value' => t('DrupalCamp Antarctica is held once a year at the South Pole, with a regular attendance of around 200 penguins'),
   );
 
   $form['cod_first_event_modules'] = array(
     '#type' => 'checkboxes',
-    '#title' => st('Optional Features'),
-    '#description' => st("Select the optional features above that are relevant to your event."),
+    '#title' => t('Optional Features'),
+    '#description' => t("Select the optional features above that are relevant to your event."),
     '#required' => FALSE,
     '#options' => _cod_get_optional_modules(),
   );
 
   $form['cod_first_event_submit'] = array(
     '#type'  => 'submit',
-    '#value' => st('Save and continue')
+    '#value' => t('Save and continue')
   );
 
   return $form;
@@ -412,232 +401,25 @@ function cod_create_first_event_submit($form_id, &$form_state) {
  * Implements hook_install().
  */
 function cod_install() {
-  // Do not use the administration theme when editing or creating content.
-  variable_set('node_admin_theme', '0');
+  $config_factory = \Drupal::configFactory();
 
-  // Create page type.
+  // Set the default and admin theme
+  \Drupal::configFactory()
+    ->getEditable('system.theme')
+    ->set('default', 'bartik')
+    ->set('admin', 'seven')
+    ->save(TRUE);
 
-  // Insert default pre-defined node types into the database. For a complete
-  // list of available node type attributes, refer to the node type API
-  // documentation at: http://api.drupal.org/api/HEAD/function/hook_node_info.
-
-  $types = array(
-    array(
-      'type' => 'page',
-      'name' => st('Basic page'),
-      'base' => 'node_content',
-      'description' => st("Use <em>basic pages</em> for your static content, such as an 'About us' page."),
-      'custom' => 1,
-      'modified' => 1,
-      'locked' => 0,
-    ),
-  );
-
-  foreach ($types as $type) {
-    $type = node_type_set_defaults($type);
-    node_type_save($type);
-    node_add_body_field($type);
-  }
-
-  // Create a default role for site administrators, with all available permissions assigned.
-  $admin_role = new stdClass();
-  $admin_role->name = 'administrator';
-  $admin_role->weight = 2;
-  user_role_save($admin_role);
-  user_role_grant_permissions($admin_role->rid, array_keys(module_invoke_all('permission')));
-  // Set this as the administrator role.
-  variable_set('user_admin_role', $admin_role->rid);
+  // Enable the admin theme.
+  \Drupal::configFactory()
+    ->getEditable('node.settings')
+    ->set('use_admin_theme', TRUE)
+    ->save(TRUE);
 
   // Assign user 1 the "administrator" role.
-  db_insert('users_roles')
-    ->fields(array('uid' => 1, 'rid' => $admin_role->rid))
-    ->execute();
-
-  // Default page to not be promoted and have comments disabled.
-  variable_set('node_options_page', array('status'));
-  variable_set('comment_page', COMMENT_NODE_HIDDEN);
-
-  // Don't display date and author information for page nodes by default.
-  $theme_settings = variable_get('theme_settings', array());
-  $theme_settings['toggle_node_info_page'] = FALSE;
-  variable_set('theme_settings', $theme_settings);
-
-  // Revert features to be sure everything is setup correctly.
-  // Currently disabled because we don't want devs enabling them on startup
-  $revert = array(
-    'cod_wysiwyg' => array('ckeditor_profile'),
-  );
-  features_revert($revert);
+  $user = User::load(1);
+  $user->roles[] = 'administrator';
+  $user->save();
 
   node_access_rebuild(FALSE);
-
-  // The installer requires that the system theme settings form
-  // be submitted in order for its themes' settings to be properly set
-  // For more background, see https://www.drupal.org/node/1776730.
-  module_load_include('inc', 'system', 'system.admin');
-  // Enable the Origins theme and set it as the default.
-  $cod_themes = array('omega', 'pisces', 'adminimal', 'fisherman');
-  foreach ($cod_themes as $theme_name) {
-    $form_state = form_state_defaults();
-    $form_state['build_info']['args'][0] = $theme_name;
-    $form_state['values'] = array();
-    drupal_form_submit('system_theme_settings', $form_state);
-  }
-}
-
-/**
- * Enable the Libraries module.
- */
-function cod_update_7001() {
-  $module_list = array('libraries');
-  module_enable($module_list);
-  return array();
-}
-
-/**
- * Enable new dependencies for COD to work properly.
- */
-function cod_update_7002() {
-  $module_list = array('inline_entity_form', 'views_autorefresh', 'views_datasource');
-  module_enable($module_list);
-  return array();
-}
-
-/**
- * Switch from Seven to Adminimal admin theme.
- */
-function cod_update_7003() {
-  $module_list = array('adminimal', 'adminimal_admin_menu');
-  module_enable($module_list);
-  variable_set('admin_theme', 'adminimal');
-
-  // Enable default settings for jquery_update
-  variable_set('jquery_update_compression_type', 'min');
-  variable_set('jquery_update_jquery_admin_version', '1.7');
-  variable_set('jquery_update_jquery_version', '1.8');
-  return array();
-}
-
-/**
- * Make sure Adminimal and Pisces are enabled if they are set as themes.
- */
-function cod_update_7004() {
-  //Verify adminimal is enabled if its set as admin theme.
-  if (variable_get('admin_theme', '') == 'adminimal') {
-    $admin_theme = 'adminimal';
-    theme_enable(array($admin_theme));
-    module_enable(array('adminimal_admin_menu'));
-    theme_disable(array('seven'));
-  }
-  // Verify pisces is enabled if its the default theme.
-  if (variable_get('theme_default', '') == 'pisces') {
-    theme_enable(array('pisces'));
-    theme_disable(array('bartik'));
-  }
-  return array();
-}
-
-/**
- * Set Fisherman as replacement Administration theme for Adminimal.
- */
-function cod_update_7006() {
-  //Verify that Adminimal is set as admin theme, then switch to Fisherman.
-  if (variable_get('admin_theme', '') == 'adminimal') {
-    $admin_theme = 'fisherman';
-    theme_enable(array($admin_theme));
-    variable_set('admin_theme', $admin_theme);
-  }
-  return array();
-}
-
-/**
- * Update foreign keys where necessary.
- * See https://www.drupal.org/node/1969018 for more info.
- */
-function cod_update_7007() {
-  // Load the base table configuration from the cache.
-  $base_tables = variable_get('entityreference:base-tables', array());
-
-  foreach (field_info_fields() as $field_name => $field) {
-
-    if ($field['type'] != 'entityreference') {
-      // Not an entity reference field.
-      continue;
-    }
-
-    // Read in the field config.
-    $field_name = field_read_field($field['field_name']);
-
-    // Create a foreign key to the target entity type base type, if available.
-    $entity_type = $field_name['settings']['target_type'];
-    if (isset($base_tables[$entity_type])) {
-      list($base_table, $id_column) = $base_tables[$entity_type];
-      $schema['foreign keys'][$base_table] = array(
-        'table' => $base_table,
-        'columns' => array('target_id' => $id_column),
-      );
-    }
-
-    // Update foreign keys to actually contain the proper entity foreign keys
-    // if they differ.
-    if ($field_name['foreign keys'] != $schema['foreign keys']) {
-      $field_name['foreign keys'] = $schema['foreign keys'];
-      field_update_field($field_name);
-    }
-  }
-}
-
-/**
- * Context module has been removed from COD. WARNING: Run Registry Rebuild first if using drush updb!
- */
-function cod_update_7008() {
-  // Remove stale registry files.
-  db_delete('registry_file')
-    ->condition('filename', 'profiles/cod/modules/contrib/context', 'LIKE')
-    ->execute();
-  db_delete('registry')
-    ->condition('filename', 'profiles/cod/modules/contrib/context', 'LIKE')
-    ->execute();
-
-  registry_rebuild();
-  // Check to see if context exists somewhere else. If so, we don't have to do
-  // anything else.
-  if (strpos(drupal_get_path('module', 'context'), 'sites') !== FALSE) {
-    return array();
-  }
-  if (db_table_exists('context')) {
-    $num_rows = db_select('context')
-      ->countQuery();
-    if ($num_rows === 0) {
-      variable_del('context_ui_show_empty_regions');
-      variable_del('context_reaction_block_disable_core');
-      variable_del('context_reaction_block_all_regions');
-      db_drop_table('context');
-      // Remove context from system table.
-      db_delete('system')
-        ->condition('name', 'context')
-        ->execute();
-      db_delete('system')
-        ->condition('name', 'context_ui')
-        ->execute();
-    }
-    else {
-      // Inform the administrator that Context is no longer contained in COD.
-      drupal_set_message(t('Due to a security update in Context and its lack of use in COD, Context has been removed and disabled. If you would like to continue using Context, please download the module to /sites/all/contrib/modules.'), 'warning');
-      db_update('system')
-        ->fields(array(
-            'status' => 0,
-          ))
-          ->condition('name', array('context', 'context_ui'), 'IN')
-          ->execute();
-      return array();
-    }
-  }
-}
-
-/**
- * Enable distro update so users don't accidentally bork their COD site while updating.
- */
-function cod_update_7009() {
-  module_enable(array('distro_update'));
 }

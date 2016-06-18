@@ -1,0 +1,3 @@
+cod.selected_extras:
+  type: config_object
+  label: 'Selected extras'
