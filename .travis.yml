@@ -17,13 +17,21 @@ mysql:
   database: drupal
   username: root
   encoding: utf8
-
+env:
+  global:
+    - PHANTOMJS2_VERSION="2.0.0"
 before_install:
   - phpenv config-rm xdebug.ini
   - composer self-update
   - composer --version
 
 install:
+  - mkdir travis-phantomjs
+  - wget https://s3.amazonaws.com/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2 -O $PWD/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2
+  - tar -xvf $PWD/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2 -C $PWD/travis-phantomjs
+  - export PATH=$PWD/travis-phantomjs:$PATH
+  - phantomjs --version
+
   # Add Composer's local bin directory to the PATH so that we will be running
   # our installed versions of Drush, PHPCS, Behat, etc.
   - export PATH="$TRAVIS_BUILD_DIR/bin:$PATH"

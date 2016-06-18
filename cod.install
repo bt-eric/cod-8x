@@ -150,21 +150,10 @@ function cod_install_finished(&$install_state) {
   $cod_themes = array('omega', 'pisces', 'adminimal', 'fisherman');
   theme_enable($cod_themes);
 
-    // The Bartik theme is automatically enabled during installation. Disable it.
-  db_update('system')
-    ->fields(array('status' => 0))
-    ->condition('type', 'theme')
-    ->condition('name', 'bartik')
-    ->execute();
-
   // Set the default and administration themes.
   variable_set('theme_default', 'pisces');
   // Set a default administrative theme:
   variable_set('admin_theme', 'fisherman');
-  variable_set('node_admin_theme', FALSE);
-
-  // Turn off user-configurable timezones.
-  variable_set('configurable_timezones', 0);
 
   // We make custom code for the footer here because we want people to be able to freely edit it if they wish.
   $footer_body = '<p>'. t('A community events site, powered by the <a href="@drupal">Conference Organizing Distribution</a>', array('@drupal' => url('https://drupal.org/project/cod'))) . '</p>';
@@ -200,10 +189,6 @@ function cod_install_finished(&$install_state) {
   // Cache a fully-built schema.
   drupal_get_schema(NULL, TRUE);
 
-  variable_set('title_node', array(
-    'auto_attach' => array('title' => 'title'),
-    'hide_label' => array('page' => 0, 'entity' => 0),
-  ));
   //TODO: Hardcoded to the first event that is created.
   if (module_exists('cod_session')) {
     if ($first_event = node_load(1)) {
@@ -211,9 +196,6 @@ function cod_install_finished(&$install_state) {
     }
   }
 
-  // Update Incorrect foreign key references.
-  // See https://www.drupal.org/node/1969018 for more info.
-  cod_update_7007();
   // Run cron to populate update status tables (if available) so that users
   // will be warned if they've installed an out of date Drupal version.
   // Will also trigger indexing of profile-supplied content or feeds.
@@ -404,16 +386,21 @@ function cod_install() {
   $config_factory = \Drupal::configFactory();
 
   // Set the default and admin theme
-  \Drupal::configFactory()
+  $config_factory
     ->getEditable('system.theme')
     ->set('default', 'bartik')
     ->set('admin', 'seven')
     ->save(TRUE);
 
   // Enable the admin theme.
-  \Drupal::configFactory()
+  $config_factory
     ->getEditable('node.settings')
-    ->set('use_admin_theme', TRUE)
+    ->set('use_admin_theme', FALSE)
+    ->save(TRUE);
+
+  $config_factory
+    ->getEditable('timezone.user')
+    ->set('configurable', FALSE)
     ->save(TRUE);
 
   // Assign user 1 the "administrator" role.

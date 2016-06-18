@@ -1,8 +1,8 @@
-@api @lightning
-Feature: Lightning Content Types
+@api @cod
+Feature: COD Content Types
   Makes sure that the article content type was created during installation.
 
-  Scenario: Make sure that the content types provided by Lightning at installation are present.
+  Scenario: Make sure that the content types provided by COD at installation are present.
     Given I am logged in as a user with the administrator role
     When I visit "/node/add"
     Then I should see "Basic page"
@@ -24,24 +24,6 @@ Feature: Lightning Content Types
     Given I am logged in as a user with the "administrator" role
     When I visit "/block/add"
     Then I should see a "Body" element
-
-  Scenario: Ensure the roles configuration form works
-    Given I am logged in as a user with the administrator role
-    When I visit "/admin/config/system/lightning"
-    And I uncheck the box "content_roles[reviewer]"
-    And I press "Save configuration"
-    Then the response status code should be 200
-    And I check the box "content_roles[reviewer]"
-    And I press "Save configuration"
-
-  Scenario: Automatically creating creator and reviewer roles for a content type
-    Given I am logged in as a user with the administrator role
-    And node_type entities:
-      | type | name |
-      | foo  | foo  |
-    And I visit "/admin/people/roles"
-    Then I should see "foo Creator"
-    And I should see "foo Reviewer"
 
   Scenario: Automatically deleting creator and manager roles for a content type
     Given I am logged in as a user with the administrator role
