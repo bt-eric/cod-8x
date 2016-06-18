@@ -1,0 +1,40 @@
+uuid: 02006f61-5097-426b-b2da-2cd75dd595d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.sponsor.body
+    - field.field.node.sponsor.field_sponsorship_level
+    - field.field.node.sponsor.og_group_ref
+    - node.type.sponsor
+  module:
+    - text
+    - user
+id: node.sponsor.default
+targetEntityType: node
+bundle: sponsor
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_sponsorship_level:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 100
+  og_group_ref:
+    label: above
+    type: entity_reference_label
+    settings:
+      link: true
+    weight: 102
+    third_party_settings: {  }
+hidden: {  }

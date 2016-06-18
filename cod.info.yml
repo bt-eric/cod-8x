@@ -47,6 +47,7 @@ dependencies:
   # cod
   - cod_basic_page
   - cod_events
+  - cod_sponsors
 
 themes:
   - bartik

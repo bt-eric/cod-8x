@@ -1,0 +1,7 @@
+name: COD Sponsors
+description: Sponsorship features
+core: 8.x
+type: module
+package: COD
+dependencies:
+  - cod_events
