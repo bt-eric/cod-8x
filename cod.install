@@ -8,18 +8,17 @@ use Drupal\user\Entity\User;
 function cod_requirements($phase) {
   $requirements = array();
   // Ensure translations don't break during installation.
-  $t = get_t();
   if($phase == 'install') {
 
     // Test PHP minimum execution time
     $requirements['php_max_execution_time'] = array(
-      'title' => $t('PHP Max Execution Time'),
+      'title' => t('PHP Max Execution Time'),
       'value' => ini_get('max_execution_time'),
     );
     $max_execution_time = (int)ini_get('max_execution_time');
     // Don't set the error when max_execution_time is 0 (Infinite).
     if ($max_execution_time && $max_execution_time < DRUPAL_MINIMUM_MAX_EXECUTION_TIME) {
-      $requirements['php_max_execution_time']['description'] = $t('Your PHP execution time is too low, please set it greater than or equal to %time seconds.', array('%time' => DRUPAL_MINIMUM_MAX_EXECUTION_TIME));
+      $requirements['php_max_execution_time']['description'] = t('Your PHP execution time is too low, please set it greater than or equal to %time seconds.', array('%time' => DRUPAL_MINIMUM_MAX_EXECUTION_TIME));
       $requirements['php_max_execution_time']['severity'] = REQUIREMENT_ERROR;
     }
 
@@ -32,7 +31,7 @@ function cod_requirements($phase) {
       $ini_suffix = '';
       if (!empty($opcache_mem)) {
         $requirements['opcode_cache_size'] = array(
-          'title' => $t('OPcache memory'),
+          'title' => t('OPcache memory'),
           'value' => $opcache_mem,
         );
         $ext_name = 'OPcache';
@@ -41,7 +40,7 @@ function cod_requirements($phase) {
       }
       elseif (!empty($apc_mem)) {
         $requirements['opcode_cache_size'] = array(
-          'title' => $t('APC shim size'),
+          'title' => t('APC shim size'),
           'value' => $apc_mem,
         );
         $ext_name = 'APC';
@@ -52,7 +51,7 @@ function cod_requirements($phase) {
       $mem_size = intval(ini_get($ini_name));
 
       if ($mem_size && $mem_size < COD_MINIMUM_OPCODE_CACHE) {
-        $requirements['opcode_cache_size']['description'] = $t('%ext_name is installed but %mem_size is not enough opcode cache to successfully install COD.
+        $requirements['opcode_cache_size']['description'] = t('%ext_name is installed but %mem_size is not enough opcode cache to successfully install COD.
           Find your php configuration file(s) and change the <em>%ini_name</em> value to at least <em>%min_mem_size</em>.',
           array(
             '%ext_name' => $ext_name,
